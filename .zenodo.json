@@ -1,0 +1,35 @@
+{
+  "creators": [
+    {
+      "name": "Gujord, Roger",
+      "orcid": "0009-0006-5227-980X"
+    }
+  ],
+  "description": "Preprint and reproducible Lean proof package. Prose/data: CC BY 4.0; code: MIT. AI-assisted exploration, proof drafts, exposition and formalization under Roger Gujord. Independent human review and historical priority remain open.",
+  "doi": "10.5281/zenodo.23973601",
+  "keywords": [
+    "Heraclitus walk",
+    "greedy integer walks",
+    "Lean",
+    "integer sequences",
+    "formal verification"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-11-05",
+  "publication_type": "preprint",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/gujord/heraclitus-coverage/tree/v1.0.0",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23912682",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "title": "Coverage in Heraclitus walks: interval filling and residue connectivity",
+  "upload_type": "publication",
+  "version": "1.0.0"
+}

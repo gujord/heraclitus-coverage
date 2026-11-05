@@ -1,0 +1,867 @@
+% Release candidate v1.0.0; see the W04 preparation record for artifact checks.
+% G06/W03 is a separate frozen snapshot; see README.md for the evidence ledger.
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm,array}
+\usepackage[margin=27mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,fancyhdr,xurl}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Coverage in Heraclitus walks: interval filling and residue connectivity},pdfauthor={Roger Gujord}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Coverage in Heraclitus walks}
+\fancyhead[R]{\small Preprint v1.0.0}
+\fancyfoot[C]{\thepage}\setlength{\headheight}{14pt}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+\emergencystretch=1em
+\newtheorem{maintheorem}{Theorem}
+\renewcommand{\themaintheorem}{\Alph{maintheorem}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\Z}{\mathbb Z}\newcommand{\N}{\mathbb N}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\code}[1]{\texttt{#1}}
+\title{Coverage in Heraclitus walks\\[5pt]\large Interval filling and residue connectivity}
+\author{Roger Gujord\\\small ORCID: \href{https://orcid.org/0009-0006-5227-980X}{0009-0006-5227-980X}}
+\date{5 November 2026\\\small Version 1.0.0\\[4pt]\footnotesize
+DOI: \href{https://doi.org/10.5281/zenodo.23973601}{10.5281/zenodo.23973601}}
+\begin{document}
+\maketitle
+\begin{abstract}
+A Heraclitus walk starts at zero and repeatedly chooses the unused integer
+closest to zero at an allowed distance, preferring the positive value in a
+tie. This paper proves two sufficient conditions for visiting every integer
+exactly once. Every unbounded distance set containing 1 and 2 has coverage,
+with exact complete-interval checkpoints at every allowed distance at least
+2. Coverage also holds when the distances contain complete tails in a
+nonempty collection of residue classes whose representatives, together with
+the modulus, have greatest common divisor 1. The latter condition requires
+no prescribed short distances. The proofs use interval filling and a
+finite-priority argument that propagates omitted targets through residue
+classes. For a full odd tail above a threshold $M\ge1$, the first visit
+to $z$ occurs by index $4M+6|z|+9$. A covered family outside both
+criteria shows that they are not exhaustive. These results answer Sloane's general coverage question for two classes of
+distance sets and unify previously reported special cases. The main results
+are formalized in Lean 4.35.0 using the rule stated here. The verification
+scope and prior-work attribution are given below.
+\end{abstract}
+
+\section{Introduction and main results}
+Throughout, $\N=\{0,1,2,\ldots\}$. The set $D\subseteq\N$ is fixed for the entire
+walk. It specifies allowed \emph{distances}, not a prescribed chronological
+list of jumps. Put $a(0)=0$ and $U_n=\{a(0),\ldots,a(n)\}$. At time $n$,
+the next point is the least admissible unused destination in the order
+\[
+0,1,-1,2,-2,3,-3,\ldots,
+\qquad v\text{ admissible}\iff |v-a(n)|\in D.
+\]
+Equivalently, minimize $(|v|,\mathbf1_{v<0})$ lexicographically over admissible
+$v\notin U_n$. Allowing $0\in D$ has no effect: the current point is used.
+
+The name \emph{Heraclitus walk} follows Sloane's terminology for this
+greedy construction.
+Sloane asks whether an infinite set of positive allowed distances with
+greatest common divisor 1 must have a Heraclitus transform containing every
+integer \cite{sloane2025,sloane2026}. Both conditions are necessary. A common
+divisor confines the walk to its multiples. A finite distance set bounds
+all jumps, while an injective walk eventually leaves every finite interval;
+it can then no longer cross between the two unbounded sides. The question
+is whether the two conditions are sufficient.
+
+The two theorems below prove sufficiency for two general classes. The first permits arbitrarily
+sparse large distances but requires 1 and 2. The second requires complete
+residue tails but permits all small distances to be absent. A full tail in
+a residue class contains every sufficiently large positive integer in that
+class. A checkpoint specifies the visited set and current point at a given
+time. To state the exact checkpoints of the first theorem, define
+\begin{align}
+ I_n&=[-\floor{n/2},\ceil{n/2}]\cap\Z,\label{eq:box}\\
+ E_n&=\{\ceil{n/2}-1,\ 1-\floor{n/2},\ \ceil{n/2},\ -\floor{n/2}\}.
+ \label{eq:ends}
+\end{align}
+Some elements of $E_n$ coincide for small $n$; it is a set, not a claim
+that four distinct states occur in every walk.
+
+\begin{maintheorem}[The 1--2 coverage theorem]\label{thm:main}
+Suppose $1,2\in D$ and $D$ is unbounded: for every $N$ there is $d\in D$
+with $d>N$. A unique infinite walk following the stated rule exists. Every such
+walk satisfies, for every $d\in D$ with $d\ge2$,
+\[
+ U_d=I_d,\qquad a(d)\in E_d.
+\]
+Moreover, every $z\in\Z$ is attained at exactly one index.
+\end{maintheorem}
+
+\begin{maintheorem}[Residue-tail coverage]\label{thm:residue-tail}
+Let $q\ge1$ and $M\ge0$ be integers. Let $S$ be a nonempty subset of
+$\{0,\ldots,q-1\}$. Suppose the greatest common divisor of $q$ and all
+elements of $S$ is 1, written
+\[
+ \gcd(q,\{s:s\in S\})=1.
+\]
+Suppose that every positive $d\ge M$ with $d\bmod q\in S$ belongs to $D$.
+Other allowed distances are arbitrary. The walk starting at zero and following the stated rule
+exists uniquely and visits every integer exactly once.
+\end{maintheorem}
+
+For example, Theorem~\ref{thm:main} applies to every unbounded set after
+adding 1 and 2. Theorem~\ref{thm:residue-tail} applies to the exact set
+$\{5,8,11,14,\ldots\}$, with modulus 3 and residue 2.
+Theorems~\ref{thm:main} and~\ref{thm:residue-tail} concern a fixed set of
+distances; adding distances can change the walk.
+Neither theorem asserts that a prescribed sequence of jump lengths is used.
+
+The first proof fills intervals and tracks their endpoints. The second
+uses the fact that repeatedly passing over a missing target requires
+choosing a different point each time from a finite set of destinations that
+take priority over it. These
+mechanisms give coverage under different hypotheses. A separate counting
+argument supplies the odd-tail first-visit bound in
+Proposition~\ref{prop:odd-tail}.
+
+The two criteria are not exhaustive. The covered reference set
+$\{1,3,6,10,14,\ldots\}$ in Appendix~\ref{sec:triple} satisfies neither:
+it omits 2, and all its sufficiently large distances are even. The broader
+coverage question therefore remains beyond the scope of these criteria.
+
+The accompanying GitHub repository contains the Lean proofs, a guide linking
+the paper's statements to their formal counterparts, and instructions for
+reproducing the verification. The versioned repository link and archived
+source package \cite{package} are described in Section~\ref{sec:formal}.
+
+\section{Related work}\label{sec:context}
+The following OEIS reports were checked on 5 November 2026.
+Several special cases were already reported. Sigrist gives a block
+description for powers of two \cite{powers}. Caveney announces a Fibonacci
+coverage proof and a six-block outline \cite{fibonacci}, and a
+squares-plus-2 proof with a four-block outline \cite{squares2}.
+His companion entry explicitly explains why adding 2 simplifies the
+problem \cite{adding2}. The factorial project of trureturing/The Omega
+Institute supplies a formal source and an interval-filling argument
+\cite{factorial,factorialcode}. The inward descent and return-filling argument used here follows that
+factorial work.
+Neither the filling idea nor the already reported named coverage results
+are presented as first discoveries of this project.
+
+Theorem~\ref{thm:main} treats this filling mechanism for arbitrary unbounded
+distance sets containing 1 and 2, with exact complete-interval checkpoints
+and endpoint constraints at every allowed distance at least 2.
+Theorem~\ref{thm:residue-tail} gives a complementary criterion using complete
+residue tails with joint gcd 1, without requiring any particular short distance.
+
+The available Caveney outlines are credited here; his complete SeqFan
+correspondence has not been retrieved. The factorial source was inspected
+at the pinned commit in the bibliography, without an external build or
+axiom audit. Priority of the arbitrary-set statement, the stronger
+all-allowed-distance checkpoints and the residue-tail criterion must be
+assessed separately. The source comparison does not establish first
+discovery or exclude unpublished work.
+
+\section{Existence, uniqueness of choices, and exact indices}
+For a finite used set $U$ and current point $c$, choose $B$ with
+$|u|\le B$ for all $u\in U$. Unboundedness gives $d\in D$ with
+$d>B+|c|$. Then $c+d>B$ is unused and reachable. Thus there is always an
+admissible unused destination. The displayed order on $\Z$ is a well-order
+of type $\omega$, so the next destination exists and is unique.
+Recursive choice on finite states gives a unique infinite walk. Any finite
+sequence of greedy moves from a state reached by that walk agrees with its
+continuation, since the next choice is unique. For arbitrary $D$, a next
+choice is unique whenever an admissible unused destination exists;
+unboundedness ensures existence at every step.
+
+No step repeats a point, hence $|U_n|=n+1$. In particular, $I_m$ has $m+1$
+points. If a finite greedy continuation from a state reached by the walk
+has visited exactly $I_m$, its ending time is $m$. This counting argument
+determines the time whenever a local transition fills such an interval;
+an endpoint position alone
+does not determine the time or the visited set.
+
+\begin{lemma}[Finite priority for an omitted target]\label{lem:finite-priority}
+Let $a$ be an infinite walk following the stated rule with distance set $D$.
+If $h$ is never visited, then there exists $N$ such that
+\[
+ |h-a(n)|\notin D\qquad\hbox{for every }n\ge N.
+\]
+\end{lemma}
+\begin{proof}
+Whenever $h$ is reachable from the current point, it is an admissible unused
+competitor. Since $h$ is never selected, the chosen successor precedes it
+in the priority order and lies in $[-|h|,|h|]$. These successors are
+distinct. Hence only finitely many indices can have $h$ reachable, which
+gives the assertion. The comparison allows equal absolute values: a
+positive successor can precede a negative target of the same magnitude.
+\end{proof}
+
+The same successor comparison holds while a target is absent from a finite
+prefix. Counting the distinct small successors, rather than only proving
+eventual avoidance, is the ingredient used for the time bound in
+Section~\ref{sec:odd-tail}.
+
+\section{Filling one side}\label{sec:filling}
+The following version states explicitly what is needed about the exterior.
+
+\begin{lemma}[Interior filling]\label{lem:fill}
+Let $1\le L<R$, $\varepsilon\in\{-1,1\}$, and $1,2\in D$.
+Suppose the current point is $\varepsilon R$, and the unused points with
+absolute value strictly less than $R$ are precisely
+\[
+ \{\varepsilon t:L\le t<R\}.
+\]
+Then finitely many greedy moves fill exactly these holes and end at
+$\varepsilon(R-1)$. All these moves have absolute destination value less
+than $R$. Which points outside that strict interior have been visited does not affect
+the conclusion.
+\end{lemma}
+
+\begin{proof}
+Work with magnitudes on the active side; a magnitude is \emph{marked} when
+its point on that side has already been visited. During inward descent, let the
+current magnitude be $r$. All magnitudes in $[L,r)$ are unvisited, while
+$r$ and $R$ are marked. Maintain that no two marked magnitudes $t,t+1$
+have $L<t<R$; the possible pair $L,L+1$ is exempt. Initially only $R$ is
+marked, so this invariant holds.
+
+If $r>L$, distance 1 reaches the unused magnitude $r-1$. The greedy
+destination must therefore have magnitude $s$ with $L\le s<r$, on the
+active side. If $r\ge L+2$, distance 2 reaches $r-2$, so $s\le r-2$.
+If $r=L+1$, necessarily $s=L$. A new mark $s>L$ has both neighbors
+unmarked, because they lay below the previous current. A new mark at $L$
+can create only the exempt bottom adjacency. Thus the invariant persists,
+and strict decrease reaches $r=L$.
+
+For the return, maintain that all active magnitudes through $r$ are used,
+that $R$ is marked, and that there are no adjacent marked magnitudes
+$t,t+1$ with $r<t<R$. If $r=R-1$, filling is complete. Otherwise, if
+$r+1$ is unused, it is the least-magnitude unused point and distance 1
+reaches it. If $r+1$ is used, the sparsity invariant makes $r+2$ unused;
+since $R$ is used, necessarily $r+2<R$. Distance 2 reaches this next
+least-magnitude hole. Both choices preserve the return invariant and
+increase $r$ while keeping $r\le R-1$. The return ends at $R-1$.
+
+All selected destinations have magnitude below $R$, where the opposite
+side is already occupied. Therefore no exterior point or opposite-sign
+tie can change the argument. No reflection symmetry of the tie rule is
+being assumed.
+\end{proof}
+
+When $L=R$, the hole interval is empty: a crossing that has just visited
+$\varepsilon R$ already completes this side. There is no filling move and
+the endpoint remains $\varepsilon R$. Keeping this case is the reason for
+the boundary states in $E_n$.
+
+\section{Transitions between consecutive allowed distances}
+Let $q<r$ belong to $D$, with $q\ge2$ and no member of $D$ strictly between
+them. Suppose the current used set is $I_q$ and the current point lies in
+$E_q$. The following argument gives a finite greedy continuation to $I_r$
+with endpoint in $E_r$.
+
+\subsection{Run, crossing, and filling when \texorpdfstring{$r\ge q+2$}{r >= q+2}}
+Put $B=\floor{r/2}$ and $T=\ceil{r/2}$, so $B\le T\le B+1$ and
+$B+T=r$. The proof uses two elementary blocks of moves.
+
+For a \emph{positive block}, suppose the state is current $x$ with used
+set $[-b,x]\cap\Z$, where
+\[
+ q<2b+2,\quad b+1\le x\le T,\quad b+1\le B.
+\]
+If $x<T$, the point $x+1$ is reachable by 1. Any unused destination of
+smaller magnitude must be $-t$, with $b+1\le t\le x$, and its distance
+from $x$ satisfies
+\[
+ q<2b+2\le x+t\le2x\le2T-2<r.
+\]
+Such a move is forbidden. A negative destination tied in magnitude loses
+to the positive candidate, whether or not it is reachable. Thus unit
+moves reach $+T$. From there, $-B$ is reachable by distance $r$. Any
+smaller unused competitor is $-t$, $b+1\le t<B$, and
+\[
+ q<2b+2\le T+b+1\le T+t<T+B=r.
+\]
+All positive points of magnitude at most $B$ are used. Hence the crossing
+to $-B$ is greedy. The remaining holes are the negative magnitudes
+$b+1,\ldots,B-1$. Lemma~\ref{lem:fill}, or its empty-hole case, gives
+the full interval $[-B,T]\cap\Z$ and endpoint $1-B$ or $-B$.
+
+For a \emph{negative block}, suppose the state is current $-x$ with used
+set $[-x,u]\cap\Z$, where
+\[
+ q<2u+1,\quad u\le x\le B,\quad u+1\le T.
+\]
+For $x<B$, an unused competitor beating \emph{or tying} $-(x+1)$ must
+be positive $t$, with $u+1\le t\le x+1$. Its distance satisfies
+\[
+ q<2u+1\le x+t\le2x+1\le2B-1<r.
+\]
+It is forbidden, including the positive tie that would otherwise win.
+Unit moves therefore reach $-B$. The $r$-crossing reaches $+T$. A smaller
+unused positive competitor $t$ has $u+1\le t<T$, giving
+$q<2u+1\le B+t<r$. All smaller unused negative competitors are excluded
+because those points have been visited; when $T=B+1$, the possible point
+$-T$ loses the tie.
+Filling positive magnitudes $u+1,\ldots,T-1$ now ends at $T-1$, or at
+$T$ when the crossing already filled the last hole.
+
+These blocks start from all four checkpoint states as follows. Write
+$q=2b$ or $q=2b+1$.
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{c|c|c|c}
+$q$ & current point & preparation & block\\\hline
+$2b$ & $b-1,\ 1-b,\ b$ & go to $b+1$ & positive\\
+$2b$ & $-b$ & none & negative, $u=x=b$\\
+$2b+1$ & $b,\ 1-b,\ -b$ & go to $-(b+1)$ & negative\\
+$2b+1$ & $b+1$ & none & positive, $x=b+1$
+\end{tabular}
+\end{center}
+In the even first row, the required distances are respectively $2,q,1$;
+the positive destination wins the least-unused-magnitude tie. In the odd
+third row, the required distances are $q,2,1$; $+(b+1)$ is already used,
+so $-(b+1)$ is the least unused point. The inequalities for the indicated
+blocks follow directly from $r\ge q+2$. In each case their output is
+$I_r$ with endpoint in $E_r$. This also covers $q=2$ and $q=3$.
+
+\subsection{Adjacent allowed distances}
+If $r=q+1$, exactly one new point is needed. For even $q=2b$ it is
+$b+1$; from the ordered endpoints $b-1,1-b,b,-b$, the distances are
+$2,q,1,q+1$. All are allowed, and the positive destination is the preferred
+least-magnitude unused point. For odd $q=2b+1$, the new point is $-(b+1)$;
+from endpoints $b,1-b,b+1,-b$, the distances are $q,2,q+1,1$.
+The positive point $b+1$ is already used, so again the move is greedy.
+The new endpoint is a boundary point of $I_{q+1}$.
+
+This proves the following local statement, with no restrictions on the
+other distances below $q$ or above $r$.
+\begin{lemma}[Checkpoint transition]\label{lem:transition}
+If $1,2,q,r\in D$, $2\le q<r$, and $D\cap(q,r)=\varnothing$, then
+every state with used set $I_q$ and current in $E_q$ has a finite greedy
+continuation to used set $I_r$ and current in $E_r$.
+\end{lemma}
+
+\section{Assembly and coverage}
+The first two moves are $+1$ and $-1$, reached using 1 and 2. Thus
+$U_2=I_2=[-1,1]\cap\Z$ and $a(2)=-1\in E_2$.
+Let $s_0=2$ and let $s_{j+1}$ be the least member of $D$ greater than $s_j$.
+Unboundedness ensures this exists. The sequence is a construction in the
+proof; it requires no algorithm for deciding membership in $D$. It satisfies
+$s_j\ge j+2$ and $D\cap(s_j,s_{j+1})=\varnothing$.
+
+Inductively apply Lemma~\ref{lem:transition}. Its finite path agrees with
+the walk starting at zero. Counting the visited points puts its last state at
+index $s_{j+1}$, so $U_{s_j}=I_{s_j}$ and $a(s_j)\in E_{s_j}$ for all $j$.
+Every allowed $d\ge2$ occurs in this enumeration: take the first $s_j\ge d$.
+If $j=0$, then $d=2$. Otherwise, $s_{j-1}<d\le s_j$, and strict inequality
+$d<s_j$ would contradict the least-successor definition. This proves all
+the checkpoints in Theorem~\ref{thm:main}.
+
+For $z\in\Z$, use the checkpoint at $s_{2|z|}$. Its index is at least
+$2|z|+2$, so its interval contains $z$. No point is revisited, so each occurrence is unique.
+Together with the existence construction, this proves the theorem.
+
+\begin{corollary}[Completion by two short distances]\label{cor:completion}
+For every unbounded $S\subseteq\N$, the fixed distance set
+$S\cup\{1,2\}$ has an integer-covering greedy walk with the checkpoints
+in Theorem~\ref{thm:main}.
+\end{corollary}
+Adding a missing distance changes the rule and generally changes the walk.
+This corollary does not transfer coverage back to the unmodified set.
+
+\section{Coverage from full residue tails}\label{sec:residue-tail}
+The complete-tail assumption in Theorem~\ref{thm:residue-tail} turns
+finite priority into a constraint on entire residue classes. Restricting
+allowed distances to those classes, or having infinitely many distances in
+them, would not supply this implication.
+
+\begin{proof}[Proof of Theorem~\ref{thm:residue-tail}]
+A residue in $S$ supplies arbitrarily large allowed distances, giving
+existence and uniqueness by the finite-history argument above. Let $V$
+be the set of visited integers and suppose $h\notin V$.
+Lemma~\ref{lem:finite-priority} implies that
+\[
+ V\cap(h+D)\quad\hbox{and}\quad V\cap(h-D)
+\]
+are finite.
+
+Fix $s\in S$. Every sufficiently large positive integer congruent to
+$h+s$ modulo $q$ lies in $h+D$, so only finitely many visited positive points lie in that residue class. Likewise every sufficiently negative integer congruent to
+$h-s$ lies in $h-D$. Each of these two parts of a residue class therefore contains unvisited points.
+
+Let $W$ be the nonempty set of residues containing an omitted integer.
+The preceding argument gives $W+s\subseteq W$ for every $s\in S$.
+Translation is a bijection of the finite residue space, so $W+s$ and $W$
+contain the same number of elements; hence $W+s=W$. Translation by $q$ is the
+identity modulo $q$. The integer shifts preserving $W$ are
+closed under differences and integer multiples. Euclid's algorithm
+therefore shows that translation by $\gcd(q,S)=1$ preserves $W$.
+Since $W$ is nonempty, it contains every residue.
+
+Choose one $s\in S$. For each residue $b$, choose an omitted target of
+residue $b-s$ and one of residue $b+s$. The first target bounds the visited
+positive points of residue $b$; the second bounds the visited negative
+points there. Hence each residue contains only finitely many visited
+integers. There are $q$ residues, so $V$ would be finite, contradicting the
+infinite walk with no repeated values. Thus every integer occurs exactly once.
+\end{proof}
+
+For a single residue $r$, the condition is simply $\gcd(q,r)=1$.
+For example, the exact distance set $\{5,8,11,14,\ldots\}$ is covered,
+although it contains none of 1,2,3. Several residues can generate jointly
+even when none is individually coprime to the modulus: the distances
+$d\ge8$ with $d\bmod6\in\{2,3\}$ are another covered example.
+For modulus one, the hypothesis simply requires all sufficiently large distances.
+
+The theorem permits arbitrary additional distances and finite deletions
+from the required tails, the latter by increasing $M$. It does not apply
+to sparse subsets merely because their residues satisfy the gcd condition.
+Its formal statement uses a finite list of canonical representatives;
+duplicates have no effect on the argument. Nonemptiness is necessary even
+when $q=1$, since an empty list would impose no distance condition.
+
+The residue-tail proof gives no explicit first-visit bound. The odd-tail
+bound below therefore needs a separate proof.
+
+The two main proofs use the same priority order in different ways.
+With distances 1 and 2, local descent and return fill an interval and
+produce exact checkpoints, however sparse the larger distances are.
+With full residue tails, a permanently omitted target would force too
+many distinct successors into a finite priority interval. Residue
+connectivity propagates that obstruction until the entire walk would be
+bounded. This second mechanism permits every short distance to be absent,
+but depends on the complete tails.
+
+\section{A quantitative bound for odd tails}\label{sec:odd-tail}
+The odd-tail case of Theorem~\ref{thm:residue-tail} admits a separate
+explicit time bound. Its proof is included because the qualitative residue
+argument does not provide this constant.
+
+\begin{proposition}[Cofinite odd tail and first-visit bound]\label{prop:odd-tail}
+Let $M\ge1$ be an integer. Suppose every odd integer $d\ge M$ belongs
+to $D$, with all other positive distances arbitrary. The walk defined above
+exists, is unique, and visits every integer exactly once. Its first
+visit to $z$ satisfies
+\[
+ \tau(z)\le 4M+6|z|+9.
+\]
+None of distances 1,2,3 is required. The bound is not claimed to be optimal.
+\end{proposition}
+\begin{proof}
+The allowed odd tail is unbounded, so existence follows from the earlier
+finite-state argument. The fixed priority order makes the walk unique, and
+the rule forbids repeated visits.
+
+Suppose $y$ is absent from the prefix through index $N$. Among the $N$
+current points $a(0),\ldots,a(N-1)$, at most $M+2|y|+1$ have parity
+opposite to $y$. Indeed, at most $M$ such distinct points lie at distance
+less than $M$ from $y$. For each remaining point the odd distance to $y$
+is allowed, and $y$ is unused. Greedy priority forces the successor into
+$[-|y|,|y|]$. These successors are distinct, so there are at most
+$2|y|+1$ of them. This proves the count without counting the endpoint
+$a(N)$ as a current point.
+
+Now suppose $z$ is absent and put $R=|z|$. Including the endpoint, the
+whole prefix contains at most $M+2R+2$ points of parity opposite to $z$.
+Set $B=M+2R+3$. The interval $[-B,B]$ contains at least $B$ integers of
+that parity, so it contains a missing point $w$ of opposite parity to $z$,
+with $|w|\le B$. Applying the count to this second missing target bounds
+the current points of the same parity as $z$ by $M+2B+1$.
+The two parity classes partition the $N$ current points, giving
+\[
+ N\le (M+2R+1)+(M+2B+1)=4M+6R+8.
+\]
+Thus omission at $N=4M+6R+9$ is impossible. This proves the first-visit
+bound and coverage. The rule forbids repeated visits, so each integer occurs
+exactly once.
+\end{proof}
+
+For the family $D_k$ in Appendix~\ref{sec:parity}, take $M=10k+3$.
+Every point of $[-5k-2,5k+2]$ is
+visited by $70k+33$. Consequently all holes in its state at
+time $5k+5$ are repaired within a further $65k+28$ moves. Coverage itself
+uses only Proposition~\ref{prop:odd-tail}; identification of those
+particular holes also uses Proposition~\ref{prop:many-holes}.
+This does not require repair before an excursion.
+
+The proposition includes the rule with exactly the odd distances at least 5,
+which omits all three short distances 1,2,3. Arbitrary additional distances
+can alter its trajectory without invalidating the missing-target comparison.
+The original prime rule omits arbitrarily large odd composites and therefore
+fails the odd-tail hypothesis. Sparse odd sets, the base-seven rule and
+prime-gap laws are not covered by this argument.
+
+\section{Applications and scope}
+The first theorem includes powers of two, positive Fibonacci values,
+factorials, and squares together with 2. Their previously reported coverage
+results and antecedent mechanisms are credited in Section~\ref{sec:context}.
+Adding 1 and 2 to any unbounded set supplies the formal completion
+corollary, but changes the rule; coverage does not transfer back after a
+required distance is removed. No restriction on the gaps between large
+allowed distances is needed.
+
+The two general criteria do not settle the original prime, triangular or
+odd-base power rules. Ordinary squares also fail their hypotheses; a separate
+AI-assisted proof of the square-walk conjectures was announced on 29 October
+2026 and is stated to be under review in OEIS A377091 \cite{squares}.
+The announced proof has not been checked as part of this work. The separate base-seven study
+\cite{base7} concerns a rule outside these criteria; its claims are not
+strengthened here. Coverage of a derived walk gives no prime-gap bound by
+itself, since the first theorem permits arbitrary gaps in the input set.
+
+\section{Verification and AI contribution}\label{sec:formal}
+The numbered mathematical statements have corresponding Lean 4.35.0 proofs.
+The coverage theorems use the stated rule starting at zero; local transition and
+filling results retain their explicit state hypotheses. The formal rule
+forbids repeated visits, compares all integer candidates, and prefers the
+positive candidate in a tie. Infinite-walk existence is proved separately.
+The finite-priority lemma is the permanent-omission statement
+\code{G18.missing\_avoids}; the quantitative proof uses its finite-prefix
+successor comparison. The source package \cite{package} contains a statement-to-proof guide in
+\code{docs/REVIEW\_GUIDE.md}, the complete required Lean sources, and
+reproduction instructions. Its versioned GitHub location is
+\url{https://github.com/gujord/heraclitus-coverage/tree/v1.0.0}.
+
+The proofs use Lean's bundled standard library. Their transitive axioms are
+restricted to \code{propext}, \code{Classical.choice} and \code{Quot.sound}.
+No empirical trajectory sample is a premise of the formal results.
+Trust includes the Lean kernel and the pinned toolchain. A fresh combined
+build from an extracted source archive compiled all 44 selected modules,
+audited all 296 retained theorems, and rejected all 40 intended false-proposition
+fixtures. The package selects the declarations needed for this paper and its
+regression checks, preserving their statement and proof bodies while narrowing
+imports. All 402 retained declaration types agree with the earlier accepted
+builds. The provenance record identifies those builds separately from this
+combined reproduction. Kernel checking does not by itself establish
+historical originality or the fidelity of this prose to the formal statements.
+
+AI tools contributed to mathematical exploration and generated proof drafts,
+exposition and Lean formalizations under Roger Gujord's direction. The
+antecedents and inspected source material are credited in
+Section~\ref{sec:context}. Roger Gujord is the sole author and is responsible
+for the paper. AI assistance and local machine verification do not
+constitute independent human review.
+Historical originality and independent human mathematical review remain open.
+
+\section{Scope and open questions}\label{sec:questions}
+The main unresolved issue is Sloane's general sufficiency question: does
+every infinite distance set with gcd 1 cover all integers?
+Theorems~\ref{thm:main} and~\ref{thm:residue-tail} answer the question for two classes of distance sets, while Appendix~\ref{sec:triple}
+supplies further covered sets outside them. They do not give a classification.
+
+A more specific question asks for broader coverage conditions when 1 is
+allowed and 2 is absent. The appendix family settles some such rules but
+does not justify replacing the 1--2 hypothesis by 1--3 in an arbitrary
+unbounded distance set. For the prime distance set, coverage remains the
+conjecture recorded in OEIS A377090 \cite{primes}; its sparse odd distances
+do not satisfy the complete-tail premise, and 1 is missing.
+
+For sparse distance sets such as the primes, a possible approach is to
+prove that the walk repeatedly reaches configurations from which the next
+missing integer is forced to be visited. Establishing that recurrence from
+the walk's full history remains an open proof obligation.
+
+\paragraph{Moving checkpoint holes.}\label{rem:moving-hole}
+Exact complete intervals are sufficient for the first proof but are not
+necessary for coverage. The checked example
+$D=\{1,3,10\}\cup\{64+4j:j\ge0\}$ has, for every $j\ge0$,
+at $n=72+4j$ and $b=36+2j$,
+\[
+ a(n)=-b,\qquad U_n=([-b,b-1]\cap\Z)\cup\{b+1\},\qquad a(n+1)=b.
+\]
+The complete interior grows without bound while a boundary hole is repeatedly
+created and repaired. Appendix~\ref{sec:repair} gives the finite initial-path certificate and the
+four-move induction proving these formulas and coverage. Appendix~\ref{sec:parity} gives a different limitation: there
+is no uniform number of lane holes across its family, even though every
+member has coverage by Proposition~\ref{prop:odd-tail}. These observations
+restrict particular state descriptions; they are not counterexamples to
+Sloane's question.
+
+\appendix
+
+\section{A coverage family without distance 2}\label{sec:triple}
+This family demonstrates that Theorems~\ref{thm:main} and
+\ref{thm:residue-tail} are not exhaustive. Its reference set omits 2 and
+has only finitely many odd distances. Any full arithmetic tail contained
+in such a set must have both even modulus and even residue, so a collection
+of those tails cannot satisfy the joint-gcd condition. Optional extensions
+of the reference set need not share this exclusion.
+
+\begin{theorem}[A family without distance 2]\label{thm:triple}
+Let
+\[
+ D=\{1,3\}\cup\{6+4j:j\ge0\}\cup T,
+ \qquad T\subseteq\{4\}\cup\{7+4j:j\ge0\}.
+\]
+An infinite walk following the stated rule exists, and every such walk
+visits each integer exactly once. For every $j\ge0$,
+\[
+ U_{6+4j}=[-3-2j,3+2j]\cap\Z.
+\]
+Moreover $a(6)=3$, and $a(10+4j)=-4-2j$ for $j\ge0$.
+The subset $T$ is arbitrary, with no computability or periodicity hypothesis.
+\end{theorem}
+
+\begin{proof}
+The initial points are
+\[
+ 0,1,2,-1,-2,-3,3.
+\]
+From 1, the candidate $-1$ requires the absent distance 2; $+2$ wins
+the next sign tie. Distance 3 then reaches $-1$, and distance 1 reaches
+$-2$. From $-2$, $+3$ would require the absent distance 5, so $-3$ is
+next. Distance 6 reaches $+3$. Optional 4 and larger optional distances
+cannot beat these choices. Thus time 6 has used interval $[-3,3]$ and
+current point $+3$.
+
+For the induction, suppose the used interval is $[-b,b]$, $b\ge1$, and
+the current is $b$ or $1-b$. Suppose $1,2b,2b+4$ are allowed, while
+$2b+2,2b+3$ are absent. The next four points are
+\[
+ b+1,\quad b+2,\quad -(b+2),\quad -(b+1).
+\]
+The first point has least unused magnitude, is reachable by 1 or $2b$,
+and wins the positive tie. From $b+1$, the smaller unused point $-(b+1)$
+requires the forbidden $2b+2$, so the positive unit move wins. From $b+2$,
+the only unused point of smaller magnitude is $-(b+1)$, requiring the
+forbidden $2b+3$. Hence the allowed $2b+4$ crossing reaches $-(b+2)$.
+Finally distance 1 reaches the least-magnitude unused point $-(b+1)$.
+All other unused points are farther from zero. The output is exactly
+$[-b-2,b+2]$, with current $-(b+1)=1-(b+2)$.
+
+Set $b=3+2j$. The required distances are $6+4j$ and $6+4(j+1)$;
+the excluded ones are $8+4j$ and $9+4j$. Every allowed optional subset
+preserves these comparisons. Four moves give the stated exact indices
+and endpoints by induction. The intervals exhaust $\Z$, and no point is
+revisited, so each integer occurs exactly once. Unboundedness of the mandatory progression gives
+existence by the finite-state argument already proved above.
+\end{proof}
+
+An \emph{auxiliary state} specifies a current point and used set; it need
+not be reached by the walk starting at zero.
+
+\begin{proposition}[A failed local replacement]\label{prop:triple-obstruction}
+Let $R=\{1,3\}\cup\{6+4j:j\ge0\}$. From the auxiliary state with
+current $-8$ and used set $\{-8\}\cup([0,8]\cap\Z)$, no finite greedy
+continuation has used set exactly $[-8,8]\cap\Z$.
+\end{proposition}
+\begin{proof}
+The forced path, including its initial point, is
+\[
+ -8,-2,-1,-4,-3,-6,-5,9.
+\]
+At each inward stage the displayed destination is the first admissible unused
+point in the priority order. Upon reaching $-5$, the only remaining hole in
+$[-8,8]$ is $-7$, whose distance is the absent 2. The next winner is $+9$
+at distance 14. Every earlier state still has an interior hole, and every
+later used set contains the exterior point 9. Since used points cannot
+be removed, the complete interval can never be the exact used set.
+\end{proof}
+This obstruction concerns only the specified starting state. Theorem~\ref{thm:triple} proves coverage for the
+very same rule $R$. Nor does the obstruction assert that $-7$ is never
+visited after escape. It rejects only the direct 1--3 substitution into
+the one-sided filling statement in Lemma~\ref{lem:fill}.
+
+\section{Missing distance 1: reachable holes and a limited filling lemma}
+\label{sec:parity}
+Both propositions below are formalized in Lean, including the exact
+state reached from zero, its hole count, and the conditional local filling statement.
+A parity lane is the subsequence of integers of one parity. Its visited
+hull consists of all same-parity integers between its visited minimum and
+maximum; a lane hole is an unused point in that hull.
+
+\begin{proposition}[No uniform lane-hole count]\label{prop:many-holes}
+For every $k\ge1$, let
+\[
+ D_k=\{2,3\}\cup\{10k+3+2t:t\ge0\}.
+\]
+At time $n=5k+5$ the walk starting at zero satisfies
+\[
+ a(n)=5k+1,\qquad
+ U_n=([-5k-2,2]\cap\Z)\cup\{5k+1\}.
+\]
+The two visited parity-lane hulls together have exactly
+$\floor{(5k-2)/2}$ holes. Thus no fixed constant bounds the number of
+lane holes over the entire class of unbounded sets consisting of 2,3
+and otherwise odd distances.
+\end{proposition}
+\begin{proof}
+First use only the distances $F=\{2,3\}$. Its first seven points are
+$0,2,-1,1,-2,-4,-6$. At time $5j+1$, $j\ge1$, write $t=5j$.
+The inductive state is current $-t-1$ and used set
+$([-t-1,2]\cap\Z)\setminus\{-t,-t+2\}$. Its next five points are
+\[
+ -t+2,\ -t,\ -t-2,\ -t-4,\ -t-6.
+\]
+The first fills the reachable interior hole by distance 3; the other hole
+is only distance 1 away. The second fills that remaining hole by distance 2.
+For each of the last three moves, both inward short-step destinations are
+used, and the outward distance-2 point precedes the distance-3 point.
+Checking the four candidates at each move proves the displayed state
+for $j+1$ and hence the induction.
+
+Now fix $k$ and put $t=5k$, $M=2t+3$. Through time $5k+1$, all current points
+and chosen destinations in this path have magnitude at most $t+1$.
+Any destination using an additional distance $d\ge M$ has magnitude
+at least $d-|c|\ge t+2$, so it cannot change these choices.
+The next three destinations using short steps are $-t+2,-t,-t-2$; the corresponding
+large-step lower bounds are $t+2,t+5,t+3$, again strictly larger.
+Thus time $5k+4$ has current $-t-2$ and full interval $[-t-2,2]$.
+Distance $M$ now reaches $t+1$. Larger allowed positive jumps reach
+at least $t+3$; the negative large jumps are farther away. The short
+destinations $-t,-t+1$ are used, while $-t-4,-t-5$ have greater magnitude.
+This proves the asserted next state.
+
+Only the lane containing $t+1$ has its hull extended. If $t$ is odd,
+its holes are $4,6,\ldots,t-1$; if $t$ is even, they are
+$3,5,\ldots,t-1$. Their respective counts are $(t-3)/2$ and $(t-2)/2$,
+giving the formula. Existence follows from unboundedness as before.
+\end{proof}
+These growing holes form one lane interval. The proposition therefore
+does not obstruct a compact interval description, eventual coverage, or
+a bound restricted to the prime distance set.
+
+\begin{proposition}[Conditional single-lane filling]\label{prop:lane-fill}
+Suppose 2 is the only positive even member of $D$. Let $B>L\ge1$ with
+$B-L$ positive and even, and $\sigma\in\{-1,1\}$. If the current is
+$\sigma B$ and the unused points inside $[-B,B]$ are exactly
+$\{\sigma L,\sigma(L+2),\ldots,\sigma(B-2)\}$, then the next
+$(B-L)/2$ moves are $\sigma(B-2),\sigma(B-4),\ldots,\sigma L$.
+Any finite pattern of used points outside the interval is permitted.
+\end{proposition}
+\begin{proof}
+All interior holes have the current parity. Odd distances cannot reach
+them, and the only positive even distance is 2. Its inward destination
+is the adjacent hole; its outward destination is used or exterior.
+Every other unused reachable point is exterior and has magnitude greater
+than $B$. The inward move is therefore the unique winner. Repeat until
+no hole remains.
+\end{proof}
+The stated starting configuration and single-lane hypothesis do not follow merely
+from allowing 2 and 3. None of these statements gives a bound on gaps between consecutive primes.
+
+\section{Coverage through a moving boundary hole}\label{sec:repair}
+Complete intervals are sufficient checkpoints, but are not necessary for coverage.
+The following concrete rule has a persistent state shape with a changing hole.
+
+\begin{theorem}[Coverage through a moving hole]\label{thm:repair}
+Let $D=\{1,3,10\}\cup\{64+4j:j\ge0\}$. A unique infinite walk following the stated rule exists
+and every such walk covers $\Z$ exactly once. At $n=72+4j$, put $b=36+2j$.
+Then
+\[
+ a(n)=-b,\qquad U_n=([-b,b-1]\cap\Z)\cup\{b+1\},
+ \qquad a(n+1)=b.
+\]
+At every time $n\ge64$ divisible by 4, every unused point of magnitude
+at most $n/2$ is visited within three further moves. The bound is attained
+at $n=64$; it is not asserted at arbitrary times or auxiliary states.
+\end{theorem}
+\begin{proof}
+First prove a conditional transition. Suppose the state has current $-b$
+and used set $([-b,b-1]\cap\Z)\cup\{b+1\}$, with $b\ge1$. Assume
+$1,3,2b,2b+4$ are allowed and $2,2b+1,2b+2,2b+3$ are excluded.
+The next four points are
+\[
+ b,\quad b+3,\quad -(b+1),\quad -(b+2).
+\]
+The first fills the least-magnitude hole by distance $2b$. The used set
+then becomes $[-b,b+1]$. From $b$, the smaller unused competitors to
+$b+3$ are $b+2,-(b+1),-(b+2)$, requiring the excluded distances
+$2,2b+1,2b+2$. The negative tie loses, so distance 3 reaches $b+3$.
+The allowed $2b+4$ crossing now reaches the least-magnitude unused point
+$-(b+1)$. Finally the unit move reaches $-(b+2)$; its positive counterpart
+would win the tie but requires the excluded distance $2b+3$.
+The output is exactly the initial state shape with $b$ replaced by $b+2$.
+
+Starting at $a(0)=0$, the first 72 destinations are the following list,
+read from left to right and then from top to bottom:
+\[
+\begin{array}{rrrrrrrrrrrr}
+1&2&-1&-2&-3&-4&-5&5&4&3&6&7\\
+8&9&10&11&12&13&14&15&16&17&18&19\\
+20&21&22&23&24&25&26&27&28&29&30&31\\
+32&-32&-22&-12&-9&-6&-7&-8&-11&-10&-13&-14\\
+-15&-16&-17&-18&-19&-20&-21&-24&-23&-26&-25&-28\\
+-27&-30&-29&35&-33&-34&-31&33&34&37&-35&-36
+\end{array}
+\]
+This is a finite certificate: for each proposed destination $v$, check
+that it is unused, that $|v-c|\in D$ for the preceding current $c$, and
+that every unused integer $w$ preceding $v$ in the priority order has
+$|w-c|\notin D$. Only $|w|\le|v|$ need be checked. Direct application of
+these tests verifies the displayed list; the same finite checks are proved
+inside Lean in \code{RepairEntrance.lean}, supplied in the source package
+\cite{package}. Uniqueness forces this prefix for every walk with this $D$.
+In particular the list gives these exact used sets and currents:
+\begin{align*}
+ U_{64}&=([-32,32]\cap\Z)\setminus\{-31\}\ \cup\{35\},
+   &a(64)&=35,\\
+ U_{68}&=([-34,33]\cap\Z)\cup\{35\},&a(68)&=33,\\
+ U_{72}&=([-36,35]\cap\Z)\cup\{37\},&a(72)&=-36.
+\end{align*}
+The next four destinations after time 64 are $-33,-34,-31,33$, and
+$a(69)=34$. Thus the first two checkpoint holes are repaired at 67 and 69.
+
+For $b=36+2j$, both $2b$ and $2b+4$ lie in the allowed tail. The three
+intermediate distances are greater than 10 and not divisible by 4, so are
+excluded, as is 2. The conditional transition therefore iterates from
+time 72, proving the exact states and immediate repair thereafter.
+Together with times 64 and 68 this proves the stated checkpoint bound.
+The complete interior $[-36-2j,35+2j]$ expands without bound, establishing
+coverage even though the symmetric checkpoint interval itself is never complete.
+The rule forbids repeated visits, and unboundedness of $D$ gives existence.
+\end{proof}
+The local transition is reusable under its explicit premises, while the
+coverage result for a walk starting at zero concerns one fixed initial path
+and tail cutoff.
+It does not prove the same initial state for other cutoffs or arbitrary sets
+containing 1. The finite initial-path certificate and universal transition are
+both mathematical proof obligations; an observed short repair delay alone
+would establish neither.
+
+
+\begin{thebibliography}{99}\small\raggedright
+\bibitem{sloane2025} N. J. A. Sloane, \emph{In the Footsteps of Heraclitus},
+DIMACS/Rutgers REU Seminar, 24 June 2025, p.~8.
+\url{https://neilsloane.com/doc/REU2025.pdf}.
+\bibitem{sloane2026} N. J. A. Sloane, \emph{Highlights from the First 400,000
+Sequences in the OEIS}, Experimental Math Seminar, 10 September 2026, p.~9.
+\url{https://neilsloane.com/doc/EMSep2026.pdf}.
+\footnote{The date follows the PDF title page; the author's publication
+list displays 2025 for this link.}
+\bibitem{powers} R\'emy Sigrist, OEIS A379719,
+powers-of-two Heraclitus walk and coverage description.
+\url{https://oeis.org/A379719}.
+\bibitem{fibonacci} G. Caveney, coverage announcement and six-block outline,
+OEIS A377092, comment of 24 September 2026 referring to 21 September
+SeqFan correspondence. \url{https://oeis.org/A377092}.
+\bibitem{squares2} G. Caveney, OEIS A400196, squares-plus-2 coverage and
+four-block outline, comment of 3 October 2026.
+\url{https://oeis.org/A400196}.
+\bibitem{adding2} G. Caveney, OEIS A400197, the role of adjoining distance 2.
+\url{https://oeis.org/A400197}.
+\bibitem{factorial} trureturing/The Omega Institute, \emph{Every integer
+occurs in the factorial Heraclitus transform}, research dossier.
+\url{https://www.trureturing.org/research/oeis-a393434-factorial-heraclitus/}.
+\bibitem{factorialcode} trureturing/The Omega Institute,
+\code{FactorialHeraclitusTransform.lean}, inspected repository commit
+\code{535a6648df930c3bfdca8a945bfcebdb0d0e1ec7}, path
+\code{D5/S3/Combinatorics/Permutation/}.
+\url{https://github.com/the-omega-institute/trureturing}.
+\bibitem{squares} N. J. A. Sloane and P. Xausa, proof announcement for the
+square Heraclitus transform, OEIS A377091, 29 October 2026; under review.
+\url{https://oeis.org/A377091}.
+\bibitem{primes} R\'emy Sigrist and N. J. A. Sloane, OEIS A377090,
+prime-distance Heraclitus walk and coverage conjecture.
+\url{https://oeis.org/A377090}.
+\bibitem{base7} R. Gujord, \emph{The base-seven Heraclitus transform:
+manuscript and reproducible proof package}, version 1.0.0, Zenodo,
+3 November 2026. \url{https://doi.org/10.5281/zenodo.23912682}.
+\bibitem{package} R. Gujord, \emph{Coverage in Heraclitus walks: interval
+filling and residue connectivity}, manuscript and reproducible proof package,
+version 1.0.0, Zenodo, 2026.
+\url{https://doi.org/10.5281/zenodo.23973601}.
+\end{thebibliography}
+\end{document}

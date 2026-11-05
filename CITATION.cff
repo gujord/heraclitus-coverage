@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Cite the accompanying preprint and reproducible proof package. Code is MIT; prose/data are CC BY 4.0."
+title: "Coverage in Heraclitus walks: interval filling and residue connectivity"
+authors:
+  - family-names: Gujord
+    given-names: Roger
+    orcid: "https://orcid.org/0009-0006-5227-980X"
+version: "1.0.0"
+doi: "10.5281/zenodo.23973601"
+url: "https://github.com/gujord/heraclitus-coverage"
+date-released: "2026-11-05"
+preferred-citation:
+  type: article
+  title: "Coverage in Heraclitus walks: interval filling and residue connectivity"
+  authors:
+    - family-names: Gujord
+      given-names: Roger
+      orcid: "https://orcid.org/0009-0006-5227-980X"
+  year: 2026
+  doi: "10.5281/zenodo.23973601"
+  version: "1.0.0"
+  notes: "Preprint with reproducible proof package; independent human review pending."

@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "pdf_sha256": "7edfe046989698198b925acb4dfd33845e43d6f1b5ae730c86e955ba8b72331e",
+  "source_sha256": "95c398bb7743dabd594d52b2973ac5bdeacfde39ca59f3a372c5c89392f50c0f",
+  "rendered_page_sha256": {
+    "page-01.png": "3265c352e04f499ffcff796abdacb27f91ffa361fe42a821ad830e292776ee1b",
+    "page-02.png": "615782f2cfddac4c3e7f1b1cea11c191165f54d4f14ca925a5fe91e6c54fb7a0",
+    "page-03.png": "fa49bc01230d4d0c0995aa192c8efa11df825aa3446c78b9fa2ed60d7a8773c4",
+    "page-04.png": "cc8cedf8c7ac433e84e7fe6d480418210a6c56c763a0246f89f8cb73201a7264",
+    "page-05.png": "023f628b0aee88478b98f8cc35d6ab3ba928515ce7bf1fb27c09938e27a16269",
+    "page-06.png": "51ad6f33719e7ecb1ee8c4ce5ba1f3fb722a42bd81165dd30d84a0346c03ea32",
+    "page-07.png": "6ab30b840bb9548fcbf5eec5bfd45ec49cd22431b2b8a2e702a995ba45d97790",
+    "page-08.png": "5e21a7265b9ef9f83d3d48005b1ccbd76232af411e679a22e4f4213de928e6f0",
+    "page-09.png": "7cedfddc0bc215092f79dc78a6eb26b21f78120195ba738c0b31e8f59633a7e8",
+    "page-10.png": "78d7a1aa7b30022229f4269c309ec60c0bb964407ea3eed06a50d968194d3e60",
+    "page-11.png": "9a6f8f0c6fcddba4991124f2b8e6d104add827ce166cfc3c9d2d31e8142772d4",
+    "page-12.png": "1ce7b7f2ca0f8794d6c467ef23dbe4b82298553d2fe640340937960b558fc437",
+    "page-13.png": "c3eaab6dbf21e023a6bc8ceab365caba7cb32b38775b8bc927f0a4bfa1e5321e"
+  },
+  "review": "All 13 pages inspected at 1500px after alignment with the base-seven title/paragraph style. No clipping, overlap or unresolved references. AI layout review, not independent human mathematical review.",
+  "finished_utc": "2026-11-05T10:10:43.080687+00:00"
+}

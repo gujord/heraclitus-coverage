@@ -1,0 +1,3 @@
+/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative/DisconnectedGcd.lean:3:55: error: Tactic `decide` proved that the proposition
+  List.foldl Nat.gcd 6 [2, 4] = 1
+is false

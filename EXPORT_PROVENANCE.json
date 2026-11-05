@@ -1,0 +1,3152 @@
+{
+  "declaration_extraction": {
+    "BlockGeometry": {
+      "declarations": [
+        {
+          "body_sha256": "04f5de129430914363b7b31592959094c85290542e57d926fa1900ee21802b04",
+          "kind": "theorem",
+          "line": 7,
+          "name": "G01.state_ext"
+        },
+        {
+          "body_sha256": "feda32a4e99c2342351817373d9420ef8d6ec701930c8dff03ca6beabf263ee4",
+          "kind": "def",
+          "line": 17,
+          "name": "G01.Interval"
+        },
+        {
+          "body_sha256": "1e7d53da2cf71cae577faf37f626664498acd9241bbb07e9d5b090402b3678db",
+          "kind": "theorem",
+          "line": 27,
+          "name": "G01.interval_visit_left"
+        },
+        {
+          "body_sha256": "79abc1d5c43395c13075532f6a9512e95df4be7739e1528410765948d6306d08",
+          "kind": "theorem",
+          "line": 34,
+          "name": "G01.interval_visit_right"
+        },
+        {
+          "body_sha256": "27b8adf32e1db6036a59ce938dff83c8daba5139a212671453ace9f60a541946",
+          "kind": "theorem",
+          "line": 41,
+          "name": "G01.allowed_eq"
+        },
+        {
+          "body_sha256": "16695182c480b5c235d6c879fbb18e911c8a886341944172f48fb677b7de2cca",
+          "kind": "theorem",
+          "line": 47,
+          "name": "G01.second_negative"
+        },
+        {
+          "body_sha256": "83eaa5cc74a6603debc91ed3a5f088aab79decd57b47f1465216fa3c67838f96",
+          "kind": "theorem",
+          "line": 175,
+          "name": "G01.next_positive"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G01-even-step-family/formal/BlockGeometry.lean",
+      "original_sha256": "75d835269b16058f397d2012be536e27818d7c0fa22b2378f06fdf992a7769d2",
+      "selected_sha256": "a553267bc0fdb0cb61421a26cf983c4d062054393fbb04cfe728f37cf802c57d"
+    },
+    "CloseBlocks": {
+      "declarations": [
+        {
+          "body_sha256": "0e10b3b0a50e29f14c19fa3612b1c58b0250d8de4e235a8b2157f4b7e85baeb9",
+          "kind": "theorem",
+          "line": 8,
+          "name": "G05.fill_negative_closed"
+        },
+        {
+          "body_sha256": "5cafbb55957dccb74346855fe41aa458ba1ba6e29d6f84dacf0eb051b7207fd3",
+          "kind": "theorem",
+          "line": 22,
+          "name": "G05.fill_positive_closed"
+        },
+        {
+          "body_sha256": "c3426b999d11f68299d8d8680a1b5025b08bdea16c9674c97aa736b06f8b1401",
+          "kind": "theorem",
+          "line": 36,
+          "name": "G05.positive_block"
+        },
+        {
+          "body_sha256": "092e832b0440bd57d7f161cafc9c5cd2a3f97a51fe9259eb6145af5a2330ab74",
+          "kind": "theorem",
+          "line": 49,
+          "name": "G05.negative_block"
+        },
+        {
+          "body_sha256": "1cec945957f460239a64be29935d0966fd617e284c7ed9b2aa2155f89035ef1f",
+          "kind": "theorem",
+          "line": 62,
+          "name": "G05.even_boundary_positive"
+        },
+        {
+          "body_sha256": "6f5182251452eeaa540a9915d94bc0f3ad9543de9ebcabb605015186caa4be86",
+          "kind": "theorem",
+          "line": 76,
+          "name": "G05.odd_boundary_negative"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G05-close-spacing/formal/CloseBlocks.lean",
+      "original_sha256": "af5fe42509322f60b5a1698d11074524618c058d99c12f762a338192f58a1082",
+      "selected_sha256": "af5fe42509322f60b5a1698d11074524618c058d99c12f762a338192f58a1082"
+    },
+    "CloseGeometry": {
+      "declarations": [
+        {
+          "body_sha256": "99451145af9a096aa0526065e40af9a4aaa87e09e23a8f902eb1f3fdfc5424d7",
+          "kind": "theorem",
+          "line": 8,
+          "name": "G05.positive_step"
+        },
+        {
+          "body_sha256": "9c80c5488df5b7891a3ff840eec3d8b5065a4078d2dcf5c6fa54fb00bddccb29",
+          "kind": "theorem",
+          "line": 31,
+          "name": "G05.positive_run"
+        },
+        {
+          "body_sha256": "58680493ff60f41d4c190208571bf03c5686b20899460903d4c299d31daf6a5a",
+          "kind": "theorem",
+          "line": 51,
+          "name": "G05.cross_negative"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G05-close-spacing/formal/CloseGeometry.lean",
+      "original_sha256": "42022735eb8dd45244e1eddc33830bbfe7ecec1ce43d1a0572a6326983cde3cb",
+      "selected_sha256": "07fc0cb55d7b13d88adf328eed139b74b40983ac66694988d781694fa51d99f0"
+    },
+    "CloseTransition": {
+      "declarations": [
+        {
+          "body_sha256": "b516d258ac95fd3b1b3bde11ce9089b35dc381acbb9701d0f6133743ad1960de",
+          "kind": "def",
+          "line": 8,
+          "name": "G05.Ends"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G05-close-spacing/formal/CloseTransition.lean",
+      "original_sha256": "0a97b32b473c994747aac83521bb2eef880208ba1c0951851b7253ca0012cb32",
+      "selected_sha256": "bd6d7fae9aeb5b47f08e05bda158df4985661974dbcb992b7c7e4009babc6a76"
+    },
+    "CofiniteCounting": {
+      "declarations": [
+        {
+          "body_sha256": "ddb17a9e7378998ec80696d08bf9a293aeffbdba99f9241b179939757f0c2e89",
+          "kind": "def",
+          "line": 10,
+          "name": "G10.OddTail"
+        },
+        {
+          "body_sha256": "4f45924581d74839edaba9a26fc44302e645a76ad62eb5443a2bf17f251ed622",
+          "kind": "def",
+          "line": 13,
+          "name": "G10.opposite"
+        },
+        {
+          "body_sha256": "4808d085be52594c8d92770bbe8c34a3e83630047ad7e5bbd88bd2e8c00dc1c8",
+          "kind": "theorem",
+          "line": 16,
+          "name": "G10.opposite_mem"
+        },
+        {
+          "body_sha256": "127d7ea531e4c0cd1b4372ae43e51b537b339914b979bb33cb2b4cb4f57c9377",
+          "kind": "theorem",
+          "line": 20,
+          "name": "G10.map_nodup_on"
+        },
+        {
+          "body_sha256": "059c4f88ceb2708345716f42682ff957a960001a7766739edaff35145750169f",
+          "kind": "theorem",
+          "line": 37,
+          "name": "G10.length_le_code"
+        },
+        {
+          "body_sha256": "eeb2c7cd9ae6700d490e8e8b614c1be4937ac32ec0cb847ced5729eccad68f50",
+          "kind": "theorem",
+          "line": 49,
+          "name": "G10.parity_distance"
+        },
+        {
+          "body_sha256": "9cdb676a1ef4587982b9b12d86b96437ab7d67e7b2cc4f83f6168add211cf30e",
+          "kind": "theorem",
+          "line": 54,
+          "name": "G10.missing_forces_small"
+        },
+        {
+          "body_sha256": "c3a16507098475f4bde4281badf7018d2884f3c2795d8cb9b4c2e211c19b07ad",
+          "kind": "def",
+          "line": 64,
+          "name": "G10.nearCode"
+        },
+        {
+          "body_sha256": "566d15116cd7b07e600b10a58b225ed9656994fabd295be34d26488b3feecee5",
+          "kind": "theorem",
+          "line": 66,
+          "name": "G10.near_code_bound"
+        },
+        {
+          "body_sha256": "07122cfea459cf84e5d3f2655d6aea8fe2985fc4e5a1a94cc366ca46efafeaa1",
+          "kind": "theorem",
+          "line": 72,
+          "name": "G10.near_code_injective"
+        },
+        {
+          "body_sha256": "681c4bd48515c76314f8215a11591bd7fede5c3f66aa75eecbacf09e241ccd91",
+          "kind": "def",
+          "line": 81,
+          "name": "G10.countCode"
+        },
+        {
+          "body_sha256": "bcaec2b9d4772423eec68afb877e56462e54e0ffc6cb47fb4fd2c204f28f8d29",
+          "kind": "theorem",
+          "line": 85,
+          "name": "G10.missing_target_count"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G10-cofinite-odd-coverage/formal/CofiniteCounting.lean",
+      "original_sha256": "3d596ab6195103cf533f118a5611ddfa30ad9b1c7c87ea4ebdf2ee7db3277549",
+      "selected_sha256": "3d596ab6195103cf533f118a5611ddfa30ad9b1c7c87ea4ebdf2ee7db3277549"
+    },
+    "CofiniteGlobal": {
+      "declarations": [
+        {
+          "body_sha256": "c02ff864f262884da5e1da67e486042aa0e3cf103fb0ad1a463a01255c95cac1",
+          "kind": "theorem",
+          "line": 10,
+          "name": "G10.opposite_prefix"
+        },
+        {
+          "body_sha256": "8f8b40ace4bed0fd0111bad46b7e0f39fb2d9abdb56b1521e8a95233794bfbb1",
+          "kind": "def",
+          "line": 18,
+          "name": "G10.lanePoint"
+        },
+        {
+          "body_sha256": "66fe531ee3071dda326a1b2d467d927cdaf0d0c1866c3ad26a514441fff4d94b",
+          "kind": "theorem",
+          "line": 21,
+          "name": "G10.lane_point_properties"
+        },
+        {
+          "body_sha256": "072417b67b8553d7d102c820f3cb3bc5b56e800956ed88987ef7916cf3d2502b",
+          "kind": "theorem",
+          "line": 27,
+          "name": "G10.lane_point_injective"
+        },
+        {
+          "body_sha256": "0fda951d52e7349f2e2d5f250a4db1e9af3045d6cb601aee023dee8dbaf5297e",
+          "kind": "theorem",
+          "line": 32,
+          "name": "G10.second_missing"
+        },
+        {
+          "body_sha256": "3c494bb3c8923b1d4bb429025b9b43868f3e3f9ed95d4feedaf2e3501c6547c7",
+          "kind": "theorem",
+          "line": 63,
+          "name": "G10.parity_partition"
+        },
+        {
+          "body_sha256": "19718d216312cd57e20baec9726b534d56d7a2b1c09bec2be7b15ff08e5222c9",
+          "kind": "theorem",
+          "line": 78,
+          "name": "G10.omission_bound"
+        },
+        {
+          "body_sha256": "9f76fd2210dbb3624b50ba6cffe7071b53e36f17ffac3808ba4104b6299dfbc4",
+          "kind": "theorem",
+          "line": 89,
+          "name": "G10.literal_first_visit"
+        },
+        {
+          "body_sha256": "01f094f34776003c2a77178e2d691ee39aeb242c65e91e4470ecda1a7e5a77e2",
+          "kind": "theorem",
+          "line": 97,
+          "name": "G10.literal_coverage"
+        },
+        {
+          "body_sha256": "1005ea30b7546f57bda2d9f53dfa54223168e602764038f91a5712c8100a9b93",
+          "kind": "theorem",
+          "line": 105,
+          "name": "G10.odd_tail_unbounded"
+        },
+        {
+          "body_sha256": "bf0a735594b70f824ecee5ed999fe6af45df337cfd7ec0cba34c9daa9ff57bd9",
+          "kind": "theorem",
+          "line": 110,
+          "name": "G10.literal_exists"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G10-cofinite-odd-coverage/formal/CofiniteGlobal.lean",
+      "original_sha256": "3a65bc5fd160584841a62ef2c66c2596301128b03872a165e041d4150fb32679",
+      "selected_sha256": "3a65bc5fd160584841a62ef2c66c2596301128b03872a165e041d4150fb32679"
+    },
+    "CofiniteResults": {
+      "declarations": [
+        {
+          "body_sha256": "37819230395335687dd711332f03a6fc814dc3af00fc9a5e55bc7dcacfa37c57",
+          "kind": "theorem",
+          "line": 10,
+          "name": "G10.literal_unique"
+        },
+        {
+          "body_sha256": "28f769f759c45dfd0f4a29fe52671ebdb28f3c89917a12e71a7fb443aad262d2",
+          "kind": "theorem",
+          "line": 43,
+          "name": "G10.literal_first_visit_unique"
+        },
+        {
+          "body_sha256": "1c600339694c34d235da1da89b7ac45429bd6b5b2c9754c266803d68b07b5c76",
+          "kind": "def",
+          "line": 51,
+          "name": "G10.g08Distances"
+        },
+        {
+          "body_sha256": "1d7238bdce50932143eba15dfa634005b5519149bcf2250ac8730e868170a3dc",
+          "kind": "theorem",
+          "line": 53,
+          "name": "G10.g08_odd_tail"
+        },
+        {
+          "body_sha256": "096ccb6740618ae66c9b50a205cb5a1a25a8cf1a903222ccbbc00d80781c32f2",
+          "kind": "theorem",
+          "line": 58,
+          "name": "G10.g08_box_deadline"
+        },
+        {
+          "body_sha256": "61678c5978d628e3037cc2ffe963be0f17c55e0a254e8df1d42cc77fe3a7d53a",
+          "kind": "theorem",
+          "line": 64,
+          "name": "G10.g08_exists"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G10-cofinite-odd-coverage/formal/CofiniteResults.lean",
+      "original_sha256": "d04a8d028a7711a99117333d25175659439741a2d2c85862bb106fa33b186c0f",
+      "selected_sha256": "a3ac15bfa65b3d08a10287b4ac27712565537aeb45000cffc815421380bb4797"
+    },
+    "EntranceBlocks": {
+      "declarations": [
+        {
+          "body_sha256": "8d89a3df15faad3c1180d0b20ae4b1dcc453ccace8118a40d61ce54a3eb4b0f0",
+          "kind": "def",
+          "line": 8,
+          "name": "G08E.zeroState"
+        },
+        {
+          "body_sha256": "661e84161605206da2d3a88e17c240f82e90cd922c381cf3421a06af136c3570",
+          "kind": "def",
+          "line": 9,
+          "name": "G08E.baseWord"
+        },
+        {
+          "body_sha256": "89db2eb6d334b57b84a5014f6674391d8e00397aa769257580be3e0f0c8bafeb",
+          "kind": "def",
+          "line": 10,
+          "name": "G08E.blockState"
+        },
+        {
+          "body_sha256": "e27f31f2ccb5a01e3a619446a36efd8eb070bc05017aed730d16998d287bc93e",
+          "kind": "def",
+          "line": 12,
+          "name": "G08E.blockWord"
+        },
+        {
+          "body_sha256": "37e88cfbbf5277b20fc4a5b22134b446e89c49bf7d9d0ff65f74997254d1bb8f",
+          "kind": "def",
+          "line": 14,
+          "name": "G08E.frontWord"
+        },
+        {
+          "body_sha256": "62bcdde85d5eeca81f159800fc85c27a3c49863c38b6d2395a53bc0330f2bc27",
+          "kind": "def",
+          "line": 15,
+          "name": "G08E.boxState"
+        },
+        {
+          "body_sha256": "dd66f9ccc7da6dd8bd018c6fcf636bccf2d1b4072d91a6b88377a8f619b696f0",
+          "kind": "def",
+          "line": 16,
+          "name": "G08E.entranceState"
+        },
+        {
+          "body_sha256": "5bb96b9f92874af41422f6d4443db59df63f3e824b3a5461f98c72017dda83e5",
+          "kind": "theorem",
+          "line": 19,
+          "name": "G08E.base_short"
+        },
+        {
+          "body_sha256": "96343a88c5f08154245948691d4425af944d5935f31a54e33cd0ec0e2eb24b12",
+          "kind": "theorem",
+          "line": 29,
+          "name": "G08E.base_state"
+        },
+        {
+          "body_sha256": "f3679ea4783c0a302b8cc723c0ed8e1ae97076fc77cd1dfe40a64f5b7c444201",
+          "kind": "theorem",
+          "line": 35,
+          "name": "G08E.base_large"
+        },
+        {
+          "body_sha256": "2595a91062da6cbff45b866939e3608e0cb7ccf54ea34d43a79971da31157d5d",
+          "kind": "theorem",
+          "line": 41,
+          "name": "G08E.block_short"
+        },
+        {
+          "body_sha256": "96615f38d65dab5df602d84700d7ce932d9f047e8e1a73b5a7d2687b6877399a",
+          "kind": "theorem",
+          "line": 53,
+          "name": "G08E.block_state"
+        },
+        {
+          "body_sha256": "b0f5745aa2f1cebd112a10665eadd83bcb79994fd4495598aad80b39eb329bd6",
+          "kind": "theorem",
+          "line": 62,
+          "name": "G08E.block_large"
+        },
+        {
+          "body_sha256": "e87534612e34626da0320fa67ba1d52facf171e5c3dcdf523b652676fe59beb8",
+          "kind": "theorem",
+          "line": 74,
+          "name": "G08E.front_short"
+        },
+        {
+          "body_sha256": "f3d5ced5b94468ab8fc48c2c2964ff3a04c45d79791b12e0e596503a42bd1b9b",
+          "kind": "theorem",
+          "line": 78,
+          "name": "G08E.front_state"
+        },
+        {
+          "body_sha256": "826fac8e387e9f45328fbde0e528f2ccad4697cebd4da662149e0a214a655947",
+          "kind": "theorem",
+          "line": 85,
+          "name": "G08E.front_large"
+        },
+        {
+          "body_sha256": "5bc8d993dc4d32c6ae7ea7ac23e749d209120778b01c6faf786a9522340aab13",
+          "kind": "theorem",
+          "line": 95,
+          "name": "G08E.final_jump"
+        },
+        {
+          "body_sha256": "44ea145ea9415aae815e3109ad19932d51afe049f1df38f9e27c1d5173a29bbd",
+          "kind": "theorem",
+          "line": 117,
+          "name": "G08E.final_state"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/EntranceBlocks.lean",
+      "original_sha256": "57203b56fe65a6b3c7e34fb6f8903876b0efa5580ac89bac472083a926334f1c",
+      "selected_sha256": "a54fafb2503daca7809d3ea8ceb6f4943da86183ffa2ee0b8af3ba987c378e59"
+    },
+    "EntranceBridge": {
+      "declarations": [
+        {
+          "body_sha256": "5c1442e899ba09eede1e56186e089922899add782c0f6a3ec503cf5a5ee60b2e",
+          "kind": "theorem",
+          "line": 9,
+          "name": "G08E.difference_symmetric"
+        },
+        {
+          "body_sha256": "52fd26cdf61c96984126519835b9e2328de6ac81cc6a9e98552563d401fa66cd",
+          "kind": "theorem",
+          "line": 14,
+          "name": "G08E.literal_rule_iff"
+        },
+        {
+          "body_sha256": "f813ab0105554d66d2ca20ca4d6204f05014fa61975b6d1afc75906c13c667bd",
+          "kind": "theorem",
+          "line": 42,
+          "name": "G08E.literal_exists"
+        },
+        {
+          "body_sha256": "84d0d96e1214a2f63c044fc90662939a671824da9a2eb368fc27f1c671b265dc",
+          "kind": "theorem",
+          "line": 51,
+          "name": "G08E.box_deadline"
+        },
+        {
+          "body_sha256": "7cdc59eb297a66ca79ab147d462c37886bf4adb93800fcb7516a362a32e72c64",
+          "kind": "theorem",
+          "line": 56,
+          "name": "G08E.omitted_entrance_deadline"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/EntranceBridge.lean",
+      "original_sha256": "391da3317c36ee7861f78012b22515f93d5df78a974d693c992392c610dbf7da",
+      "selected_sha256": "359ba78b31a20919fbe0f4e90cdc42fa1db7a7cdb674af0351bde7d74a4f37e6"
+    },
+    "EntranceExamples": {
+      "declarations": [
+        {
+          "body_sha256": "fd10f18d9ac2cafa0f0a6a610be6072192bfad0ca1e41f894e45a3a5ed755715",
+          "kind": "theorem",
+          "line": 8,
+          "name": "G08E.boundary_one"
+        },
+        {
+          "body_sha256": "c2f8f547be0b265c10c992e101cdeb2948f83d2beded4a5d787ebf5c1ee01200",
+          "kind": "theorem",
+          "line": 18,
+          "name": "G08E.boundary_two"
+        },
+        {
+          "body_sha256": "bb31d51648bdcd7af9e67cc244936783ab571767a9fedaca987c4280239dd471",
+          "kind": "theorem",
+          "line": 28,
+          "name": "G08E.boundary_previous_index"
+        },
+        {
+          "body_sha256": "fa0f408d2afc2ea03475fda907dabcbf41ae709f053ff813dab6af766904ad87",
+          "kind": "theorem",
+          "line": 31,
+          "name": "G08E.endpoint_minus_seven_used"
+        },
+        {
+          "body_sha256": "38369c0ec9b8923b14e986933f9908123928658881bfb80811b2a551a6336fec",
+          "kind": "def",
+          "line": 36,
+          "name": "G08E.alteredThreshold"
+        },
+        {
+          "body_sha256": "8f68c25d0b9fd0d1b083dcbbaad04702ad05d44e1fe00e0f846ff174927ea072",
+          "kind": "def",
+          "line": 37,
+          "name": "G08E.before_last_short"
+        },
+        {
+          "body_sha256": "871b0c353c8a7f57a43c3b48cd7131c6119f7d09cf7539da5ffbba1bddd9dbb8",
+          "kind": "theorem",
+          "line": 39,
+          "name": "G08E.altered_threshold_competitor"
+        },
+        {
+          "body_sha256": "89518395e37888f0c74b63fbe28b980d793e903f9052844e7057f9110aa636b6",
+          "kind": "theorem",
+          "line": 48,
+          "name": "G08E.altered_threshold_breaks_short_choice"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/EntranceExamples.lean",
+      "original_sha256": "344632d7ec6af5979a81412f09aab054a1b2abaf7f9a3265f663bf39ac5d85d2",
+      "selected_sha256": "8c2d15bed0183feda2c21508d2d35e3b21d4d20ce6d8992a5d961cd78b8a24f8"
+    },
+    "EntranceGlobal": {
+      "declarations": [
+        {
+          "body_sha256": "e982e869f93f3711a3a3fc601f1b1d939b1a9bd3c5049b5a459b01baeb523bba",
+          "kind": "theorem",
+          "line": 8,
+          "name": "G08E.history_zero"
+        },
+        {
+          "body_sha256": "440355d67dcb54d7d180a629686eafce9a290b4356236a93dfcd6bbc78edd307",
+          "kind": "theorem",
+          "line": 21,
+          "name": "G08E.actual_block_states"
+        },
+        {
+          "body_sha256": "42633f538d053a80d8880a3033403b7066c77f2ce760b1525aac91d369cf9ef2",
+          "kind": "theorem",
+          "line": 40,
+          "name": "G08E.actual_box"
+        },
+        {
+          "body_sha256": "2d79e909f110b233a846190d07d6951114d26d4c5c45f259ca5b4b849820b138",
+          "kind": "theorem",
+          "line": 49,
+          "name": "G08E.actual_entrance"
+        },
+        {
+          "body_sha256": "79f590d1a62e11f043e62ff31a206b70a200456d2f2b5d0219ab80ebc9370dab",
+          "kind": "theorem",
+          "line": 61,
+          "name": "G08E.exact_entrance"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/EntranceGlobal.lean",
+      "original_sha256": "130bacb1037fc6fab33bb793f78a430b6a4cb1258b6d53a82f6bbbf265690616",
+      "selected_sha256": "130bacb1037fc6fab33bb793f78a430b6a4cb1258b6d53a82f6bbbf265690616"
+    },
+    "EntranceResults": {
+      "declarations": [
+        {
+          "body_sha256": "26906d2b727c6bef4db3d67c1ffc864ededfb578577be453924ec861ec9a4893",
+          "kind": "def",
+          "line": 9,
+          "name": "G08E.HasHoleCount"
+        },
+        {
+          "body_sha256": "553bf3d6f7e0d35a7518c65ee90bc4dcb8eb8e6692a009de11d016de5df1a1ef",
+          "kind": "theorem",
+          "line": 12,
+          "name": "G08E.actual_hole_enumeration"
+        },
+        {
+          "body_sha256": "ab0b8e8a87726cc8fc19aa0f657c2ae517ba715718c225a58803dd1e79a124e5",
+          "kind": "theorem",
+          "line": 23,
+          "name": "G08E.actual_hole_count"
+        },
+        {
+          "body_sha256": "8044f54eb95389b4fe35dbfd2a1515a4d27a1e64782d971d9af2cfac371ce9de",
+          "kind": "theorem",
+          "line": 28,
+          "name": "G08E.unbounded_reachable_holes"
+        },
+        {
+          "body_sha256": "07e7f7e312ed7f49305fb9e83f59debc1c40e46c0af72d22eadaa0304bc2b0f2",
+          "kind": "theorem",
+          "line": 37,
+          "name": "G08E.no_uniform_hole_bound"
+        },
+        {
+          "body_sha256": "68ed5a3ffc430446bac193898dbae0892657b0e9b7d0dbe06c5057b0a0d5b09c",
+          "kind": "theorem",
+          "line": 45,
+          "name": "G08E.entrance_hole_inside"
+        },
+        {
+          "body_sha256": "67aef012485424e03d2956f349d0442395ce7dde9ee019584144ba53e7680f2a",
+          "kind": "theorem",
+          "line": 56,
+          "name": "G08E.every_entrance_hole_repaired"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/EntranceResults.lean",
+      "original_sha256": "6a38cfa9b11ef296efc02eca62cdf56ada839de89025ae43f08d2f91b354fb1c",
+      "selected_sha256": "1cdff7bda0ce5cc02e3469e4699da4912acd07c032456845664eb04c739e4c79"
+    },
+    "EntranceTrace": {
+      "declarations": [
+        {
+          "body_sha256": "778239c7160610d229a7a9a211adde314d02efeca21b8158bc4e3e92f8ae20f6",
+          "kind": "def",
+          "line": 8,
+          "name": "G08E.shortD"
+        },
+        {
+          "body_sha256": "53949109374549b27f60b52d1f021f39a85670b8596d95d4401cb012655e1243",
+          "kind": "def",
+          "line": 9,
+          "name": "G08E.distances"
+        },
+        {
+          "body_sha256": "05d47de6c7fcabb50f83b5f05d7b5ac4384580de4ecfb6666122df67529a4d83",
+          "kind": "def",
+          "line": 11,
+          "name": "G08E.after"
+        },
+        {
+          "body_sha256": "712724e71e42918d13c17275d91ef36b3612c96e4b0a480db915724d2435dcf0",
+          "kind": "def",
+          "line": 15,
+          "name": "G08E.Valid"
+        },
+        {
+          "body_sha256": "c1a066ff9798be6e0effa375e5259403427f01f9f9f18fa5714695ba1336d681",
+          "kind": "theorem",
+          "line": 31,
+          "name": "G08E.history_next"
+        },
+        {
+          "body_sha256": "3593c475a4f8603701ba08fb765dddf7e3fe8e6ebf5d10de2dd7d944e0c52d88",
+          "kind": "theorem",
+          "line": 37,
+          "name": "G08E.walk_greedy"
+        },
+        {
+          "body_sha256": "125cb8a1d37d17f27d1ef5b2344474b30ee1fff86cf69a04883121447bf23cb8",
+          "kind": "theorem",
+          "line": 45,
+          "name": "G08E.follow_trace"
+        },
+        {
+          "body_sha256": "c453598089a04741813b684a5c13d3a3909250b1e99a91432b38c6145cc58add",
+          "kind": "theorem",
+          "line": 58,
+          "name": "G08E.abs_distance_bound"
+        },
+        {
+          "body_sha256": "857da01d49c6b37cc6ffb739d6dce0cc5ab6a7b318a721800946254cbbce9f04",
+          "kind": "theorem",
+          "line": 64,
+          "name": "G08E.short_lift"
+        },
+        {
+          "body_sha256": "aca72c474b760d441140d208903f9e356dc4e75644654ce61e79d9c4623f9de4",
+          "kind": "theorem",
+          "line": 79,
+          "name": "G08E.short_greedy"
+        },
+        {
+          "body_sha256": "340e0487b16fe9272a252f21a4f5029463a5473c0d15596539e2c6bd67f2370a",
+          "kind": "theorem",
+          "line": 89,
+          "name": "G08E.negative_preferred"
+        },
+        {
+          "body_sha256": "8bd1af5dee538c81762e3290da933c89580abb3f354e8abeea57001a3757a746",
+          "kind": "theorem",
+          "line": 94,
+          "name": "G08E.positive_preferred"
+        },
+        {
+          "body_sha256": "c84e7ecb04c12c4e1efbe95fc9f2c95a9b886bec7346fb40b72137df472d506d",
+          "kind": "theorem",
+          "line": 99,
+          "name": "G08E.negative_shield"
+        },
+        {
+          "body_sha256": "8201ef5872d6ef20e6bcc1e731faad0640f5a3e074aa9d5ca1f93c7deb83056e",
+          "kind": "theorem",
+          "line": 105,
+          "name": "G08E.short_signed"
+        },
+        {
+          "body_sha256": "e51edbd27898a631147eff86888f17600d1d80be72c8c45801cb2e52a6f80e13",
+          "kind": "theorem",
+          "line": 113,
+          "name": "G08E.lift_trace"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/EntranceTrace.lean",
+      "original_sha256": "fbaa5208b3bbff7e303d227e2891737e86497d259a5473c76285538c95f4493d",
+      "selected_sha256": "6d50665af91f90ed795cc3b18451149a1c5a88d239b252375bcd0b1522df284e"
+    },
+    "Examples": {
+      "declarations": [
+        {
+          "body_sha256": "74e449820652ebad7beaa3b6703b2d7be9aa3c7f61826839dd76e4a7cc69021e",
+          "kind": "def",
+          "line": 7,
+          "name": "G01.entranceState"
+        },
+        {
+          "body_sha256": "e1d2a1daa1a848dda08d189ec553557eeef048c64c0a5997b88b3b206ad1fc25",
+          "kind": "theorem",
+          "line": 10,
+          "name": "G01.entranceState_spec"
+        },
+        {
+          "body_sha256": "d115e86aec4e144ce21c9c4356d5fc3635cf570df5c8685c5740edee0b692a39",
+          "kind": "def",
+          "line": 22,
+          "name": "G01.zeroState"
+        },
+        {
+          "body_sha256": "a9a18e671d4a4b4391e6a7592a43c37d9f257efa7133f0d7c716c9ffe3ed23a7",
+          "kind": "theorem",
+          "line": 24,
+          "name": "G01.initial_positive"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G01-even-step-family/formal/Examples.lean",
+      "original_sha256": "3562be617f194d2c93bdc76b5c1bcbe85e78153996996d671cbe1e2d45979863",
+      "selected_sha256": "140f59284b840fd89d528f1bdcfb812550224392f266a6a6d330b03ec82a9685"
+    },
+    "FinitePrefix": {
+      "declarations": [
+        {
+          "body_sha256": "f8404e0d7bfdc7e996ba81cf0d0cb55495aba1d27883e6953b1ab0c62118a997",
+          "kind": "def",
+          "line": 8,
+          "name": "G02.candidates"
+        },
+        {
+          "body_sha256": "a80f1bbbd328fcd6f6e46ac711ef547ddc64f728d44448ef87f9346535e1af89",
+          "kind": "theorem",
+          "line": 11,
+          "name": "G02.mem_candidates"
+        },
+        {
+          "body_sha256": "f170a3d864cdc4c6f5262c79b6f0ecb528d67a299c80156b989f49dfbc468f13",
+          "kind": "def",
+          "line": 22,
+          "name": "G02.FiniteGreedy"
+        },
+        {
+          "body_sha256": "fd515cba28aeed150f5474931d54b3cc5341db71212888802fe5cfa6ceab005f",
+          "kind": "theorem",
+          "line": 26,
+          "name": "G02.finite_greedy_sound"
+        },
+        {
+          "body_sha256": "99372b7ead9e58bf7f1d67183825d7ce919cfe529986c9ccda176e273e8ab28b",
+          "kind": "def",
+          "line": 36,
+          "name": "G02.Certificate"
+        },
+        {
+          "body_sha256": "2ed075ab752c6f499cbfb67a1de27cd14ba47886682c7983aead1b03cf387faf",
+          "kind": "def",
+          "line": 40,
+          "name": "G02.finish"
+        },
+        {
+          "body_sha256": "46d75199f8b01a411afafcf9e42154f0a31602525370750155d8c4ebd067b215",
+          "kind": "def",
+          "line": 50,
+          "name": "G02.Rule"
+        },
+        {
+          "body_sha256": "eec566244ca1572f0120608d2a61f2ed986263ce1d9b3db832cd445be5da6791",
+          "kind": "theorem",
+          "line": 53,
+          "name": "G02.certificate_history"
+        },
+        {
+          "body_sha256": "008ff46c62d7540d684d47b6badc3e8ae0043c7c106ae35ace7465415b208705",
+          "kind": "theorem",
+          "line": 68,
+          "name": "G02.certificate_from_zero"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G02-assumption-boundaries/formal/FinitePrefix.lean",
+      "original_sha256": "15299671ebb7a483c15e414b5a69298c445a494199205b558912d6296082837a",
+      "selected_sha256": "52ec262622f190d839c23581fe58c519d68088b34b83a839056c1677858f83f4"
+    },
+    "Global": {
+      "declarations": [
+        {
+          "body_sha256": "8b1775f843d841fcdfda20885afb5dc60633cef690496617ac008e170772be1e",
+          "kind": "def",
+          "line": 123,
+          "name": "G01.Bounded"
+        },
+        {
+          "body_sha256": "be9a8d41ad1b13730d5322813e8d9b469e3347aaf8dcc7f4273eef201c5ed8d5",
+          "kind": "theorem",
+          "line": 125,
+          "name": "G01.zero_bounded"
+        },
+        {
+          "body_sha256": "f425e040deb6dc31bba9cedf2cff30f50a98267cb242e9be81e08947a5aa76a0",
+          "kind": "theorem",
+          "line": 131,
+          "name": "G01.visit_bounded"
+        },
+        {
+          "body_sha256": "43a60a09f697becdfa4abda44ac0b0ccba0ab2112671ae273ff3174facf8126a",
+          "kind": "structure",
+          "line": 156,
+          "name": "G01.BoundedState"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G01-even-step-family/formal/Global.lean",
+      "original_sha256": "0ee969feffe52ae4dee6a18050e091e39b1c2b079989deed577f155ed55598fe",
+      "selected_sha256": "5a7442473ad4ad2876a9b86de7afccf83a41761c57f26525c9426cddc62d2640"
+    },
+    "History": {
+      "declarations": [
+        {
+          "body_sha256": "c44fa69baf843591b27009b7a32409f8a42aaa1ad74f9d368611157f272f9d40",
+          "kind": "theorem",
+          "line": 7,
+          "name": "G01.history_zero"
+        },
+        {
+          "body_sha256": "75fa1ad9358547e0e71c5e7809adca1ee3bdbe1918eacf6a36cb3ae8c6fe1311",
+          "kind": "theorem",
+          "line": 18,
+          "name": "G01.history_succ"
+        },
+        {
+          "body_sha256": "792cd65a29d499faf2df902588e383b23f61abcdf409f39f4b64318990d7e9af",
+          "kind": "theorem",
+          "line": 33,
+          "name": "G01.walk_injective"
+        },
+        {
+          "body_sha256": "18ef466f48f935166439cb8b925d0590be17965d58c88bb9ec83f9df7e953183",
+          "kind": "theorem",
+          "line": 49,
+          "name": "G01.reaches_history"
+        },
+        {
+          "body_sha256": "2088e143cf3ea21c75a8e6a2ef8ad6a542a99af06c1740578bee7d7856d7385e",
+          "kind": "theorem",
+          "line": 65,
+          "name": "G01.map_nodup_injective"
+        },
+        {
+          "body_sha256": "50222a6309d71250529a4388ee6dd157a43c4c3ff5364a14f12551c11656bc74",
+          "kind": "def",
+          "line": 79,
+          "name": "G01.historyList"
+        },
+        {
+          "body_sha256": "9125f1dd9dad889ed8df724b11089924db421d0fc1539ab5aa69496cfe8aeee1",
+          "kind": "theorem",
+          "line": 81,
+          "name": "G01.historyList_mem"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G01-even-step-family/formal/History.lean",
+      "original_sha256": "180d0209e66d69091ba43be35039f81bf51e9854bf92777ff062fd9ab2f111d4",
+      "selected_sha256": "7ade8bf8dcc5b143ea67367a9586736eaa3560cc03e18780728d69fda510483d"
+    },
+    "HoleCount": {
+      "declarations": [
+        {
+          "body_sha256": "2dd7a35d001eaccb2315672dcec573c9b5f99525e4c4917020258b7e6b4b8f84",
+          "kind": "def",
+          "line": 9,
+          "name": "G08H.FilledPlus"
+        },
+        {
+          "body_sha256": "96965141cf66abb95e94631ebecbe0933e8f4b1a4fe7b7304556d53f40115336",
+          "kind": "def",
+          "line": 12,
+          "name": "G08H.LaneHole"
+        },
+        {
+          "body_sha256": "d48f744eb46371a0ab7b42f8acaca2a9d891345acae032f38f0ec3173c136596",
+          "kind": "def",
+          "line": 16,
+          "name": "G08H.holesList"
+        },
+        {
+          "body_sha256": "3f95d1ed89c3c743d18de480baff69e6b5d886f87c45f191f040d796668a181d",
+          "kind": "theorem",
+          "line": 19,
+          "name": "G08H.lane_hole_iff"
+        },
+        {
+          "body_sha256": "cac420e13334c9018eeff2e9e59814e0fbff04017eb55ddce89328d7e600b8e9",
+          "kind": "theorem",
+          "line": 51,
+          "name": "G08H.holesList_mem_formula"
+        },
+        {
+          "body_sha256": "1e66da036eb76de7a2f7d9dd34e0acad0147a008858835b6a6fdaa42a57dc950",
+          "kind": "theorem",
+          "line": 64,
+          "name": "G08H.holesList_mem_iff"
+        },
+        {
+          "body_sha256": "497377b5b26278c0d9f960486bcef1adc1a3f1b06e4fae4d40ba2d06861a29f2",
+          "kind": "theorem",
+          "line": 69,
+          "name": "G08H.map_injective_nodup"
+        },
+        {
+          "body_sha256": "3a4f1c71ed3919f4b8b040a1c425a4ece1471ce506b78f44f63aee6267bd9830",
+          "kind": "theorem",
+          "line": 83,
+          "name": "G08H.holesList_nodup"
+        },
+        {
+          "body_sha256": "def52ba6f57c15bade1989c39d11f76a10c19b543eb6cff58cbc4085561076d7",
+          "kind": "theorem",
+          "line": 89,
+          "name": "G08H.holesList_length"
+        },
+        {
+          "body_sha256": "25b82e1ce42d53d56f5f10eb755815bb52b6b902b16fc4bfaddd276255d59a2c",
+          "kind": "theorem",
+          "line": 92,
+          "name": "G08H.holes_five"
+        },
+        {
+          "body_sha256": "6fec5a0c5f2f8fe8e14f21b6b710ad9caa03fa434b7e8c1ad948b0fe9d4b27f5",
+          "kind": "theorem",
+          "line": 94,
+          "name": "G08H.holes_ten"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal-holes/HoleCount.lean",
+      "original_sha256": "d6a13dc9d9d0c4ea2fce488c607d0b827a626b16edfe24d68d5b1337e922626e",
+      "selected_sha256": "62efbf32d291ae590252408d3e940a5f38199d9fd57ad524c27e481568329b67"
+    },
+    "InfiniteWitnesses": {
+      "declarations": [
+        {
+          "body_sha256": "5768fbb5ab1ff34ad39671b20e7876aacde0e978bc7596b6547ab6e2c479a290",
+          "kind": "def",
+          "line": 8,
+          "name": "G02.Unbounded"
+        },
+        {
+          "body_sha256": "16e54da8aa553976b5add803afee11c88d11fd12fdc324abefa2270346a57445",
+          "kind": "theorem",
+          "line": 10,
+          "name": "G02.unbounded_admissible"
+        },
+        {
+          "body_sha256": "4213605225e8492e63f4950b4085e2ec4e886780af4ad6dbe3a0c2d660df259e",
+          "kind": "def",
+          "line": 24,
+          "name": "G02.next"
+        },
+        {
+          "body_sha256": "e429833834a79505d6cc5bbf0cdb4e463c14fafb11cdf43eefe68a45595282da",
+          "kind": "theorem",
+          "line": 27,
+          "name": "G02.next_spec"
+        },
+        {
+          "body_sha256": "b082a7d11107c02ad21a056fbb4408f66af290351f45020f1aa473b82ec1da70",
+          "kind": "def",
+          "line": 31,
+          "name": "G02.orbit"
+        },
+        {
+          "body_sha256": "9d4bcf892c5c6126c21a7cbe4b9618ed750203af899293c925517305640cc80b",
+          "kind": "def",
+          "line": 36,
+          "name": "G02.sequence"
+        },
+        {
+          "body_sha256": "77520033844c9f218658e6d9f4b2c5c76cbcb5d907011cc5730b9484c126b923",
+          "kind": "theorem",
+          "line": 39,
+          "name": "G02.orbit_history"
+        },
+        {
+          "body_sha256": "6b8202ed069cd8743e3f1efa1ef5669d460bbac10fcc240df0a9e1b6fe67dc1b",
+          "kind": "theorem",
+          "line": 47,
+          "name": "G02.unbounded_exists"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G02-assumption-boundaries/formal/InfiniteWitnesses.lean",
+      "original_sha256": "597db67f132e0f1d8d367da329c6334e5a92e561f63f86bf7bf21ad5497fd9c7",
+      "selected_sha256": "9094aba35493bd40c7ae7fb1a12f054f7c17d36fe93b03006dfc7262fed6e334"
+    },
+    "LaneExamples": {
+      "declarations": [
+        {
+          "body_sha256": "39b9388a18e0576275d0358ca37e5f1900a95c35afaf0550b66d7a85803f7c7d",
+          "kind": "def",
+          "line": 8,
+          "name": "G08.sampleUsed"
+        },
+        {
+          "body_sha256": "96ee792b663a0e7cf44ccf5bf34beb91c00d6f7cba96956b0ab91f7946615aa4",
+          "kind": "def",
+          "line": 11,
+          "name": "G08.sampleState"
+        },
+        {
+          "body_sha256": "26c1a560aa1b35dce5458e1ca23634976b062a4af39eb190acb599b4ac74befd",
+          "kind": "def",
+          "line": 13,
+          "name": "G08.allOddsAndTwo"
+        },
+        {
+          "body_sha256": "8074178b6d3f937dd18c160c705a03e84d5835e0c1e3f3151f908b223bdb59d5",
+          "kind": "theorem",
+          "line": 15,
+          "name": "G08.sample_distances"
+        },
+        {
+          "body_sha256": "d3d4afb35d5f61f5340074a8e93e4e676e5700886f2f195c099b486f85b277f4",
+          "kind": "theorem",
+          "line": 23,
+          "name": "G08.two_holes"
+        },
+        {
+          "body_sha256": "9a606301b8dc524d14e2047a039d4f89f60c7deca925f502dffdb411c1c34313",
+          "kind": "theorem",
+          "line": 35,
+          "name": "G08.sample_entry"
+        },
+        {
+          "body_sha256": "4d74aa458ab5555c7fa3da3c0bfb2711a12d33616db54ee79bcdd9a599ba5041",
+          "kind": "theorem",
+          "line": 43,
+          "name": "G08.sample_finite"
+        },
+        {
+          "body_sha256": "e7ed182b2302c40c41c72cd3e7a6c22b86f47daa924326c0024d3ce66778db64",
+          "kind": "theorem",
+          "line": 46,
+          "name": "G08.sample_exterior"
+        },
+        {
+          "body_sha256": "b7f5d6a87c7b0fb832a0ed9565a975df2e24c043947bedc9c5a64b20c0fa0123",
+          "kind": "theorem",
+          "line": 50,
+          "name": "G08.sample_filling"
+        },
+        {
+          "body_sha256": "06bf22ae55a1963f0496263ff1243aa019b43658369673f4c11d24568aa8867e",
+          "kind": "theorem",
+          "line": 65,
+          "name": "G08.positive_exterior_filling"
+        },
+        {
+          "body_sha256": "2ec68a57f4822511988b2ff9e4c17e824e782ec5e098042c4b4b75ba16bfab14",
+          "kind": "theorem",
+          "line": 70,
+          "name": "G08.negative_exterior_filling"
+        },
+        {
+          "body_sha256": "1c4e4c41b4a02a4d64ca4601930de317543d6878b9af8a847a5a3bd7a44f6089",
+          "kind": "def",
+          "line": 75,
+          "name": "G08.extraEven"
+        },
+        {
+          "body_sha256": "8b226b607ca2bd9a4f6d6008f6720fc41fbed31615779bbe2c304c0dd2bdc253",
+          "kind": "def",
+          "line": 76,
+          "name": "G08.noTwo"
+        },
+        {
+          "body_sha256": "6f65babdbcaad4a17b428b06a926d9c081ccd831d6e2e86ce2f76b037babc660",
+          "kind": "def",
+          "line": 77,
+          "name": "G08.twoAndFive"
+        },
+        {
+          "body_sha256": "48330b7a38e46a5d43e4241479f03ad058882b5a690bcccb9fbe7e91932adeda",
+          "kind": "def",
+          "line": 78,
+          "name": "G08.onlyTwo"
+        },
+        {
+          "body_sha256": "44a05101674c1c34d9408877a33c125fbf4537c981b4c2654a5bbf64fcdbd1ab",
+          "kind": "def",
+          "line": 79,
+          "name": "G08.extraHole"
+        },
+        {
+          "body_sha256": "d5b5addbaabd0d80d16e790f94553f08817ac847ca89e0a8f45a3559f94750ee",
+          "kind": "def",
+          "line": 80,
+          "name": "G08.wrongEntrance"
+        },
+        {
+          "body_sha256": "d37efb8ef9a6df266dc44095c652e013dc46926f04d90d595c73a4a3bd5c6a68",
+          "kind": "theorem",
+          "line": 82,
+          "name": "G08.extra_even_counterexample"
+        },
+        {
+          "body_sha256": "d4ebcdd7cdb8273d34a23c473b70952ee150429ec8e331bf370191da5f753d9c",
+          "kind": "theorem",
+          "line": 88,
+          "name": "G08.absent_two_counterexample"
+        },
+        {
+          "body_sha256": "1e796fccbd96ccc12e6dbb5d0c73045cf68acda55050f3cda0a135b29d79b46a",
+          "kind": "theorem",
+          "line": 93,
+          "name": "G08.extra_hole_counterexample"
+        },
+        {
+          "body_sha256": "c74e308871b792e1fb53f50ca3574bd5c12c9aa393d1be36bff94f8bae74cf7d",
+          "kind": "theorem",
+          "line": 99,
+          "name": "G08.wrong_entrance_counterexample"
+        },
+        {
+          "body_sha256": "b5d155b62c67bc47cec0648f0206e9851a2e664bf410f5c96ef7751c4278a0d0",
+          "kind": "theorem",
+          "line": 104,
+          "name": "G08.third_inward_move_counterexample"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal/LaneExamples.lean",
+      "original_sha256": "d8c49960db32b36192c56c5a7d1bf2e60a4b2b58b4c31c854f7895fbb8a66224",
+      "selected_sha256": "4f0d147dd56137c25810b10e06ba34482a87220ba9a849bb8ccd330ce27b80e7"
+    },
+    "LaneFill": {
+      "declarations": [
+        {
+          "body_sha256": "2df2c0bd32e924fb9bb425287df7a00bef221e3986afe11838e94a0d6b87a1a0",
+          "kind": "def",
+          "line": 8,
+          "name": "G08.laneRun"
+        },
+        {
+          "body_sha256": "66b172ae4e062a72527f556854f86e5b4ebfe1d475beafdf73cd10eca0d162af",
+          "kind": "theorem",
+          "line": 12,
+          "name": "G08.run_current"
+        },
+        {
+          "body_sha256": "b32d0c52943508e901f24984cc11fbf407d4be0af8a075c4b361046d285863b4",
+          "kind": "theorem",
+          "line": 19,
+          "name": "G08.run_used"
+        },
+        {
+          "body_sha256": "d05b1f955631c3aa945219094692fdd78ec27211de3bb55e5fa55e9b27d15b14",
+          "kind": "theorem",
+          "line": 45,
+          "name": "G08.run_interior"
+        },
+        {
+          "body_sha256": "6969469af3181537df90cac3731d9203c0cc1859558d1f14735ac7dc7d9a67b9",
+          "kind": "theorem",
+          "line": 56,
+          "name": "G08.run_greedy"
+        },
+        {
+          "body_sha256": "4d9cb8ebe617ba9f5056c01edfb2070d6979dd2af06b900406ab5dc06f720582",
+          "kind": "theorem",
+          "line": 77,
+          "name": "G08.run_complete_iff"
+        },
+        {
+          "body_sha256": "a7773f54d2df27ceae4866307648cdc9e620ec25d10990de77cc75d942c2c538",
+          "kind": "def",
+          "line": 107,
+          "name": "G08.FiniteUsed"
+        },
+        {
+          "body_sha256": "71b5b13b65bcb862ef03198971dc1948f7095a3d273bd5b6ec366fdad3f69071",
+          "kind": "theorem",
+          "line": 109,
+          "name": "G08.finite_visit"
+        },
+        {
+          "body_sha256": "4c2f1b15c2cf5263a93243df75073ebb87ed0e4c79bfccae897855d9c575eeab",
+          "kind": "theorem",
+          "line": 119,
+          "name": "G08.run_finite"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal/LaneFill.lean",
+      "original_sha256": "bdfdd7f5e732ab3f3c9eefcb601158d143ded895c77568e5b2735ce7ffa7fa98",
+      "selected_sha256": "e9e3ae5cb08e0d2d95a5c76590baf04e82ad0b6572d0eeba3b19409d15f55655"
+    },
+    "LaneLiteral": {
+      "declarations": [
+        {
+          "body_sha256": "3d823c81b6a9e5ccd7f0ffc8117ea3fedcc28557cd7dad7ca0f8a1c155c22dc6",
+          "kind": "def",
+          "line": 8,
+          "name": "G08.prefixState"
+        },
+        {
+          "body_sha256": "dd90fe89b27eb751d50f2d7f6a3e20bed2afc5ea449dca4be5975f3f23b8ead1",
+          "kind": "def",
+          "line": 11,
+          "name": "G08.LocalLiteral"
+        },
+        {
+          "body_sha256": "43ea1a1464c5e1b44e50755fdf96501913e641795491263b5f88f128414c921d",
+          "kind": "theorem",
+          "line": 18,
+          "name": "G08.state_ext"
+        },
+        {
+          "body_sha256": "31b336832c3e0cdf72e92c849454d23b7abb228e84dc14d8b6f1476d6ee0a016",
+          "kind": "theorem",
+          "line": 27,
+          "name": "G08.prefix_zero"
+        },
+        {
+          "body_sha256": "581f7fbeee8e3f8e071cf776c78127fd37248efc306dfdc265da36a08f5d2deb",
+          "kind": "theorem",
+          "line": 38,
+          "name": "G08.prefix_next"
+        },
+        {
+          "body_sha256": "6fa62d1a25e446b84c1e14e9877d3d6241cfbce3be0b3f7e3163c9f0f04d4e5c",
+          "kind": "theorem",
+          "line": 56,
+          "name": "G08.prefix_current_used"
+        },
+        {
+          "body_sha256": "0236f9a614ad2f907ac10783bec83ffc61a1115cf025c165d4f2da6d95ef8127",
+          "kind": "theorem",
+          "line": 63,
+          "name": "G08.unused_distance_positive"
+        },
+        {
+          "body_sha256": "a49e88fcc5204b6f547f3bf0475996b6fc7b8670942af566e6b1409e45b1ab59",
+          "kind": "theorem",
+          "line": 70,
+          "name": "G08.literal_iff"
+        },
+        {
+          "body_sha256": "73ac1c2920f565e14202f06458a161f7ddf48858c78f987751e64c499321e77a",
+          "kind": "theorem",
+          "line": 91,
+          "name": "G08.interior_current_used"
+        },
+        {
+          "body_sha256": "f42664598e4bc18ebc7777646d8d5c0221482596171678a99144f7a58a7a6dbe",
+          "kind": "theorem",
+          "line": 102,
+          "name": "G08.prefix_run"
+        },
+        {
+          "body_sha256": "ace7df0ef92d0b0ce0fe8cef482f3c99916f9d13f3924cb0cced6382f77f4c48",
+          "kind": "theorem",
+          "line": 108,
+          "name": "G08.canonical_literal"
+        },
+        {
+          "body_sha256": "1d1a77c603b48d854280d33263bf91135818e9af182a702f7803d27f0951fdee",
+          "kind": "theorem",
+          "line": 118,
+          "name": "G08.literal_state_eq"
+        },
+        {
+          "body_sha256": "810c1631fb21fb60b9de6a7fcc107ff9e1d28b84a3d22552c499ca9fff741bbc",
+          "kind": "def",
+          "line": 134,
+          "name": "G08.LaneEntrance"
+        },
+        {
+          "body_sha256": "900aca8359902cd973b5efd0c89d527b44537b434a214fb9d5676feefa28a598",
+          "kind": "theorem",
+          "line": 137,
+          "name": "G08.lane_count"
+        },
+        {
+          "body_sha256": "bfddfdb994626861d7e7ea4d56c45833f23c491c21aee83138dc08ffd6749230",
+          "kind": "theorem",
+          "line": 153,
+          "name": "G08.conditional_lane_filling"
+        },
+        {
+          "body_sha256": "2eafce4fa5c168c177fc4e1847416733655902c3be9af573144967013f9e274e",
+          "kind": "theorem",
+          "line": 198,
+          "name": "G08.finite_literal_prefix"
+        },
+        {
+          "body_sha256": "f483b7d2fb1d15b3afdce8a33f0b02d090f31d582729a8f6f704a66017e96edf",
+          "kind": "def",
+          "line": 209,
+          "name": "G08.LiteralWalk"
+        },
+        {
+          "body_sha256": "8278869c6837b4040136db89ef439c49bac244484efc6fefc520c157b8df6df4",
+          "kind": "theorem",
+          "line": 215,
+          "name": "G08.history_segment"
+        },
+        {
+          "body_sha256": "7f89bce9dbc15e646ed6c4e348ec372d19940e76f698085956f376532bebf2e9",
+          "kind": "theorem",
+          "line": 233,
+          "name": "G08.walk_segment_literal"
+        },
+        {
+          "body_sha256": "b46e734fb6ee9c9d541bb5652de163ef4484ac9ae8fa5d1c5626abea3f66a54e",
+          "kind": "theorem",
+          "line": 244,
+          "name": "G08.literal_walk_lane"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal/LaneLiteral.lean",
+      "original_sha256": "a761a61a21cff0865bd173dc504c483c5bb3c045d50755fb6ceeaf1802c73d30",
+      "selected_sha256": "e48d16ad91c62673af4763d59815dbe09c98f3b261a26dbaaeb47aaf05b111e3"
+    },
+    "LaneStep": {
+      "declarations": [
+        {
+          "body_sha256": "755535614597d4fcf18d1736909444ea5a0a6be97bcdc2240e80cc27030f23ee",
+          "kind": "def",
+          "line": 8,
+          "name": "G08.OnlyEvenTwo"
+        },
+        {
+          "body_sha256": "07f7cca1b7f06267ccc2342a769be71ab1eee16979317aba094fc4ebe28da1f6",
+          "kind": "def",
+          "line": 11,
+          "name": "G08.Hole"
+        },
+        {
+          "body_sha256": "edd205baf331c5b45835aefa4bb1a942fb3c85ae0117ed1393fdce80bdf8ea5e",
+          "kind": "def",
+          "line": 14,
+          "name": "G08.Interior"
+        },
+        {
+          "body_sha256": "05ba7daf4931780b33ddc7d88b191edfea085e9f145d5931314a3a979622b23f",
+          "kind": "theorem",
+          "line": 17,
+          "name": "G08.point_distance"
+        },
+        {
+          "body_sha256": "a0ed6cbb3ad36310db7c4237853f63fcbeda491757cfa75678a0ec0c8b283a99",
+          "kind": "theorem",
+          "line": 29,
+          "name": "G08.inward_greedy"
+        },
+        {
+          "body_sha256": "33aa8461580befc3e35a6466312c77ecf0e356fdc9f96932b76e7a47edd9b6a2",
+          "kind": "theorem",
+          "line": 62,
+          "name": "G08.interior_visit"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G08-double-triple-parity/formal/LaneStep.lean",
+      "original_sha256": "24266801a4da1f19708cfd2d16cdfadf64aaf8f759c7d51de3c86b64bbcf03c4",
+      "selected_sha256": "abde96149835a98a39e4a4fe5fa8e11d146d418c9af1cc7c3584716562db6c0c"
+    },
+    "MixedBlocks": {
+      "declarations": [
+        {
+          "body_sha256": "7c960ba3fe99d39b507c57d6583e50d5bbb0904e238a6e16a999cca9ed3ae204",
+          "kind": "theorem",
+          "line": 8,
+          "name": "G03.fill_positive"
+        },
+        {
+          "body_sha256": "f369efea0d61ee2b009f389ae5430fb1ce11b467426c5bfef593b50bf068015b",
+          "kind": "theorem",
+          "line": 40,
+          "name": "G03.fill_negative"
+        },
+        {
+          "body_sha256": "cd9ba07bff83f772b0e1837b61adbbb52015fb53c030dcdaa5435ad42b934bc0",
+          "kind": "theorem",
+          "line": 119,
+          "name": "G03.odd_next"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G03-mixed-parity/formal/MixedBlocks.lean",
+      "original_sha256": "9515df2ce30602efcfe76ce89d2179ea2cb026160bd69433925c116a9deba039",
+      "selected_sha256": "b567b5638b14c4b385440258c20b062638eae97275ed6817560a3076018fdcbc"
+    },
+    "MixedGeometry": {
+      "declarations": [
+        {
+          "body_sha256": "f45b2f43e7160feaffb45371b12798345dad2e59e329bd1d66aa682e5aa279e0",
+          "kind": "theorem",
+          "line": 73,
+          "name": "G03.negative_step"
+        },
+        {
+          "body_sha256": "cd3a858e68fc01ac7b8fc2037729a86c61ecc7c4ef5ab9da08cb239a805a22a7",
+          "kind": "theorem",
+          "line": 96,
+          "name": "G03.negative_run"
+        },
+        {
+          "body_sha256": "1e75fa23589a2b9985ea109375bc32d2f84ae603a3b8120369146739965b7244",
+          "kind": "theorem",
+          "line": 116,
+          "name": "G03.cross_positive"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G03-mixed-parity/formal/MixedGeometry.lean",
+      "original_sha256": "eb7675ca67df2551f454e08d8af49cc61affb8465a91925822753a5bd5efa83a",
+      "selected_sha256": "0b60730e9d414710ad0b7cf7e8e983b3d0ec64dc508e67b6329c572375e15791"
+    },
+    "MixedGlobal": {
+      "declarations": [
+        {
+          "body_sha256": "1d545d2964107f933dd22a90533795a2a08ea1b19d69904c2a04a2a7564c78a7",
+          "kind": "def",
+          "line": 11,
+          "name": "G03.Box"
+        },
+        {
+          "body_sha256": "b76f3816001a6f7764d3963c5683e8baa8d38e3f79437ad017c5c617f817dbec",
+          "kind": "def",
+          "line": 54,
+          "name": "G03.boxList"
+        },
+        {
+          "body_sha256": "ecadacf1bc659a1b4359d31f801b43fe323cc739ff34f60b75f75583c7536b6b",
+          "kind": "theorem",
+          "line": 57,
+          "name": "G03.boxList_mem"
+        },
+        {
+          "body_sha256": "a478e59531089e59db55631d03a720a1f32c28cc46957bbf29c7bf37d0919901",
+          "kind": "theorem",
+          "line": 67,
+          "name": "G03.box_history_index"
+        },
+        {
+          "body_sha256": "8ebfc81b905173c263001181a19b3af70890b20b7cc4e81de12efeffa0bf69a8",
+          "kind": "theorem",
+          "line": 81,
+          "name": "G03.reached_box"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G03-mixed-parity/formal/MixedGlobal.lean",
+      "original_sha256": "dfe556bb8ab1907a8e7c9cdb7aed03ff19da3d29379763ebbd3aefbb578c1834",
+      "selected_sha256": "c06e6013eb7cf5698da74a03520c6b47a8c71433bb9cdadb7197adb429ccea52"
+    },
+    "OneSide": {
+      "declarations": [
+        {
+          "body_sha256": "7dcb649002b9b81b05cfc99d2fd8385897663ff1ab9c5ba15360a87677a2e0f3",
+          "kind": "structure",
+          "line": 7,
+          "name": "G01.Frame"
+        },
+        {
+          "body_sha256": "9af987fb79132c39040747648cf135520e69e55438cd05171e0160e334bffbec",
+          "kind": "def",
+          "line": 12,
+          "name": "G01.Sparse"
+        },
+        {
+          "body_sha256": "c2f3974788944065bac13b6d4d2c91419f8e14aa854d81a26cc5d239adf80340",
+          "kind": "theorem",
+          "line": 15,
+          "name": "G01.unused_active"
+        },
+        {
+          "body_sha256": "3d3b9b8e7a4d539feca429d57563b1ac6a3e980fdf752ba55be123a294491ed0",
+          "kind": "theorem",
+          "line": 27,
+          "name": "G01.frame_visit"
+        },
+        {
+          "body_sha256": "82d1e5d8fd6bbaeea657ac86e234f3ba15769cdb161cc6642790c3b80b1c9ef8",
+          "kind": "theorem",
+          "line": 37,
+          "name": "G01.descent_step"
+        },
+        {
+          "body_sha256": "4ee75ab12ce7846bcab0581eee317fe315c119734e9c606af175d6936759da2b",
+          "kind": "theorem",
+          "line": 64,
+          "name": "G01.sparse_descent_visit"
+        },
+        {
+          "body_sha256": "39db1ba90c006f9ab5a7dfbbd91689f6695bf9fcdc1b80dfb0c49143856710f2",
+          "kind": "theorem",
+          "line": 81,
+          "name": "G01.descent_finish"
+        },
+        {
+          "body_sha256": "ddc49d459fba86e096806e561a2fc1e3a889afe1d3fc733500007a091382ea8c",
+          "kind": "theorem",
+          "line": 108,
+          "name": "G01.active_min_greedy"
+        },
+        {
+          "body_sha256": "31a73ac9a5caad27b0257f933520c1a0a20b5b17ac47db9997b1a45c5bfce6ee",
+          "kind": "theorem",
+          "line": 129,
+          "name": "G01.fill_step"
+        },
+        {
+          "body_sha256": "fea29ce0254e7f191e4c8b9776161faf2dc0fe418cd2437b97d483f6e1b9cd0c",
+          "kind": "def",
+          "line": 185,
+          "name": "G01.Complete"
+        },
+        {
+          "body_sha256": "4fcbd2389df04a9a7c9d17d88b70cb275c3e78587651fd12d5139a2b2fc2f534",
+          "kind": "theorem",
+          "line": 188,
+          "name": "G01.fill_finish"
+        },
+        {
+          "body_sha256": "da07409296ccb38484dc0a0f3c859e5b739080c5623452365182e076cdb29d03",
+          "kind": "def",
+          "line": 219,
+          "name": "G01.Entrance"
+        },
+        {
+          "body_sha256": "5a7e94446695281aebb4d7d1057e3104682cb9e3ffa4bc2dca4250a31780956a",
+          "kind": "theorem",
+          "line": 224,
+          "name": "G01.opposite_disjoint"
+        },
+        {
+          "body_sha256": "6e12d562d3888f63b703628e192f7f2509a5554ba863928ee32090224e19d74d",
+          "kind": "theorem",
+          "line": 228,
+          "name": "G01.entrance_frame"
+        },
+        {
+          "body_sha256": "9e7bccaf51cce4818cbab547c752ef44c6b71ac1fa9a3a9b67e9c1e0415b0bc2",
+          "kind": "theorem",
+          "line": 247,
+          "name": "G01.one_side_filling"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G01-even-step-family/formal/OneSide.lean",
+      "original_sha256": "e7d190bc98e70c50e510ba58b326cf7de6642e826e4758b7b69ac6dad5555c25",
+      "selected_sha256": "08deb2b61e9ef242ebccbade69e3e555d09b679ab81e05c42b21088ba6b4eb7a"
+    },
+    "OriginalRule": {
+      "declarations": [
+        {
+          "body_sha256": "51448a8f2ca0d6ded124952742f311e3760ed3d6721b13fb989c502d57d0ce51",
+          "kind": "theorem",
+          "line": 17,
+          "name": "G01.difference_symm"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G01-even-step-family/formal/OriginalRule.lean",
+      "original_sha256": "bec8a451edc7c59101f778ed0c82041b5ae6332c0164541b8e2dd06037dd5eaf",
+      "selected_sha256": "f3c32cb363338c96749f765d47160f6840ee0c6b10d2e784f1d9fc14ba95c17d"
+    },
+    "RepairBlocks": {
+      "declarations": [
+        {
+          "body_sha256": "529e82ed9a43981f76e43f63e3e13dc6f03001f55fafcdaa5d5ed9209b012d3f",
+          "kind": "def",
+          "line": 8,
+          "name": "G09.Frontier"
+        },
+        {
+          "body_sha256": "9fa1587e900c35091370f5a3cf813f867ea572b1cb3af48d67647cc57aea20da",
+          "kind": "def",
+          "line": 12,
+          "name": "G09.repairBlock"
+        },
+        {
+          "body_sha256": "fc7ad1fae61f87bef02917707e80e6fc85f7b2cf1f5548135aa1643e18f1da64",
+          "kind": "theorem",
+          "line": 15,
+          "name": "G09.first_repair"
+        },
+        {
+          "body_sha256": "a67a782ad947b6c1e36d79a7387a3d7a3a3b223f4dd5ab2ac70d46d4117e1263",
+          "kind": "theorem",
+          "line": 28,
+          "name": "G09.after_repair"
+        },
+        {
+          "body_sha256": "521fa31b9ef98ee30e435e8dab857634e709d3ea9094b2ad5435429f8ce6fb16",
+          "kind": "theorem",
+          "line": 35,
+          "name": "G09.forward_three"
+        },
+        {
+          "body_sha256": "739a434f65604b737b4fb3c423ba272ca1b58d4ee26c76dfebc12bb416066fe9",
+          "kind": "theorem",
+          "line": 62,
+          "name": "G09.cross_after_three"
+        },
+        {
+          "body_sha256": "cf3f43ed47e54732a953c0928c3bd4e82237d7c398cdc477ff12202755ed1135",
+          "kind": "theorem",
+          "line": 79,
+          "name": "G09.last_negative"
+        },
+        {
+          "body_sha256": "edfc03fc49e6fcd759de7ee3bfe911faaa7cd37987cede571f3455d6fb9e8f34",
+          "kind": "theorem",
+          "line": 107,
+          "name": "G09.repair_certificate"
+        },
+        {
+          "body_sha256": "a71a53ee94e151d0265b5fc4335765b48a0252bcaddcfd6c045588e0f14ba723",
+          "kind": "theorem",
+          "line": 117,
+          "name": "G09.repair_finish"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G09-reachable-hole-repair/formal/RepairBlocks.lean",
+      "original_sha256": "5bb53b305b6e2e1dab8ed159e409e4c4c7fdd2174159759df311e0da038f9ebf",
+      "selected_sha256": "5bb53b305b6e2e1dab8ed159e409e4c4c7fdd2174159759df311e0da038f9ebf"
+    },
+    "RepairEntrance": {
+      "declarations": [
+        {
+          "body_sha256": "25abbe574140e446bd329f96b573126a2146c9447046b51805db7d54763b34d0",
+          "kind": "def",
+          "line": 10,
+          "name": "G09.distances"
+        },
+        {
+          "body_sha256": "9c462fd91892d4f577ae5542086c720f2dfd8cdbb92214d51a947d2c73296e85",
+          "kind": "def",
+          "line": 12,
+          "name": "G09.entrance"
+        },
+        {
+          "body_sha256": "437f0aaa7b4641a27b25d558fc0ccd1e895dec417b5019d90ce3d442f03a1adf",
+          "kind": "instance",
+          "line": 18,
+          "name": "G09.distances_decidable"
+        },
+        {
+          "body_sha256": "040ebd88e79d7dac158a3a35800b0eed69844b1e40b577335f6b907ddf178d27",
+          "kind": "instance",
+          "line": 22,
+          "name": "G09.zero_used_decidable"
+        },
+        {
+          "body_sha256": "ddbcc6e25b4ad2b80e48a48c9b0d27b178bc02ec0936071b3151a4a5d4b3a09f",
+          "kind": "instance",
+          "line": 25,
+          "name": "G09.visit_used_decidable"
+        },
+        {
+          "body_sha256": "a9f5f1c8d92b43e9dc72e9323eccc08936cc697397b9f9e633201fa244a888c4",
+          "kind": "instance",
+          "line": 29,
+          "name": "G09.finite_greedy_decidable"
+        },
+        {
+          "body_sha256": "726b4753b1fc6a07022f085d89ae8862676a81cf245ea459cea2f456bfa3e528",
+          "kind": "instance",
+          "line": 34,
+          "name": "G09.certificate_decidable"
+        },
+        {
+          "body_sha256": "0a4d2547fc62e06cef8b60e27055a3710bd9fe3b3acd8c01d7ecbc5a84abc41e",
+          "kind": "theorem",
+          "line": 42,
+          "name": "G09.entrance_certificate"
+        },
+        {
+          "body_sha256": "bafe34502bea75cdf1a20fbbe66620d8d94cd81bca595196bb2b9d7744ec63e7",
+          "kind": "theorem",
+          "line": 45,
+          "name": "G09.certificate_take"
+        },
+        {
+          "body_sha256": "fa572433e39241f4f25259f2c108ad93cff987a870ccf579d5d3a4db8e05681a",
+          "kind": "theorem",
+          "line": 54,
+          "name": "G09.entrance_history"
+        },
+        {
+          "body_sha256": "9c67174a0dacf32fde84f29bad5a5bf163db06253a9c3447b9b91d2e37282d51",
+          "kind": "theorem",
+          "line": 64,
+          "name": "G09.entrance_frontier"
+        },
+        {
+          "body_sha256": "098dd6937b76523616c50ebc573a14ff5befa49eb4581121f00f4aa9bf346135",
+          "kind": "theorem",
+          "line": 72,
+          "name": "G09.first_checkpoint_frame"
+        },
+        {
+          "body_sha256": "d67c79801cc02988cef812c7c47e0909b4e80a219eb99031837ef4d95e2c91ad",
+          "kind": "theorem",
+          "line": 78,
+          "name": "G09.second_checkpoint_frame"
+        },
+        {
+          "body_sha256": "c00c6876dc796c26bade9782d362921028e3af63396a2d30b59edc139328d305",
+          "kind": "theorem",
+          "line": 84,
+          "name": "G09.original_hole"
+        },
+        {
+          "body_sha256": "fcc95864d15183a456e6f656c5a3f405a1b482fddbfda29e4e1f55c6998d5718",
+          "kind": "theorem",
+          "line": 94,
+          "name": "G09.second_hole"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G09-reachable-hole-repair/formal/RepairEntrance.lean",
+      "original_sha256": "d38790abf5872ba8d410be656d0466186fbfa59884b1cd38acb5c8972c37681a",
+      "selected_sha256": "d38790abf5872ba8d410be656d0466186fbfa59884b1cd38acb5c8972c37681a"
+    },
+    "RepairGlobal": {
+      "declarations": [
+        {
+          "body_sha256": "6e8186453545093fbc7b8b1bb6a3e91c8a91266dd3cf74866bd637f2e925d332",
+          "kind": "def",
+          "line": 8,
+          "name": "G09.Checkpoints"
+        },
+        {
+          "body_sha256": "0df7d81a53a3d84afa2b37858d53faefb7ad919507438c15db8b248571f39349",
+          "kind": "def",
+          "line": 11,
+          "name": "G09.Repairs"
+        },
+        {
+          "body_sha256": "dc8921598c9523602e3f4d2acfa7c92daeaba2d92d79e1ab19d692030c98d37b",
+          "kind": "theorem",
+          "line": 14,
+          "name": "G09.tail_hypotheses"
+        },
+        {
+          "body_sha256": "8a3a22f866fc42b593c90343dac2bc179d961e92ecf08175312a92b30c48c362",
+          "kind": "theorem",
+          "line": 22,
+          "name": "G09.checkpoints"
+        },
+        {
+          "body_sha256": "a8bc8b1a288c58869cd26f3a501bb1e68259faf48b5fdee5cb49cc71eb534441",
+          "kind": "theorem",
+          "line": 37,
+          "name": "G09.immediate_repairs"
+        },
+        {
+          "body_sha256": "e201093a8da3798cf348af7af8bb3ef24f2cd99c23b287f7e4b341125905e9cc",
+          "kind": "def",
+          "line": 60,
+          "name": "G09.RepairBound"
+        },
+        {
+          "body_sha256": "4d6b635dbefacb7fa2c8f5bc3c0d8ad1a85ca2639fea5d4bbd64159df178f681",
+          "kind": "theorem",
+          "line": 64,
+          "name": "G09.repairs_within_three"
+        },
+        {
+          "body_sha256": "5861c0668977bd33c727de91e6636b376c058e9a258313c7479f8bb2f9a8dc47",
+          "kind": "theorem",
+          "line": 91,
+          "name": "G09.coverage"
+        },
+        {
+          "body_sha256": "dc0f7af1735a6d77a148adf6b0394edf55af98d9c53a16428fa4b365c8ba1bca",
+          "kind": "theorem",
+          "line": 98,
+          "name": "G09.distances_unbounded"
+        },
+        {
+          "body_sha256": "2b92c27594722ad2ebb3f619fb3ed88cda334cf023ff16be03b5d683ed646896",
+          "kind": "theorem",
+          "line": 103,
+          "name": "G09.literal_checkpoints"
+        },
+        {
+          "body_sha256": "da1d1ae2601e9b1c2c145a742ffcb170164ea2842b17a078f169899a548383fc",
+          "kind": "theorem",
+          "line": 106,
+          "name": "G09.literal_repairs"
+        },
+        {
+          "body_sha256": "c2f1fc66d4cbcf105613c8d822707de9e26cd23dfb64d50583b8f8f4ceb038d6",
+          "kind": "theorem",
+          "line": 109,
+          "name": "G09.literal_coverage"
+        },
+        {
+          "body_sha256": "9ff7ea60d029856ca8ccde8ac92e5f03783672dbb6c22b76cdb16aef43b2d870",
+          "kind": "theorem",
+          "line": 112,
+          "name": "G09.literal_repair_bound"
+        },
+        {
+          "body_sha256": "c7aa50df0f4b48b8af0b58046e1d53e368ded09d8b796eaa02e062158e025469",
+          "kind": "theorem",
+          "line": 115,
+          "name": "G09.literal_exists"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G09-reachable-hole-repair/formal/RepairGlobal.lean",
+      "original_sha256": "cd64f97a20e3f3ae4eb322795f82010d0d1cb5ce928e32016a7cfe322a931962",
+      "selected_sha256": "76b398da3380eb3f3955d1f30a395ffbaa74441ef5b327c0c1fef471074ed34b"
+    },
+    "ResidueAlgebra": {
+      "declarations": [
+        {
+          "body_sha256": "2605b23595eef7ed16ba4ce394bf71a078f2332ab0fedc2ef2e2a78f3540f24b",
+          "kind": "def",
+          "line": 9,
+          "name": "G18.Shift"
+        },
+        {
+          "body_sha256": "9c788a3f876ee1177f1d90639212571bf7f3dda6c9dcc900c8815ee6e279831d",
+          "kind": "theorem",
+          "line": 11,
+          "name": "G18.shift_zero"
+        },
+        {
+          "body_sha256": "a4cd21a2cdfa6c7dc46a2814bf2c04d7521c3fe391e0f0a939bca51cd57fec81",
+          "kind": "theorem",
+          "line": 15,
+          "name": "G18.shift_neg"
+        },
+        {
+          "body_sha256": "0c40164f8c90f7266d3204a40b47c38caf690baf365822efa63bd22350297b43",
+          "kind": "theorem",
+          "line": 22,
+          "name": "G18.shift_add"
+        },
+        {
+          "body_sha256": "fb9a3cb82418a6d9b110a53498c8ff539f9674cc0ed1291c49cb2806b46d6e5b",
+          "kind": "theorem",
+          "line": 28,
+          "name": "G18.shift_nat_mul"
+        },
+        {
+          "body_sha256": "75c4b26f723ea969515e90306439fa781b0d73f5ae7f5d78aa7fc1e83b44c0a3",
+          "kind": "theorem",
+          "line": 35,
+          "name": "G18.shift_int_mul"
+        },
+        {
+          "body_sha256": "cf52cce5424f590626a58d4ac6ee93559b8506c4f3235ea47df0e7a5e2603ee0",
+          "kind": "theorem",
+          "line": 43,
+          "name": "G18.shift_mod"
+        },
+        {
+          "body_sha256": "10b09912b063cf52027d894f9e200027f4b5c8e7c2f11628559730f846781891",
+          "kind": "theorem",
+          "line": 54,
+          "name": "G18.shift_gcd"
+        },
+        {
+          "body_sha256": "edbe59cd33f696358d5927649fffa83a1f50334f6f52ebeda77b1e9be4282453",
+          "kind": "theorem",
+          "line": 65,
+          "name": "G18.shift_fold_gcd"
+        },
+        {
+          "body_sha256": "b2e0f9c84b71229ea02dabe1fbc9439b06442838c6536b37deaadf86bc783d7e",
+          "kind": "theorem",
+          "line": 75,
+          "name": "G18.shift_one_all"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/ResidueAlgebra.lean",
+      "original_sha256": "832ecb877b6ec3b536f7c228c235c73914cb5d78d9a0fd5aa64928185239561a",
+      "selected_sha256": "666843042aa4b818a6c7bc274dbe5407800a2f9ee27ce0430e3ff861b418ebf6"
+    },
+    "ResidueCoverage": {
+      "declarations": [
+        {
+          "body_sha256": "f66c10c3c1e99b2183645578ddf7a13df43f7fc6456fd0325d5a4eae63382782",
+          "kind": "theorem",
+          "line": 10,
+          "name": "G18.omitted_add"
+        },
+        {
+          "body_sha256": "943dbf4399fc70cbb45cceda8653d0deb628aeae7f368807254d9c86c9b966dd",
+          "kind": "theorem",
+          "line": 23,
+          "name": "G18.omitted_sub"
+        },
+        {
+          "body_sha256": "e8e5ef0c659ce49722223e79b08e4f058d62b9b2f0e35f2fbc7497bc1ca438bb",
+          "kind": "theorem",
+          "line": 36,
+          "name": "G18.omitted_shift"
+        },
+        {
+          "body_sha256": "4d15991f7b1621e4c7f1a81967a000193630f64c14ceee93a3d97af5cb7d80c1",
+          "kind": "theorem",
+          "line": 48,
+          "name": "G18.omitted_period"
+        },
+        {
+          "body_sha256": "6df344663f35c96c0ecda91a1239d4d74ceeffc693b15b49cfa1f4e576f24abb",
+          "kind": "theorem",
+          "line": 53,
+          "name": "G18.all_omitted_classes"
+        },
+        {
+          "body_sha256": "e2437ac2ee16264d53e71fd6a558aedbc28ff34990653c4d7e59ed909b2d81a0",
+          "kind": "theorem",
+          "line": 63,
+          "name": "G18.visited_class_bounded"
+        },
+        {
+          "body_sha256": "2c4c2fcc90014c5098dedbcfb7f746d3d77d924f945106f87ada4bea9ad5d3a1",
+          "kind": "theorem",
+          "line": 89,
+          "name": "G18.finite_class_bound"
+        },
+        {
+          "body_sha256": "06a8ab6b5b61b0528e4cf7f3dc401acad18386f64981086ad9c5c8ee4891f380",
+          "kind": "theorem",
+          "line": 109,
+          "name": "G18.literal_coverage"
+        },
+        {
+          "body_sha256": "57526f098cd36ac7c4e763be49486ac478e66eee5286f79b8d6ff18c73727e31",
+          "kind": "theorem",
+          "line": 134,
+          "name": "G18.tail_unbounded"
+        },
+        {
+          "body_sha256": "c06ec3aeee2d5df26d29c8867716b9ff561e84411744d625f482422b327e7466",
+          "kind": "theorem",
+          "line": 150,
+          "name": "G18.literal_exists"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/ResidueCoverage.lean",
+      "original_sha256": "a7c4fbbd1951f083f24f22ef70fe33741feb21c20b5735f330278529d7deaff1",
+      "selected_sha256": "a7c4fbbd1951f083f24f22ef70fe33741feb21c20b5735f330278529d7deaff1"
+    },
+    "ResidueOmission": {
+      "declarations": [
+        {
+          "body_sha256": "c7027e7e80943cc842c3d160b19a510adfdc5dbe336bc123f975dbad38abb4bd",
+          "kind": "def",
+          "line": 11,
+          "name": "G18.ResidueTail"
+        },
+        {
+          "body_sha256": "c29eadb59dd70b4e45d3d30dcbf0cfad22d18437060b475a415c11385e153ae9",
+          "kind": "def",
+          "line": 14,
+          "name": "G18.Missing"
+        },
+        {
+          "body_sha256": "2d58233d4d408f57d987ad9bd0fbb8e483a152309f9df5f20bf380e76a352018",
+          "kind": "def",
+          "line": 16,
+          "name": "G18.OmittedClass"
+        },
+        {
+          "body_sha256": "796ed18f0ff6acebf8f2b8557ef3188878f0048e776c933f0336ba5789c2d40c",
+          "kind": "theorem",
+          "line": 19,
+          "name": "G18.eventually_ne"
+        },
+        {
+          "body_sha256": "d76990066ed6e60581c28bfdb09c6a98c777bab4d8b28fb20284f72f83bd91d0",
+          "kind": "theorem",
+          "line": 30,
+          "name": "G18.finite_eventually"
+        },
+        {
+          "body_sha256": "ad1290242f6df88f48b27a583f7f08458f1432844f1133ad6800608d856b48cf",
+          "kind": "theorem",
+          "line": 46,
+          "name": "G18.eventually_outside"
+        },
+        {
+          "body_sha256": "c82166650979ae97d508fca94a37c03b77d39b6caa5d7a512c3d0fe2cb488cf0",
+          "kind": "theorem",
+          "line": 61,
+          "name": "G18.prefix_bound"
+        },
+        {
+          "body_sha256": "b592525052ac1fec9f859c08d5f9a64f4b9f72003bad0947d804d7a90ce3f264",
+          "kind": "theorem",
+          "line": 76,
+          "name": "G18.missing_avoids"
+        },
+        {
+          "body_sha256": "4fcdfc0d61454dc032657c28c7d57f18078edb2704d020058e151e18f209471e",
+          "kind": "theorem",
+          "line": 90,
+          "name": "G18.class_difference"
+        },
+        {
+          "body_sha256": "cbf7f61370d1e3f5d17ed448689d54abc36c82eca7b579807282070630dd25fb",
+          "kind": "theorem",
+          "line": 102,
+          "name": "G18.positive_distance_mod"
+        },
+        {
+          "body_sha256": "98034976335aee25aa4a1f1fe42eaf467094e8d8d01a84609c11b10d9db6d68a",
+          "kind": "theorem",
+          "line": 110,
+          "name": "G18.upper_class"
+        },
+        {
+          "body_sha256": "ef39e0a18752207a711fd9774971d1c73726fd9a7dd1fb66faa0deb148c11586",
+          "kind": "theorem",
+          "line": 133,
+          "name": "G18.lower_class"
+        },
+        {
+          "body_sha256": "ac46adbd7f12e011f0544963cd2fb98f09a0218d755533192970ddb833590abe",
+          "kind": "theorem",
+          "line": 158,
+          "name": "G18.class_above"
+        },
+        {
+          "body_sha256": "845e2d4cb1506c727e9f7803b63149acf2f6a06c69cd630eed10ca72d992a488",
+          "kind": "theorem",
+          "line": 170,
+          "name": "G18.class_below"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/ResidueOmission.lean",
+      "original_sha256": "edd138ed791f2b0681e2eda3a750f5c246818c6fb89e3b2fac49bdcb88b4a006",
+      "selected_sha256": "edd138ed791f2b0681e2eda3a750f5c246818c6fb89e3b2fac49bdcb88b4a006"
+    },
+    "ResidueResults": {
+      "declarations": [
+        {
+          "body_sha256": "de52384ff56e5f99d21f7854325ff04b411925eaf344e7fab2fc18fc20ffe245",
+          "kind": "theorem",
+          "line": 8,
+          "name": "G18.progression_exists"
+        },
+        {
+          "body_sha256": "529cc308d9e97abef4e02b74aa15f5e56ff8883f32a95f774018c838f171be04",
+          "kind": "theorem",
+          "line": 21,
+          "name": "G18.odd_tail_coverage"
+        },
+        {
+          "body_sha256": "2cbf1aab8de390913307b412e41bfbd03a23e3b1bc5c91b540dda118e2430bbf",
+          "kind": "def",
+          "line": 32,
+          "name": "G18.progressionFive"
+        },
+        {
+          "body_sha256": "b3c91bba58d46485fc9fa298d12816a9e7c5738aef4fdf400b090952505ab6cc",
+          "kind": "theorem",
+          "line": 34,
+          "name": "G18.progression_five_no_short"
+        },
+        {
+          "body_sha256": "28c785edd51d2f06084b35fcd01048aba52e7264ee6c5e8befeedb64524500da",
+          "kind": "theorem",
+          "line": 39,
+          "name": "G18.progression_five_exists"
+        },
+        {
+          "body_sha256": "64c721da85a8ca32613c9f327cd90f98eaaf886770ef4f12071ce7cee7fbbada",
+          "kind": "def",
+          "line": 46,
+          "name": "G18.mixedSix"
+        },
+        {
+          "body_sha256": "1c204b25336f8380522e936a3abe806f86b5a127f8d9f28806b4010c3b9d4ea5",
+          "kind": "theorem",
+          "line": 48,
+          "name": "G18.mixed_six_residues"
+        },
+        {
+          "body_sha256": "c51f176f9ea679c56e4169f3f8a3d16bec7cea3a13d527b01d8d7412d34e1664",
+          "kind": "theorem",
+          "line": 52,
+          "name": "G18.mixed_six_exists"
+        },
+        {
+          "body_sha256": "bbfdf13381dff8fe5d44afb3ddbda66899e8d0411cf16d6094f1f51777f5d3e6",
+          "kind": "theorem",
+          "line": 63,
+          "name": "G18.modulus_one_exists"
+        },
+        {
+          "body_sha256": "c9d0619ecc652a6f4b5babb4a46d2d31bf78e7ed1c96f18dcdd57ab974c59a1f",
+          "kind": "theorem",
+          "line": 73,
+          "name": "G18.duplicate_residues_exists"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/ResidueResults.lean",
+      "original_sha256": "8b6d12ccdd9eb5145901000d83d49a8d5ca53844c87275c4bb37371dae78aa2b",
+      "selected_sha256": "8b6d12ccdd9eb5145901000d83d49a8d5ca53844c87275c4bb37371dae78aa2b"
+    },
+    "Semantics": {
+      "declarations": [
+        {
+          "body_sha256": "a38685c53654ae4b9fef495cc8badd85a0b6d71a8f79aa9c6ee2ba7b3a4b8cd2",
+          "kind": "structure",
+          "line": 7,
+          "name": "G01.State"
+        },
+        {
+          "body_sha256": "0db67e1e1a6a2b159b457e8a9f7c129a0812b75361f242dcf4da019c3c45f440",
+          "kind": "def",
+          "line": 11,
+          "name": "G01.Preferred"
+        },
+        {
+          "body_sha256": "38783ed5572716eb00d9ac1e4d326ee20ba43b975c9d9f9d34987ba4d481afcf",
+          "kind": "def",
+          "line": 14,
+          "name": "G01.Allowed"
+        },
+        {
+          "body_sha256": "63656dc92a5ba0137b52b23ebbe0361308b86e8134501aedf1c8a7c7faea896d",
+          "kind": "def",
+          "line": 17,
+          "name": "G01.Greedy"
+        },
+        {
+          "body_sha256": "c6b23a3a2209c846fd7da61c8fdc23595ac8aa82e29e42aff8a66ee79a5d4022",
+          "kind": "def",
+          "line": 21,
+          "name": "G01.visit"
+        },
+        {
+          "body_sha256": "aa3a0d6969875ff2ca283e504233047e777d7e6ed3f5ba487ca8fe53e8921338",
+          "kind": "inductive",
+          "line": 24,
+          "name": "G01.Reaches"
+        },
+        {
+          "body_sha256": "92e31ce3d3c5e3fe19a66460fde3cfe0c7034f8b2ea76fe3e1e08a0476551a2c",
+          "kind": "theorem",
+          "line": 28,
+          "name": "G01.Reaches.trans"
+        },
+        {
+          "body_sha256": "f2a3f246942a2d53ce2f20370740d665221474b1b435013c3ef0792becae23c9",
+          "kind": "def",
+          "line": 34,
+          "name": "G01.rank"
+        },
+        {
+          "body_sha256": "36b365c2959e8647cd3914d07ad735d165d302814e8c12efaf868603c101368c",
+          "kind": "theorem",
+          "line": 36,
+          "name": "G01.rank_order"
+        },
+        {
+          "body_sha256": "3df754daf83c8a3ead4e8559471c844ab4a380962c6de7aefa50d9f232c24fe3",
+          "kind": "theorem",
+          "line": 42,
+          "name": "G01.least_nat"
+        },
+        {
+          "body_sha256": "bcae41866cb68ec1df12a4c9b0263ed7baeefd447ddab07bee8d7e7c1a596fe7",
+          "kind": "theorem",
+          "line": 57,
+          "name": "G01.greedy_exists"
+        },
+        {
+          "body_sha256": "f576c4d86f6e0746b4cb768084e206679fdb4cbd8e3ee0fc6bfefa7afa1426c4",
+          "kind": "theorem",
+          "line": 69,
+          "name": "G01.greedy_unique"
+        },
+        {
+          "body_sha256": "884cdf27acfd9b86b496a2e5a48138fad86210f89e4832c07d3caf20339d0151",
+          "kind": "def",
+          "line": 79,
+          "name": "G01.point"
+        },
+        {
+          "body_sha256": "f5e2f8ee49170295fd8370168b245ed364f0b8028ab70938bcdb9c86ae73f5c5",
+          "kind": "theorem",
+          "line": 81,
+          "name": "G01.point_abs"
+        },
+        {
+          "body_sha256": "a8fa87860cf52239776ab9f54325e1d04605e72265f834483ed12128807654a5",
+          "kind": "theorem",
+          "line": 84,
+          "name": "G01.point_injective"
+        },
+        {
+          "body_sha256": "1e20b4f28e3aa0201d43515115276284e6cd17a1c782a0482a965ff15ed89216",
+          "kind": "theorem",
+          "line": 87,
+          "name": "G01.point_cases"
+        },
+        {
+          "body_sha256": "28ecc74e46c6119451f779e82fb2bb4370faa1a3a5c0f5132cccc8ac16f83b11",
+          "kind": "theorem",
+          "line": 93,
+          "name": "G01.point_sub_distance"
+        },
+        {
+          "body_sha256": "fceeda16619c30aa599757799f8e63f0dfec86b5c582a0ab52349212ef668abf",
+          "kind": "theorem",
+          "line": 101,
+          "name": "G01.point_add_distance"
+        },
+        {
+          "body_sha256": "fc2285c4311cac38b897e41c900ff35465b67b64d36ba6649f2adb94fbba1175",
+          "kind": "def",
+          "line": 116,
+          "name": "G01.history"
+        },
+        {
+          "body_sha256": "c7a793b0f5384619fc3bf748a30140da97fbf9d2f4e785abaf30091dad8d0d32",
+          "kind": "def",
+          "line": 127,
+          "name": "G01.Coverage"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G01-even-step-family/formal/Semantics.lean",
+      "original_sha256": "c537db891c0e6ee8e1493236dd038a2c82402a31394daf819ead3b3aaa1fcd00",
+      "selected_sha256": "8ddf88420d2568cae21d3e681918b36027273bd386e4c0c1d72b2d5ca214d3f3"
+    },
+    "Shielded": {
+      "declarations": [
+        {
+          "body_sha256": "f2c0958b74c3575416aa4985a484fe869eb19b10ede586209bee903b5cd7727e",
+          "kind": "theorem",
+          "line": 8,
+          "name": "G03.reaches_used"
+        },
+        {
+          "body_sha256": "3f0378b6a4aae5d737c4d30c7d0cc400906b8141b6245a5e771b337fc8a8992e",
+          "kind": "def",
+          "line": 14,
+          "name": "G03.Inside"
+        },
+        {
+          "body_sha256": "5e16134dde4c3e4e872598602554e575945e84e66cb9f70686d19e8c51513705",
+          "kind": "theorem",
+          "line": 17,
+          "name": "G03.inside_visit"
+        },
+        {
+          "body_sha256": "e00394335f08efcfa75bc57025de4401fcc91f609c4b57012a2cafdcb4da2b4e",
+          "kind": "theorem",
+          "line": 24,
+          "name": "G03.inside_greedy"
+        },
+        {
+          "body_sha256": "08b8f7c3a87aba7d52b1a6f3acc745a08ef55291bab2bb74f506e0a0411e31b8",
+          "kind": "theorem",
+          "line": 35,
+          "name": "G03.transfer_inside"
+        },
+        {
+          "body_sha256": "2aeb2fc75195f4c0d445ca1e55eb63a918ce9bb07f33b983f659736a42a46e52",
+          "kind": "theorem",
+          "line": 58,
+          "name": "G03.shielded_filling"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G03-mixed-parity/formal/Shielded.lean",
+      "original_sha256": "8c0493694b7ca0b80054b4043053b5180eac2739b0762cdf3f7d11d599e93181",
+      "selected_sha256": "fd12528e8d76b699021f304e778108fdbd1476ecc7992d1f3184c74be8c9dbf0"
+    },
+    "TripleBlocks": {
+      "declarations": [
+        {
+          "body_sha256": "44fe5030cbd1f0027a1df2f4368ce7357dbb1aee9e2b2df3e38c7d7189b2c967",
+          "kind": "def",
+          "line": 8,
+          "name": "G07.Family"
+        },
+        {
+          "body_sha256": "3ef5c3fbedfb07df838340057e5f2c47f1be49f7ae864621aa56960d56104ae8",
+          "kind": "theorem",
+          "line": 12,
+          "name": "G07.next_positive"
+        },
+        {
+          "body_sha256": "189fad9d5a9eb3adfd6a53ebfbee8fa82bbd690e1cdf3909e079d37d3135664b",
+          "kind": "theorem",
+          "line": 29,
+          "name": "G07.second_positive"
+        },
+        {
+          "body_sha256": "8ad2e9901cb1005beeb3f94c463a923280e546804c4bf48a28f4cae7931fb07a",
+          "kind": "theorem",
+          "line": 55,
+          "name": "G07.cross_negative"
+        },
+        {
+          "body_sha256": "60a750b1599dddb838b4d6d7b4e790cda835a35519b24fdc4fe99d81c24b8d3d",
+          "kind": "theorem",
+          "line": 81,
+          "name": "G07.repair_negative"
+        },
+        {
+          "body_sha256": "6fea2fe56821c30b5eb832aeb4431b6a99d34e2fdc2fc2d736f27c5248dbf980",
+          "kind": "def",
+          "line": 97,
+          "name": "G07.block"
+        },
+        {
+          "body_sha256": "c761d642dbae2a7038b78a522414d96dd4a9bffe225c8be9f38892f316b99afc",
+          "kind": "theorem",
+          "line": 99,
+          "name": "G07.finite_of_greedy"
+        },
+        {
+          "body_sha256": "d5d9aacde8c91d6cc45cd69dfa8eee94e0749534894e570a20a60f9a9069aee1",
+          "kind": "theorem",
+          "line": 102,
+          "name": "G07.block_certificate"
+        },
+        {
+          "body_sha256": "d08e7845ff33ce74602b89bd9906bf3377d9c3b95eb704432c6ad50bdfb81e3c",
+          "kind": "theorem",
+          "line": 119,
+          "name": "G07.block_finish"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G07-unit-triple-repair/formal/TripleBlocks.lean",
+      "original_sha256": "25b3ea65068c2ad5180ff2a119a510ed7f34a07016af102e7634f8c0dac82307",
+      "selected_sha256": "25b3ea65068c2ad5180ff2a119a510ed7f34a07016af102e7634f8c0dac82307"
+    },
+    "TripleGlobal": {
+      "declarations": [
+        {
+          "body_sha256": "8cfbe203bc144751f549c7c58ff9f04186050f420233cb0f47676ebb6292abf6",
+          "kind": "def",
+          "line": 10,
+          "name": "G07.initialPrefix"
+        },
+        {
+          "body_sha256": "d585bf95ae7ed1cc902f2a0302c46af63a50a42d2ad6b78ba32b57683732544b",
+          "kind": "theorem",
+          "line": 12,
+          "name": "G07.initial_certificate"
+        },
+        {
+          "body_sha256": "4ec69e126b22b3df5d601c8fbb6200abdbb18545182cc42db3a9a28b46875a58",
+          "kind": "theorem",
+          "line": 21,
+          "name": "G07.initial_history"
+        },
+        {
+          "body_sha256": "f6a0c30344e2e89c93f20c98ccd042a1eb5ade65653cc1dc55dcd5796af188fe",
+          "kind": "theorem",
+          "line": 25,
+          "name": "G07.initial_box"
+        },
+        {
+          "body_sha256": "4b886ea4415b01ebd6cd5f2ee1b6b447ea895d20a6abfb8ebc8e54f2f03d22e9",
+          "kind": "def",
+          "line": 36,
+          "name": "G07.Checkpoints"
+        },
+        {
+          "body_sha256": "f1021fc134fbb80124c71f2c1b38da10d619d0b9aaa3bfe62378b8a24b3b8793",
+          "kind": "theorem",
+          "line": 40,
+          "name": "G07.family_blocks"
+        },
+        {
+          "body_sha256": "00b44823d7f1a4501bb25cb0003a907aece592b9f24058eba5ff12e4f701dbc3",
+          "kind": "theorem",
+          "line": 73,
+          "name": "G07.family_checkpoints"
+        },
+        {
+          "body_sha256": "c775ed59e4d8658704381c3ae7b9c33c16296a99db5a92621192124d9d5718a2",
+          "kind": "theorem",
+          "line": 97,
+          "name": "G07.family_coverage"
+        },
+        {
+          "body_sha256": "41af7beb12aa23865c62fed074e03004904e7c780b755e908b5866ba036c2419",
+          "kind": "theorem",
+          "line": 104,
+          "name": "G07.family_unbounded"
+        },
+        {
+          "body_sha256": "4612d9df8b7881460829ccac1d8cdde3c7d9e6f5b0a1d0e7917ad3f0e72c81c6",
+          "kind": "theorem",
+          "line": 108,
+          "name": "G07.literal_checkpoints"
+        },
+        {
+          "body_sha256": "84775c09db8fe87891a50b3a1ced31d636f7df8ed707d470838581701c577453",
+          "kind": "theorem",
+          "line": 111,
+          "name": "G07.literal_coverage"
+        },
+        {
+          "body_sha256": "5df51998fbff9250a212031250cbe2526eae595f4c8290c9b07b0ded379eaa46",
+          "kind": "theorem",
+          "line": 114,
+          "name": "G07.literal_exists"
+        },
+        {
+          "body_sha256": "b4cb40a7f2606daa37f5bacba52cb5874abc4e4ab05cdf51b5b3acb8d182c08d",
+          "kind": "def",
+          "line": 119,
+          "name": "G07.reference"
+        },
+        {
+          "body_sha256": "95e28abe0b6211c9b0335b1107c37425bbd11a8f592d31c69425397f4be432a7",
+          "kind": "theorem",
+          "line": 121,
+          "name": "G07.reference_family"
+        },
+        {
+          "body_sha256": "f5d1d22620c4dbe5c4f1435eb418497ec138c69f82ad19d82c92f50e0444a77f",
+          "kind": "def",
+          "line": 136,
+          "name": "G07.optional"
+        },
+        {
+          "body_sha256": "726994729c637bbc7fc4bc88701f7429c314bb27fd2aaeaed048f3dc6d5cfa59",
+          "kind": "theorem",
+          "line": 139,
+          "name": "G07.optional_family"
+        },
+        {
+          "body_sha256": "a6877a15b0ee01f291c6e900036185fba0061564c90a01289dcedcb127e60b20",
+          "kind": "theorem",
+          "line": 147,
+          "name": "G07.optional_result"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G07-unit-triple-repair/formal/TripleGlobal.lean",
+      "original_sha256": "f11de00ade9e8a6d9d62e2782c79e96fb1ddc3e084c4eea713affb3c2bb77440",
+      "selected_sha256": "eb88b9a71d3f76343a902a143ae7f2c60cf190775db860890d7b38af4bc808af"
+    },
+    "TripleObstruction": {
+      "declarations": [
+        {
+          "body_sha256": "6e3d8ac3e32b8012e156af90d7f9eb543a71749227aae628ec0db8d57c9fbd4e",
+          "kind": "def",
+          "line": 10,
+          "name": "G07.seed"
+        },
+        {
+          "body_sha256": "0300ac92e90b1ba1727b08040368694d17fd3cdc4d37440b3b86981e8f971cb6",
+          "kind": "def",
+          "line": 11,
+          "name": "G07.inwardPrefix"
+        },
+        {
+          "body_sha256": "06b2b59b05c1a646bb62b9f0687bc53356ea8e9b72be4a8693c31f55c3f53cae",
+          "kind": "def",
+          "line": 13,
+          "name": "G07.blockedState"
+        },
+        {
+          "body_sha256": "ac211d842a40e46c092bcc1bd6bfc08ac8401bd17b13c8edb705238418a41867",
+          "kind": "theorem",
+          "line": 27,
+          "name": "G07.inward_certificate"
+        },
+        {
+          "body_sha256": "67321c30205b57d639a6ff9fe53584c98d1c8f3a9c01bf6d84e3ec4a7055a162",
+          "kind": "theorem",
+          "line": 37,
+          "name": "G07.blocked_used"
+        },
+        {
+          "body_sha256": "34defce8ad0a30af9ded797ff43e072ab048b3512dada08c05265b11acc2372a",
+          "kind": "theorem",
+          "line": 41,
+          "name": "G07.blocked_no_interior"
+        },
+        {
+          "body_sha256": "e0d06ae78f92d2d0679a32e64ffb53a9e64aae13ac8d5b8041f442063dd14a01",
+          "kind": "theorem",
+          "line": 49,
+          "name": "G07.reaches_used"
+        },
+        {
+          "body_sha256": "6e20d5df8554678390fb0bbdeebf6130f8f291c4a53455bc27fa92a69b783703",
+          "kind": "theorem",
+          "line": 54,
+          "name": "G07.blocked_no_completion"
+        },
+        {
+          "body_sha256": "5c922722f18ea5f0728e65ee4caffb784aafd555304b45a1ebfcf3509b7b9868",
+          "kind": "theorem",
+          "line": 65,
+          "name": "G07.finish_preserves_used"
+        },
+        {
+          "body_sha256": "c91114d9c369442c5f9a8848e1ea880c7feecabb5c63e83962ba4249c2ca9a24",
+          "kind": "theorem",
+          "line": 70,
+          "name": "G07.certificate_prevents_completion"
+        },
+        {
+          "body_sha256": "e21ae94f7153ce9cd2c0926b5739c53d14be31cb175c725095311c6276acde65",
+          "kind": "theorem",
+          "line": 86,
+          "name": "G07.local_filling_impossible"
+        },
+        {
+          "body_sha256": "ab7bc41e30be13dc1256b0ca61b5eca3f9cff85f1a4ff223b457d0cdaa770bda",
+          "kind": "theorem",
+          "line": 97,
+          "name": "G07.same_rule_global_coverage"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G07-unit-triple-repair/formal/TripleObstruction.lean",
+      "original_sha256": "dad6f2cf0311a41c3ff1c7ea5278d870169961486d462029598492ac94fb03a1",
+      "selected_sha256": "408673e8649249114c378dd1e17ce5e14dd44a1258220a68d3cb19aae71ce230"
+    },
+    "UniversalGlobal": {
+      "declarations": [
+        {
+          "body_sha256": "5be2214cd4f845543536b167014280fb7daa39b736117b56fbfda6ca143d7a60",
+          "kind": "def",
+          "line": 8,
+          "name": "G06.nextDistance"
+        },
+        {
+          "body_sha256": "7a61d6df9340f58e80920be59a7bc46624ca7114d2b12505b7ad9825e6a68ed4",
+          "kind": "theorem",
+          "line": 11,
+          "name": "G06.nextDistance_spec"
+        },
+        {
+          "body_sha256": "5228b4388cfdcd8f2504092706ae5a80ddd0e27d7224b74bde91fe02950756eb",
+          "kind": "def",
+          "line": 21,
+          "name": "G06.scales"
+        },
+        {
+          "body_sha256": "778e29cc923492caa8d61a9c02e1cbd2c7f568970be5403cc65114ee9c153035",
+          "kind": "theorem",
+          "line": 25,
+          "name": "G06.scales_growth"
+        },
+        {
+          "body_sha256": "11e7b9b78345674f6e5e6c6749a43b3622f0566b26af990f3e200ffe35f68acf",
+          "kind": "theorem",
+          "line": 34,
+          "name": "G06.scales_member"
+        },
+        {
+          "body_sha256": "5f46abc859b6d2ce629d381b0f80bd239637453e9c3360a44f2be142d6f7bccf",
+          "kind": "theorem",
+          "line": 40,
+          "name": "G06.every_distance"
+        },
+        {
+          "body_sha256": "777afb4e331223f3fc0ecb2c5c6242b0a222f569792cad4285636d50f9191382",
+          "kind": "theorem",
+          "line": 61,
+          "name": "G06.initial_checkpoint"
+        },
+        {
+          "body_sha256": "c5778eddba5a217c4e5ab793c01b5a2afce6934e16ac3f6e462f5a752edb16ac",
+          "kind": "theorem",
+          "line": 73,
+          "name": "G06.scale_checkpoints"
+        },
+        {
+          "body_sha256": "6b84a8fce4771acb3ae3cc30f3745edce57bd55027db28fee1cd24bdc27f91ba",
+          "kind": "def",
+          "line": 87,
+          "name": "G06.Checkpoints"
+        },
+        {
+          "body_sha256": "5d6693a8259246e91a2cb60d87f307110ec319e6ba7fd319fc78a404d2dbecd7",
+          "kind": "theorem",
+          "line": 90,
+          "name": "G06.all_checkpoints"
+        },
+        {
+          "body_sha256": "6519f8047805ae6a8a3462821086938ecb31e8ef5738edb0df3667e59d15527e",
+          "kind": "theorem",
+          "line": 97,
+          "name": "G06.unbounded_coverage"
+        },
+        {
+          "body_sha256": "0d7c50b86ea421a95f48f15b5157437ec8f95689e269074af8cd1a63b8b70c83",
+          "kind": "theorem",
+          "line": 106,
+          "name": "G06.unbounded_exists"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G06-unbounded-step-sets/formal/UniversalGlobal.lean",
+      "original_sha256": "46787a22d17c3d6f3633674ad6830dd3d591ddcb957a91eb5bdca9d4ab5f2dd7",
+      "selected_sha256": "46787a22d17c3d6f3633674ad6830dd3d591ddcb957a91eb5bdca9d4ab5f2dd7"
+    },
+    "UniversalLiteral": {
+      "declarations": [
+        {
+          "body_sha256": "306ea35c70c431699898045bf82882cf3ece811971a2e9ee5c03f6d7ac2b7b7d",
+          "kind": "def",
+          "line": 8,
+          "name": "G06.LiteralRule"
+        },
+        {
+          "body_sha256": "463838343d4e214ab4f0dc06dd4da8751f32f463022b30d734d76847c44b8a8f",
+          "kind": "theorem",
+          "line": 14,
+          "name": "G06.allowed_of_unused"
+        },
+        {
+          "body_sha256": "abfdcf4a3ad107edf7ded622600e30e0ad02a90a904c69379f08419c28f80ddd",
+          "kind": "theorem",
+          "line": 21,
+          "name": "G06.literal_iff"
+        },
+        {
+          "body_sha256": "c2548bd8a81969bb0419afdf5de77bbe65871ea025bc5bb0b97723244169a6af",
+          "kind": "theorem",
+          "line": 39,
+          "name": "G06.literal_checkpoints"
+        },
+        {
+          "body_sha256": "f25dc7f6714f62b92c7415bb8f8cb3611343fb314f048e3599c27179f0bfd8c8",
+          "kind": "theorem",
+          "line": 43,
+          "name": "G06.literal_coverage"
+        },
+        {
+          "body_sha256": "dfe7daff05c91f1d32666da7f45eaf20ab04e911c83f5dcbc1f76a07b8fe6815",
+          "kind": "theorem",
+          "line": 47,
+          "name": "G06.literal_exists"
+        },
+        {
+          "body_sha256": "c48bb38ca7f4ab74dc6c0217801dc63da0b3a3b4f198efdd3574f83e5499c704",
+          "kind": "def",
+          "line": 52,
+          "name": "G06.complete12"
+        },
+        {
+          "body_sha256": "a2fc76842b16470f0f2369a841c962bb254e1f1c12bf90a2ec08a754ed005852",
+          "kind": "theorem",
+          "line": 54,
+          "name": "G06.completion_unbounded"
+        },
+        {
+          "body_sha256": "32c37a8617db2b0875f2a99b73adbb04c3feb886185a86bf564ae0c976e5a694",
+          "kind": "theorem",
+          "line": 59,
+          "name": "G06.completion_coverage"
+        },
+        {
+          "body_sha256": "1835d27c3c6dde7e3d2d0ff7d3b1da304b98a0db4f611ff4c272588bb9efb8d1",
+          "kind": "theorem",
+          "line": 63,
+          "name": "G06.completion_exists"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G06-unbounded-step-sets/formal/UniversalLiteral.lean",
+      "original_sha256": "69ce009020cfc720a0f2fea96b54c143141d36a5e6020a36caa0ebf22d34a64e",
+      "selected_sha256": "a0cdc35a48a04616219d50228f30627f60cd78f96a02fde61092158a2c2d4138"
+    },
+    "UniversalTransition": {
+      "declarations": [
+        {
+          "body_sha256": "62e12966945f9669a6db833d9fd6a2dae35a70464313dc668c26a1b5b0837223",
+          "kind": "theorem",
+          "line": 8,
+          "name": "G06.separated_transition"
+        },
+        {
+          "body_sha256": "04862f7e36e16a8e6ea35f81214a93d3d6aa70b47c96e192cf0de339ddd592aa",
+          "kind": "theorem",
+          "line": 84,
+          "name": "G06.adjacent_transition"
+        },
+        {
+          "body_sha256": "3dbcf6948c94d4ca2f0a4706fb9a57c0e4cfb2f884e2479f290b0786be9fcc48",
+          "kind": "theorem",
+          "line": 142,
+          "name": "G06.transition"
+        }
+      ],
+      "original_path": "generalization/mathematics/cases/G06-unbounded-step-sets/formal/UniversalTransition.lean",
+      "original_sha256": "bd26e553049ec4bdde5002c7b858573b8c718e12fcfc08f4baa8bbf5e35fac70",
+      "selected_sha256": "61be394d4a505c691bb30ea649157d72d2403290c8843eb3c6e99bdd9930788e"
+    }
+  },
+  "doi": "10.5281/zenodo.23973601",
+  "exporter_sha256": "7749990822790a9a95d8026b090c6d4df8393058419f3ea34d1c90f3fe3b910e",
+  "historical_receipts": [
+    {
+      "finished_utc": "2026-11-05T01:53:23.678231+00:00",
+      "path": "generalization/mathematics/cases/G18-residue-tail-coverage/evidence/2026-11-05-lean/lean-run.json",
+      "sha256": "7bebba384d7d93a78a7d4f0d4add6f15b1689030a2f0acc184f1d36fd5f4ee21"
+    },
+    {
+      "finished_utc": "2026-11-04T23:26:27.916074+00:00",
+      "path": "generalization/mathematics/cases/G09-reachable-hole-repair/evidence/2026-11-05/lean-run.json",
+      "sha256": "be778130389f4a8d5f47a6ee6134d47692be2186652cd5c14668321f51f02df5"
+    },
+    {
+      "finished_utc": "2026-11-05T00:57:41.274000+00:00",
+      "path": "generalization/mathematics/cases/G08-double-triple-parity/evidence/2026-11-05-lean-entrance/lean-run.json",
+      "sha256": "51f0894c64723c8ee56700eb5a36f385bedc8b0cc914b4e9cd2b1ff4d9772d0a"
+    },
+    {
+      "finished_utc": "2026-11-05T00:34:59.759637+00:00",
+      "path": "generalization/mathematics/cases/G08-double-triple-parity/evidence/2026-11-05-lean-lane/lean-run.json",
+      "sha256": "90a901541910c0e5ae590bbee728951bee234f7da523f441091b664fb0333449"
+    },
+    {
+      "finished_utc": "2026-11-05T00:49:07.996397+00:00",
+      "path": "generalization/mathematics/cases/G08-double-triple-parity/formal-holes/evidence/component-run.json",
+      "sha256": "73e62342c3da4771d5b76d5b28f388291887b266a21a57eeb6464160f891bd00"
+    }
+  ],
+  "inputs": {
+    ".github/workflows/verify.yml": {
+      "sha256": "5338db73e7ea1ed9b126ad8846f3f58c2e0304cc58e5483e6ec7494d3f8cff79",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/.github/workflows/verify.yml"
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "source": "LICENSES/CC-BY-4.0.txt"
+    },
+    "LICENSES/MIT.txt": {
+      "sha256": "858ec502a9104f8c7a58e6150ae0d4811017c44f033980e86c1c94fb63ce0759",
+      "source": "LICENSES/MIT.txt"
+    },
+    "README.md": {
+      "sha256": "2fcb54b2e6630d49c961a79a23f78e361fde254c2e29f1c6341ab672151f0de7",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/README.md"
+    },
+    "docs/REVIEW_GUIDE.md": {
+      "sha256": "8f8194e6f365419f2bb60d3bc879ff52c03db792c14e01e6b9b7584d3117f47d",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/docs/REVIEW_GUIDE.md"
+    },
+    "docs/prior-work.md": {
+      "sha256": "0fdaeb7fe542d3744b26364be75e072666e1a6a44bc5ddf2f64da49ae527c822",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/docs/prior-work.md"
+    },
+    "docs/provenance.md": {
+      "sha256": "7c326062afa32fbebe12a9c9845ea7ec5bda4616bcdd284fb0afc0b91789c5b0",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/docs/provenance.md"
+    },
+    "docs/reproducibility.md": {
+      "sha256": "265cf2a35db94e83e5b3c6b5300f2b397989ee3b04ffc94fc8ccd1eef837f15a",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/docs/reproducibility.md"
+    },
+    "docs/verification.md": {
+      "sha256": "64b9502a446965735861691834d2f8a127ef9df911f66b3b3eb060035267b402",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/docs/verification.md"
+    },
+    "formal/BlockGeometry.lean": {
+      "sha256": "a553267bc0fdb0cb61421a26cf983c4d062054393fbb04cfe728f37cf802c57d",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/BlockGeometry.lean"
+    },
+    "formal/CloseBlocks.lean": {
+      "sha256": "af5fe42509322f60b5a1698d11074524618c058d99c12f762a338192f58a1082",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/CloseBlocks.lean"
+    },
+    "formal/CloseGeometry.lean": {
+      "sha256": "07fc0cb55d7b13d88adf328eed139b74b40983ac66694988d781694fa51d99f0",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/CloseGeometry.lean"
+    },
+    "formal/CloseTransition.lean": {
+      "sha256": "bd6d7fae9aeb5b47f08e05bda158df4985661974dbcb992b7c7e4009babc6a76",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/CloseTransition.lean"
+    },
+    "formal/CofiniteCounting.lean": {
+      "sha256": "3d596ab6195103cf533f118a5611ddfa30ad9b1c7c87ea4ebdf2ee7db3277549",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/CofiniteCounting.lean"
+    },
+    "formal/CofiniteGlobal.lean": {
+      "sha256": "3a65bc5fd160584841a62ef2c66c2596301128b03872a165e041d4150fb32679",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/CofiniteGlobal.lean"
+    },
+    "formal/CofiniteResults.lean": {
+      "sha256": "a3ac15bfa65b3d08a10287b4ac27712565537aeb45000cffc815421380bb4797",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/CofiniteResults.lean"
+    },
+    "formal/EntranceBlocks.lean": {
+      "sha256": "a54fafb2503daca7809d3ea8ceb6f4943da86183ffa2ee0b8af3ba987c378e59",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/EntranceBlocks.lean"
+    },
+    "formal/EntranceBridge.lean": {
+      "sha256": "359ba78b31a20919fbe0f4e90cdc42fa1db7a7cdb674af0351bde7d74a4f37e6",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/EntranceBridge.lean"
+    },
+    "formal/EntranceExamples.lean": {
+      "sha256": "8c2d15bed0183feda2c21508d2d35e3b21d4d20ce6d8992a5d961cd78b8a24f8",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/EntranceExamples.lean"
+    },
+    "formal/EntranceGlobal.lean": {
+      "sha256": "130bacb1037fc6fab33bb793f78a430b6a4cb1258b6d53a82f6bbbf265690616",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/EntranceGlobal.lean"
+    },
+    "formal/EntranceResults.lean": {
+      "sha256": "1cdff7bda0ce5cc02e3469e4699da4912acd07c032456845664eb04c739e4c79",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/EntranceResults.lean"
+    },
+    "formal/EntranceTrace.lean": {
+      "sha256": "6d50665af91f90ed795cc3b18451149a1c5a88d239b252375bcd0b1522df284e",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/EntranceTrace.lean"
+    },
+    "formal/Examples.lean": {
+      "sha256": "140f59284b840fd89d528f1bdcfb812550224392f266a6a6d330b03ec82a9685",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/Examples.lean"
+    },
+    "formal/FinitePrefix.lean": {
+      "sha256": "52ec262622f190d839c23581fe58c519d68088b34b83a839056c1677858f83f4",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/FinitePrefix.lean"
+    },
+    "formal/Global.lean": {
+      "sha256": "5a7442473ad4ad2876a9b86de7afccf83a41761c57f26525c9426cddc62d2640",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/Global.lean"
+    },
+    "formal/History.lean": {
+      "sha256": "7ade8bf8dcc5b143ea67367a9586736eaa3560cc03e18780728d69fda510483d",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/History.lean"
+    },
+    "formal/HoleCount.lean": {
+      "sha256": "62efbf32d291ae590252408d3e940a5f38199d9fd57ad524c27e481568329b67",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/HoleCount.lean"
+    },
+    "formal/InfiniteWitnesses.lean": {
+      "sha256": "9094aba35493bd40c7ae7fb1a12f054f7c17d36fe93b03006dfc7262fed6e334",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/InfiniteWitnesses.lean"
+    },
+    "formal/LaneExamples.lean": {
+      "sha256": "4f0d147dd56137c25810b10e06ba34482a87220ba9a849bb8ccd330ce27b80e7",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/LaneExamples.lean"
+    },
+    "formal/LaneFill.lean": {
+      "sha256": "e9e3ae5cb08e0d2d95a5c76590baf04e82ad0b6572d0eeba3b19409d15f55655",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/LaneFill.lean"
+    },
+    "formal/LaneLiteral.lean": {
+      "sha256": "e48d16ad91c62673af4763d59815dbe09c98f3b261a26dbaaeb47aaf05b111e3",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/LaneLiteral.lean"
+    },
+    "formal/LaneStep.lean": {
+      "sha256": "abde96149835a98a39e4a4fe5fa8e11d146d418c9af1cc7c3584716562db6c0c",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/LaneStep.lean"
+    },
+    "formal/MixedBlocks.lean": {
+      "sha256": "b567b5638b14c4b385440258c20b062638eae97275ed6817560a3076018fdcbc",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/MixedBlocks.lean"
+    },
+    "formal/MixedGeometry.lean": {
+      "sha256": "0b60730e9d414710ad0b7cf7e8e983b3d0ec64dc508e67b6329c572375e15791",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/MixedGeometry.lean"
+    },
+    "formal/MixedGlobal.lean": {
+      "sha256": "c06e6013eb7cf5698da74a03520c6b47a8c71433bb9cdadb7197adb429ccea52",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/MixedGlobal.lean"
+    },
+    "formal/OneSide.lean": {
+      "sha256": "08deb2b61e9ef242ebccbade69e3e555d09b679ab81e05c42b21088ba6b4eb7a",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/OneSide.lean"
+    },
+    "formal/OriginalRule.lean": {
+      "sha256": "f3c32cb363338c96749f765d47160f6840ee0c6b10d2e784f1d9fc14ba95c17d",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/OriginalRule.lean"
+    },
+    "formal/PaperAudit.lean": {
+      "sha256": "274101a6bf1672347d442474911488806e84e1f2bda5540b28bd4cebbdfa4c7f",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/PaperAudit.lean"
+    },
+    "formal/README.md": {
+      "sha256": "9dac58c9ca3db7d9e8d27eb7d1d44ff97842ae5ce90d00282925cddaad694cdb",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/formal/README.md"
+    },
+    "formal/RepairBlocks.lean": {
+      "sha256": "5bb53b305b6e2e1dab8ed159e409e4c4c7fdd2174159759df311e0da038f9ebf",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/RepairBlocks.lean"
+    },
+    "formal/RepairEntrance.lean": {
+      "sha256": "d38790abf5872ba8d410be656d0466186fbfa59884b1cd38acb5c8972c37681a",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/RepairEntrance.lean"
+    },
+    "formal/RepairGlobal.lean": {
+      "sha256": "76b398da3380eb3f3955d1f30a395ffbaa74441ef5b327c0c1fef471074ed34b",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/RepairGlobal.lean"
+    },
+    "formal/ResidueAlgebra.lean": {
+      "sha256": "666843042aa4b818a6c7bc274dbe5407800a2f9ee27ce0430e3ff861b418ebf6",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/ResidueAlgebra.lean"
+    },
+    "formal/ResidueCoverage.lean": {
+      "sha256": "a7c4fbbd1951f083f24f22ef70fe33741feb21c20b5735f330278529d7deaff1",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/ResidueCoverage.lean"
+    },
+    "formal/ResidueOmission.lean": {
+      "sha256": "edd138ed791f2b0681e2eda3a750f5c246818c6fb89e3b2fac49bdcb88b4a006",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/ResidueOmission.lean"
+    },
+    "formal/ResidueResults.lean": {
+      "sha256": "8b6d12ccdd9eb5145901000d83d49a8d5ca53844c87275c4bb37371dae78aa2b",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/ResidueResults.lean"
+    },
+    "formal/Semantics.lean": {
+      "sha256": "8ddf88420d2568cae21d3e681918b36027273bd386e4c0c1d72b2d5ca214d3f3",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/Semantics.lean"
+    },
+    "formal/Shielded.lean": {
+      "sha256": "fd12528e8d76b699021f304e778108fdbd1476ecc7992d1f3184c74be8c9dbf0",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/Shielded.lean"
+    },
+    "formal/TripleBlocks.lean": {
+      "sha256": "25b3ea65068c2ad5180ff2a119a510ed7f34a07016af102e7634f8c0dac82307",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/TripleBlocks.lean"
+    },
+    "formal/TripleGlobal.lean": {
+      "sha256": "eb88b9a71d3f76343a902a143ae7f2c60cf190775db860890d7b38af4bc808af",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/TripleGlobal.lean"
+    },
+    "formal/TripleObstruction.lean": {
+      "sha256": "408673e8649249114c378dd1e17ce5e14dd44a1258220a68d3cb19aae71ce230",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/TripleObstruction.lean"
+    },
+    "formal/UniversalGlobal.lean": {
+      "sha256": "46787a22d17c3d6f3633674ad6830dd3d591ddcb957a91eb5bdca9d4ab5f2dd7",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/UniversalGlobal.lean"
+    },
+    "formal/UniversalLiteral.lean": {
+      "sha256": "a0cdc35a48a04616219d50228f30627f60cd78f96a02fde61092158a2c2d4138",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/UniversalLiteral.lean"
+    },
+    "formal/UniversalTransition.lean": {
+      "sha256": "61be394d4a505c691bb30ea649157d72d2403290c8843eb3c6e99bdd9930788e",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/selected/UniversalTransition.lean"
+    },
+    "formal/negative/G06/formal-negative/BoundedSetAboveTwo.lean": {
+      "sha256": "1d832bc29786f2951815e67f4928d193dcca0ea3d9795cea5d3e8b2699f162fc",
+      "source": "generalization/mathematics/cases/G06-unbounded-step-sets/formal/negative/BoundedSetAboveTwo.lean"
+    },
+    "formal/negative/G06/formal-negative/MissingOne.lean": {
+      "sha256": "c09ac0383d5830b80c6315db3fde33ecdbb9b08050b6fc00fd4ff8016eea655b",
+      "source": "generalization/mathematics/cases/G06-unbounded-step-sets/formal/negative/MissingOne.lean"
+    },
+    "formal/negative/G06/formal-negative/MissingTwo.lean": {
+      "sha256": "25bbc26fc4ad3ff9476048e635fd4976714f24a43dfd1dfc15040acecb591731",
+      "source": "generalization/mathematics/cases/G06-unbounded-step-sets/formal/negative/MissingTwo.lean"
+    },
+    "formal/negative/G06/formal-negative/RepeatedZero.lean": {
+      "sha256": "3a72a9363b4bd11adf4a1d8db1545c2375d4482ecc4e92b989cd5be3d2044d87",
+      "source": "generalization/mathematics/cases/G06-unbounded-step-sets/formal/negative/RepeatedZero.lean"
+    },
+    "formal/negative/G06/formal-negative/WrongAdjacentEndpoint.lean": {
+      "sha256": "e57b9c3e994bd0ec2e37ef0faa7dfd174385f44a3c08942879fb95672fb2520d",
+      "source": "generalization/mathematics/cases/G06-unbounded-step-sets/formal/negative/WrongAdjacentEndpoint.lean"
+    },
+    "formal/negative/G07/formal-negative/ForbiddenEight.lean": {
+      "sha256": "e212c3d7cc4454049df41c126746f13b7cc749b168989a428b1944d347158343",
+      "source": "generalization/mathematics/cases/G07-unit-triple-repair/formal/negative/ForbiddenEight.lean"
+    },
+    "formal/negative/G07/formal-negative/LostLocalHole.lean": {
+      "sha256": "cf83bbc20ef537eec9a67086eed880efe3d59f1f10101c4a540a815952b5f96c",
+      "source": "generalization/mathematics/cases/G07-unit-triple-repair/formal/negative/LostLocalHole.lean"
+    },
+    "formal/negative/G07/formal-negative/MissingCore.lean": {
+      "sha256": "d3f5d69241e619f0d9db2650e3999f7136878d78f6a0fd72c63d0b8fd543d92f",
+      "source": "generalization/mathematics/cases/G07-unit-triple-repair/formal/negative/MissingCore.lean"
+    },
+    "formal/negative/G07/formal-negative/MissingDouble.lean": {
+      "sha256": "e4033facd3cd674bba9aa88de0c04c976497e87130bf21cbc43626b5b0818ec2",
+      "source": "generalization/mathematics/cases/G07-unit-triple-repair/formal/negative/MissingDouble.lean"
+    },
+    "formal/negative/G07/formal-negative/WrongBlockEndpoint.lean": {
+      "sha256": "d200c174bc8da78c51fc0ecef7cf2460c54efc90dc9ec410cf3e55c0c7d3c894",
+      "source": "generalization/mathematics/cases/G07-unit-triple-repair/formal/negative/WrongBlockEndpoint.lean"
+    },
+    "formal/negative/G08/formal-entrance-negative/AlteredThresholdTie.lean": {
+      "sha256": "f8c8f9c94e314f46ef0abc2950e5e61bad2e4df13be7a3ce3986aba8fb547709",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/negative/AlteredThresholdTie.lean"
+    },
+    "formal/negative/G08/formal-entrance-negative/MissingUsedEndpoint.lean": {
+      "sha256": "5534ccc56cac5b61821998b545c791f73c8593d7e84175365a017133707c475c",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/negative/MissingUsedEndpoint.lean"
+    },
+    "formal/negative/G08/formal-entrance-negative/WrongCurrent.lean": {
+      "sha256": "f0728337a5a3fe277606688ef060660b6810cfb41cbdaf395ac4ca0264be3c3d",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/negative/WrongCurrent.lean"
+    },
+    "formal/negative/G08/formal-entrance-negative/WrongHoleCount.lean": {
+      "sha256": "cb9e447aa81e3d96ae1ea113ec3ffc78b4c5ce688b19949e4060864d8d45b516",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/negative/WrongHoleCount.lean"
+    },
+    "formal/negative/G08/formal-entrance-negative/WrongIndex.lean": {
+      "sha256": "eac80017e9c5c1317993f3428849a083f64a344ecaa43edd8b2058c979d2ceb4",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal-entrance/negative/WrongIndex.lean"
+    },
+    "formal/negative/G08/formal-holes-negative/WrongCountAtTen.lean": {
+      "sha256": "6d7eb6cecc5eaaae435119a30b097f7f90d6055283d22df2adbe138b7e257c66",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal-holes/negative/WrongCountAtTen.lean"
+    },
+    "formal/negative/G08/formal-holes-negative/WrongParityAtFive.lean": {
+      "sha256": "822cb3049e760a43a4da39a096243f5e1428dfa307bc5fdc9b98c3434bba9abe",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal-holes/negative/WrongParityAtFive.lean"
+    },
+    "formal/negative/G08/formal-negative/AbsentTwo.lean": {
+      "sha256": "7cc8afb7cc8986dade9567b70ff942a68c108774b93d97719a61bdae172d9420",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal/negative/AbsentTwo.lean"
+    },
+    "formal/negative/G08/formal-negative/ExtraEvenDistance.lean": {
+      "sha256": "936dc25bd6f341a66d193e43020804e7b4a86b5d2e19d64ca2c4f3800df885e3",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal/negative/ExtraEvenDistance.lean"
+    },
+    "formal/negative/G08/formal-negative/ExtraInteriorHole.lean": {
+      "sha256": "168769e112325a03fb0332e0888b9e157defcab1a2099da61f3d0d1378e4c268",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal/negative/ExtraInteriorHole.lean"
+    },
+    "formal/negative/G08/formal-negative/ThirdInwardMove.lean": {
+      "sha256": "e671ed079c646f2a0911e6bde0c13eae25f9614d23667da1d80059c4805d7a10",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal/negative/ThirdInwardMove.lean"
+    },
+    "formal/negative/G08/formal-negative/WrongEntrance.lean": {
+      "sha256": "e778473cab519f89e64409d4de05e300d05c828645e60be694827eb4ceec9773",
+      "source": "generalization/mathematics/cases/G08-double-triple-parity/formal/negative/WrongEntrance.lean"
+    },
+    "formal/negative/G09/formal-negative/AbsentDouble.lean": {
+      "sha256": "b929490da418bd8f8fa71f9fa7a9ffc13d4e647c3d82a42880fdb4742c6472f1",
+      "source": "generalization/mathematics/cases/G09-reachable-hole-repair/formal/negative/AbsentDouble.lean"
+    },
+    "formal/negative/G09/formal-negative/FalseCompleteBox.lean": {
+      "sha256": "edf3ad1523a9fbd2ac800c5a196e7ec1d688d2b8dff64c7d0a8a047c24934c42",
+      "source": "generalization/mathematics/cases/G09-reachable-hole-repair/formal/negative/FalseCompleteBox.lean"
+    },
+    "formal/negative/G09/formal-negative/OddCrossing.lean": {
+      "sha256": "80aa43f33731d9a5c6093872546bd724aaf328ae412c7b7b2db1ab31ff593098",
+      "source": "generalization/mathematics/cases/G09-reachable-hole-repair/formal/negative/OddCrossing.lean"
+    },
+    "formal/negative/G09/formal-negative/WrongBlockSign.lean": {
+      "sha256": "b1dbc98163f83d6569990f3e6fa4a942256bc6931440e9fd234bcd463fce9247",
+      "source": "generalization/mathematics/cases/G09-reachable-hole-repair/formal/negative/WrongBlockSign.lean"
+    },
+    "formal/negative/G09/formal-negative/WrongEntranceEndpoint.lean": {
+      "sha256": "5e3a2c79e23cbcbdfa5f82c1052cbf1dde2f2359304a3afeeffa59f64f5c3623",
+      "source": "generalization/mathematics/cases/G09-reachable-hole-repair/formal/negative/WrongEntranceEndpoint.lean"
+    },
+    "formal/negative/G09/formal-negative/WrongFirstRepair.lean": {
+      "sha256": "cb5be2d4e02514700845ddf8145468219b7b91cca0b68cc86e22b5ae985fc84d",
+      "source": "generalization/mathematics/cases/G09-reachable-hole-repair/formal/negative/WrongFirstRepair.lean"
+    },
+    "formal/negative/G10/formal-negative/G08DeadlineArithmetic.lean": {
+      "sha256": "d2ac81313970d360b405bf490ba38178c32a0b238917b3bc73bcb599417f18a4",
+      "source": "generalization/mathematics/cases/G10-cofinite-odd-coverage/formal/negative/G08DeadlineArithmetic.lean"
+    },
+    "formal/negative/G10/formal-negative/NearParityCollision.lean": {
+      "sha256": "02fdde019175a5c41695ebeb7dda9f7bf07fd0badb677f617fd8242dd8fd57e1",
+      "source": "generalization/mathematics/cases/G10-cofinite-odd-coverage/formal/negative/NearParityCollision.lean"
+    },
+    "formal/negative/G10/formal-negative/OppositeParityRequired.lean": {
+      "sha256": "a00d021626e97a1e282fe3c139d7135e2eefd79efac6dc45eb29bf474441e601",
+      "source": "generalization/mathematics/cases/G10-cofinite-odd-coverage/formal/negative/OppositeParityRequired.lean"
+    },
+    "formal/negative/G10/formal-negative/PrefixEndpoint.lean": {
+      "sha256": "3eff3b911cfe3e62f1f6230c54d8c27b0e45ff32ef1230475b8be8c7482036ec",
+      "source": "generalization/mathematics/cases/G10-cofinite-odd-coverage/formal/negative/PrefixEndpoint.lean"
+    },
+    "formal/negative/G10/formal-negative/SparseOddTail.lean": {
+      "sha256": "caa28fbc3cb8ecc5c2596168d521e0a94900635d03ff6d789507b542110c3def",
+      "source": "generalization/mathematics/cases/G10-cofinite-odd-coverage/formal/negative/SparseOddTail.lean"
+    },
+    "formal/negative/G10/formal-negative/StrictNearBoundary.lean": {
+      "sha256": "0f0b20bcdd6391d5db1985d5c938915113add2be998c237fa13c2c60b4c30dde",
+      "source": "generalization/mathematics/cases/G10-cofinite-odd-coverage/formal/negative/StrictNearBoundary.lean"
+    },
+    "formal/negative/G18/formal-negative/DisconnectedGcd.lean": {
+      "sha256": "44c62d2ef7845b4d45104fe9a1ca2d195881e2edecf38f40879dd2e49565f888",
+      "source": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/negative/DisconnectedGcd.lean"
+    },
+    "formal/negative/G18/formal-negative/EmptyList.lean": {
+      "sha256": "0f887f127c3b9f0da1b27c56561433ad623dede331b19937e8c6b2abae51a044",
+      "source": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/negative/EmptyList.lean"
+    },
+    "formal/negative/G18/formal-negative/NegativeDirection.lean": {
+      "sha256": "a69ba01ebbaf6e184c00842fabafa851ceeec9b684a9185f5b12aebf29d171f0",
+      "source": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/negative/NegativeDirection.lean"
+    },
+    "formal/negative/G18/formal-negative/NoncanonicalResidue.lean": {
+      "sha256": "368a76f93aebe4518b7a821a67da847bde315202165a5c744077b9f1eda02110",
+      "source": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/negative/NoncanonicalResidue.lean"
+    },
+    "formal/negative/G18/formal-negative/SparseTail.lean": {
+      "sha256": "6d3a2d83398b85cfe8407b7fbfe93389abac5a92b818e22c5fbc865342c6bdb8",
+      "source": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/negative/SparseTail.lean"
+    },
+    "formal/negative/G18/formal-negative/StrictMagnitude.lean": {
+      "sha256": "89e52f9744eca9dd488477cc5fa47280f2c7d8a89bff0ef38fa870b06631b574",
+      "source": "generalization/mathematics/cases/G18-residue-tail-coverage/formal/negative/StrictMagnitude.lean"
+    },
+    "paper/heraclitus-coverage.tex": {
+      "sha256": "95c398bb7743dabd594d52b2973ac5bdeacfde39ca59f3a372c5c89392f50c0f",
+      "source": "generalization/mathematics/paper/article-draft/heraclitus-coverage.tex"
+    },
+    "scripts/build_paper.py": {
+      "sha256": "16a56d8d221c32e401403c8b269a9f46bb05cd54f983f0885d937cee4e058da5",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/scripts/build_paper.py"
+    },
+    "scripts/check_entrance.py": {
+      "sha256": "52197ec3ff40b7ff1592c7c0058099be5236cb7fad46057175dee8539900a383",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/scripts/check_entrance.py"
+    },
+    "scripts/check_release.py": {
+      "sha256": "33d9b8d377ed103e721b78cf9b10369892d11b099037751f0f92ef121105e3b8",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/scripts/check_release.py"
+    },
+    "scripts/test_release.py": {
+      "sha256": "5c13dd24988deb4144cfd839ddc77a77cec5f934f9deb49f36570424f3412ee6",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/scripts/test_release.py"
+    },
+    "scripts/verify_lean.py": {
+      "sha256": "fc9c134baa2124de5858156a9e80bb717ec96a281402e9edc397873d94f4a688",
+      "source": "generalization/workflow/cases/W04-first-article-residue-bundle/release/public/scripts/verify_lean.py"
+    }
+  },
+  "omissions": "Private research history, agent coordination, unrelated cases and archives.",
+  "stage": "release-candidate",
+  "status": "Prepared for publication; publication is a separate operation.",
+  "version": "1.0.0"
+}

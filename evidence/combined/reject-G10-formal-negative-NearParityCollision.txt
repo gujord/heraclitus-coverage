@@ -1,0 +1,3 @@
+/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative/NearParityCollision.lean:5:2: error: Tactic `decide` proved that the proposition
+  ((1 - 0 + ↑5) / 2).toNat ≠ ((2 - 0 + ↑5) / 2).toNat
+is false

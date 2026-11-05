@@ -1,0 +1,2641 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-05T09:10:37.082781+00:00",
+  "source_sha256": {
+    "formal/BlockGeometry.lean": "a553267bc0fdb0cb61421a26cf983c4d062054393fbb04cfe728f37cf802c57d",
+    "formal/CloseBlocks.lean": "af5fe42509322f60b5a1698d11074524618c058d99c12f762a338192f58a1082",
+    "formal/CloseGeometry.lean": "07fc0cb55d7b13d88adf328eed139b74b40983ac66694988d781694fa51d99f0",
+    "formal/CloseTransition.lean": "bd6d7fae9aeb5b47f08e05bda158df4985661974dbcb992b7c7e4009babc6a76",
+    "formal/CofiniteCounting.lean": "3d596ab6195103cf533f118a5611ddfa30ad9b1c7c87ea4ebdf2ee7db3277549",
+    "formal/CofiniteGlobal.lean": "3a65bc5fd160584841a62ef2c66c2596301128b03872a165e041d4150fb32679",
+    "formal/CofiniteResults.lean": "a3ac15bfa65b3d08a10287b4ac27712565537aeb45000cffc815421380bb4797",
+    "formal/EntranceBlocks.lean": "a54fafb2503daca7809d3ea8ceb6f4943da86183ffa2ee0b8af3ba987c378e59",
+    "formal/EntranceBridge.lean": "359ba78b31a20919fbe0f4e90cdc42fa1db7a7cdb674af0351bde7d74a4f37e6",
+    "formal/EntranceExamples.lean": "8c2d15bed0183feda2c21508d2d35e3b21d4d20ce6d8992a5d961cd78b8a24f8",
+    "formal/EntranceGlobal.lean": "130bacb1037fc6fab33bb793f78a430b6a4cb1258b6d53a82f6bbbf265690616",
+    "formal/EntranceResults.lean": "1cdff7bda0ce5cc02e3469e4699da4912acd07c032456845664eb04c739e4c79",
+    "formal/EntranceTrace.lean": "6d50665af91f90ed795cc3b18451149a1c5a88d239b252375bcd0b1522df284e",
+    "formal/Examples.lean": "140f59284b840fd89d528f1bdcfb812550224392f266a6a6d330b03ec82a9685",
+    "formal/FinitePrefix.lean": "52ec262622f190d839c23581fe58c519d68088b34b83a839056c1677858f83f4",
+    "formal/Global.lean": "5a7442473ad4ad2876a9b86de7afccf83a41761c57f26525c9426cddc62d2640",
+    "formal/History.lean": "7ade8bf8dcc5b143ea67367a9586736eaa3560cc03e18780728d69fda510483d",
+    "formal/HoleCount.lean": "62efbf32d291ae590252408d3e940a5f38199d9fd57ad524c27e481568329b67",
+    "formal/InfiniteWitnesses.lean": "9094aba35493bd40c7ae7fb1a12f054f7c17d36fe93b03006dfc7262fed6e334",
+    "formal/LaneExamples.lean": "4f0d147dd56137c25810b10e06ba34482a87220ba9a849bb8ccd330ce27b80e7",
+    "formal/LaneFill.lean": "e9e3ae5cb08e0d2d95a5c76590baf04e82ad0b6572d0eeba3b19409d15f55655",
+    "formal/LaneLiteral.lean": "e48d16ad91c62673af4763d59815dbe09c98f3b261a26dbaaeb47aaf05b111e3",
+    "formal/LaneStep.lean": "abde96149835a98a39e4a4fe5fa8e11d146d418c9af1cc7c3584716562db6c0c",
+    "formal/MixedBlocks.lean": "b567b5638b14c4b385440258c20b062638eae97275ed6817560a3076018fdcbc",
+    "formal/MixedGeometry.lean": "0b60730e9d414710ad0b7cf7e8e983b3d0ec64dc508e67b6329c572375e15791",
+    "formal/MixedGlobal.lean": "c06e6013eb7cf5698da74a03520c6b47a8c71433bb9cdadb7197adb429ccea52",
+    "formal/OneSide.lean": "08deb2b61e9ef242ebccbade69e3e555d09b679ab81e05c42b21088ba6b4eb7a",
+    "formal/OriginalRule.lean": "f3c32cb363338c96749f765d47160f6840ee0c6b10d2e784f1d9fc14ba95c17d",
+    "formal/PaperAudit.lean": "274101a6bf1672347d442474911488806e84e1f2bda5540b28bd4cebbdfa4c7f",
+    "formal/RepairBlocks.lean": "5bb53b305b6e2e1dab8ed159e409e4c4c7fdd2174159759df311e0da038f9ebf",
+    "formal/RepairEntrance.lean": "d38790abf5872ba8d410be656d0466186fbfa59884b1cd38acb5c8972c37681a",
+    "formal/RepairGlobal.lean": "76b398da3380eb3f3955d1f30a395ffbaa74441ef5b327c0c1fef471074ed34b",
+    "formal/ResidueAlgebra.lean": "666843042aa4b818a6c7bc274dbe5407800a2f9ee27ce0430e3ff861b418ebf6",
+    "formal/ResidueCoverage.lean": "a7c4fbbd1951f083f24f22ef70fe33741feb21c20b5735f330278529d7deaff1",
+    "formal/ResidueOmission.lean": "edd138ed791f2b0681e2eda3a750f5c246818c6fb89e3b2fac49bdcb88b4a006",
+    "formal/ResidueResults.lean": "8b6d12ccdd9eb5145901000d83d49a8d5ca53844c87275c4bb37371dae78aa2b",
+    "formal/Semantics.lean": "8ddf88420d2568cae21d3e681918b36027273bd386e4c0c1d72b2d5ca214d3f3",
+    "formal/Shielded.lean": "fd12528e8d76b699021f304e778108fdbd1476ecc7992d1f3184c74be8c9dbf0",
+    "formal/TripleBlocks.lean": "25b3ea65068c2ad5180ff2a119a510ed7f34a07016af102e7634f8c0dac82307",
+    "formal/TripleGlobal.lean": "eb88b9a71d3f76343a902a143ae7f2c60cf190775db860890d7b38af4bc808af",
+    "formal/TripleObstruction.lean": "408673e8649249114c378dd1e17ce5e14dd44a1258220a68d3cb19aae71ce230",
+    "formal/UniversalGlobal.lean": "46787a22d17c3d6f3633674ad6830dd3d591ddcb957a91eb5bdca9d4ab5f2dd7",
+    "formal/UniversalLiteral.lean": "a0cdc35a48a04616219d50228f30627f60cd78f96a02fde61092158a2c2d4138",
+    "formal/UniversalTransition.lean": "61be394d4a505c691bb30ea649157d72d2403290c8843eb3c6e99bdd9930788e",
+    "formal/negative/G06/formal-negative/BoundedSetAboveTwo.lean": "1d832bc29786f2951815e67f4928d193dcca0ea3d9795cea5d3e8b2699f162fc",
+    "formal/negative/G06/formal-negative/MissingOne.lean": "c09ac0383d5830b80c6315db3fde33ecdbb9b08050b6fc00fd4ff8016eea655b",
+    "formal/negative/G06/formal-negative/MissingTwo.lean": "25bbc26fc4ad3ff9476048e635fd4976714f24a43dfd1dfc15040acecb591731",
+    "formal/negative/G06/formal-negative/RepeatedZero.lean": "3a72a9363b4bd11adf4a1d8db1545c2375d4482ecc4e92b989cd5be3d2044d87",
+    "formal/negative/G06/formal-negative/WrongAdjacentEndpoint.lean": "e57b9c3e994bd0ec2e37ef0faa7dfd174385f44a3c08942879fb95672fb2520d",
+    "formal/negative/G07/formal-negative/ForbiddenEight.lean": "e212c3d7cc4454049df41c126746f13b7cc749b168989a428b1944d347158343",
+    "formal/negative/G07/formal-negative/LostLocalHole.lean": "cf83bbc20ef537eec9a67086eed880efe3d59f1f10101c4a540a815952b5f96c",
+    "formal/negative/G07/formal-negative/MissingCore.lean": "d3f5d69241e619f0d9db2650e3999f7136878d78f6a0fd72c63d0b8fd543d92f",
+    "formal/negative/G07/formal-negative/MissingDouble.lean": "e4033facd3cd674bba9aa88de0c04c976497e87130bf21cbc43626b5b0818ec2",
+    "formal/negative/G07/formal-negative/WrongBlockEndpoint.lean": "d200c174bc8da78c51fc0ecef7cf2460c54efc90dc9ec410cf3e55c0c7d3c894",
+    "formal/negative/G08/formal-entrance-negative/AlteredThresholdTie.lean": "f8c8f9c94e314f46ef0abc2950e5e61bad2e4df13be7a3ce3986aba8fb547709",
+    "formal/negative/G08/formal-entrance-negative/MissingUsedEndpoint.lean": "5534ccc56cac5b61821998b545c791f73c8593d7e84175365a017133707c475c",
+    "formal/negative/G08/formal-entrance-negative/WrongCurrent.lean": "f0728337a5a3fe277606688ef060660b6810cfb41cbdaf395ac4ca0264be3c3d",
+    "formal/negative/G08/formal-entrance-negative/WrongHoleCount.lean": "cb9e447aa81e3d96ae1ea113ec3ffc78b4c5ce688b19949e4060864d8d45b516",
+    "formal/negative/G08/formal-entrance-negative/WrongIndex.lean": "eac80017e9c5c1317993f3428849a083f64a344ecaa43edd8b2058c979d2ceb4",
+    "formal/negative/G08/formal-holes-negative/WrongCountAtTen.lean": "6d7eb6cecc5eaaae435119a30b097f7f90d6055283d22df2adbe138b7e257c66",
+    "formal/negative/G08/formal-holes-negative/WrongParityAtFive.lean": "822cb3049e760a43a4da39a096243f5e1428dfa307bc5fdc9b98c3434bba9abe",
+    "formal/negative/G08/formal-negative/AbsentTwo.lean": "7cc8afb7cc8986dade9567b70ff942a68c108774b93d97719a61bdae172d9420",
+    "formal/negative/G08/formal-negative/ExtraEvenDistance.lean": "936dc25bd6f341a66d193e43020804e7b4a86b5d2e19d64ca2c4f3800df885e3",
+    "formal/negative/G08/formal-negative/ExtraInteriorHole.lean": "168769e112325a03fb0332e0888b9e157defcab1a2099da61f3d0d1378e4c268",
+    "formal/negative/G08/formal-negative/ThirdInwardMove.lean": "e671ed079c646f2a0911e6bde0c13eae25f9614d23667da1d80059c4805d7a10",
+    "formal/negative/G08/formal-negative/WrongEntrance.lean": "e778473cab519f89e64409d4de05e300d05c828645e60be694827eb4ceec9773",
+    "formal/negative/G09/formal-negative/AbsentDouble.lean": "b929490da418bd8f8fa71f9fa7a9ffc13d4e647c3d82a42880fdb4742c6472f1",
+    "formal/negative/G09/formal-negative/FalseCompleteBox.lean": "edf3ad1523a9fbd2ac800c5a196e7ec1d688d2b8dff64c7d0a8a047c24934c42",
+    "formal/negative/G09/formal-negative/OddCrossing.lean": "80aa43f33731d9a5c6093872546bd724aaf328ae412c7b7b2db1ab31ff593098",
+    "formal/negative/G09/formal-negative/WrongBlockSign.lean": "b1dbc98163f83d6569990f3e6fa4a942256bc6931440e9fd234bcd463fce9247",
+    "formal/negative/G09/formal-negative/WrongEntranceEndpoint.lean": "5e3a2c79e23cbcbdfa5f82c1052cbf1dde2f2359304a3afeeffa59f64f5c3623",
+    "formal/negative/G09/formal-negative/WrongFirstRepair.lean": "cb5be2d4e02514700845ddf8145468219b7b91cca0b68cc86e22b5ae985fc84d",
+    "formal/negative/G10/formal-negative/G08DeadlineArithmetic.lean": "d2ac81313970d360b405bf490ba38178c32a0b238917b3bc73bcb599417f18a4",
+    "formal/negative/G10/formal-negative/NearParityCollision.lean": "02fdde019175a5c41695ebeb7dda9f7bf07fd0badb677f617fd8242dd8fd57e1",
+    "formal/negative/G10/formal-negative/OppositeParityRequired.lean": "a00d021626e97a1e282fe3c139d7135e2eefd79efac6dc45eb29bf474441e601",
+    "formal/negative/G10/formal-negative/PrefixEndpoint.lean": "3eff3b911cfe3e62f1f6230c54d8c27b0e45ff32ef1230475b8be8c7482036ec",
+    "formal/negative/G10/formal-negative/SparseOddTail.lean": "caa28fbc3cb8ecc5c2596168d521e0a94900635d03ff6d789507b542110c3def",
+    "formal/negative/G10/formal-negative/StrictNearBoundary.lean": "0f0b20bcdd6391d5db1985d5c938915113add2be998c237fa13c2c60b4c30dde",
+    "formal/negative/G18/formal-negative/DisconnectedGcd.lean": "44c62d2ef7845b4d45104fe9a1ca2d195881e2edecf38f40879dd2e49565f888",
+    "formal/negative/G18/formal-negative/EmptyList.lean": "0f887f127c3b9f0da1b27c56561433ad623dede331b19937e8c6b2abae51a044",
+    "formal/negative/G18/formal-negative/NegativeDirection.lean": "a69ba01ebbaf6e184c00842fabafa851ceeec9b684a9185f5b12aebf29d171f0",
+    "formal/negative/G18/formal-negative/NoncanonicalResidue.lean": "368a76f93aebe4518b7a821a67da847bde315202165a5c744077b9f1eda02110",
+    "formal/negative/G18/formal-negative/SparseTail.lean": "6d3a2d83398b85cfe8407b7fbfe93389abac5a92b818e22c5fbc865342c6bdb8",
+    "formal/negative/G18/formal-negative/StrictMagnitude.lean": "89e52f9744eca9dd488477cc5fa47280f2c7d8a89bff0ef38fa870b06631b574"
+  },
+  "commands": [
+    {
+      "label": "version",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "00edf203452ef5587805ba11a094af7c135529bad05573402ddf03a3c69368e2"
+    },
+    {
+      "label": "prefix",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "--print-prefix"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "2d1708b8b4f8c3fe1430a8951966993c8bed780466987383df32ba6275a49425"
+    },
+    {
+      "label": "build-HoleCount",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/HoleCount.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/HoleCount.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-ResidueAlgebra",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/ResidueAlgebra.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/ResidueAlgebra.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-Semantics",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/Semantics.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/Semantics.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-LaneStep",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/LaneStep.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/LaneStep.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-OneSide",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/OneSide.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/OneSide.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-Examples",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/Examples.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/Examples.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-LaneFill",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/LaneFill.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/LaneFill.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-BlockGeometry",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/BlockGeometry.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/BlockGeometry.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-LaneLiteral",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/LaneLiteral.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/LaneLiteral.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-EntranceTrace",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/EntranceTrace.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/EntranceTrace.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-History",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/History.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/History.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-LaneExamples",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/LaneExamples.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/LaneExamples.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-EntranceBlocks",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/EntranceBlocks.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/EntranceBlocks.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-Global",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/Global.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/Global.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-Shielded",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/Shielded.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/Shielded.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-EntranceGlobal",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/EntranceGlobal.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/EntranceGlobal.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-MixedGeometry",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/MixedGeometry.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/MixedGeometry.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-OriginalRule",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/OriginalRule.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/OriginalRule.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-FinitePrefix",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/FinitePrefix.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/FinitePrefix.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-MixedBlocks",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/MixedBlocks.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/MixedBlocks.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-InfiniteWitnesses",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/InfiniteWitnesses.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/InfiniteWitnesses.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-MixedGlobal",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/MixedGlobal.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/MixedGlobal.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-CloseGeometry",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/CloseGeometry.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/CloseGeometry.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-CloseBlocks",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/CloseBlocks.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/CloseBlocks.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-CloseTransition",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/CloseTransition.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/CloseTransition.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-UniversalTransition",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/UniversalTransition.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/UniversalTransition.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-UniversalGlobal",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/UniversalGlobal.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/UniversalGlobal.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-UniversalLiteral",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/UniversalLiteral.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/UniversalLiteral.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-CofiniteCounting",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/CofiniteCounting.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/CofiniteCounting.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-TripleBlocks",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/TripleBlocks.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/TripleBlocks.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-CofiniteGlobal",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/CofiniteGlobal.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/CofiniteGlobal.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-TripleGlobal",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/TripleGlobal.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/TripleGlobal.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-CofiniteResults",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/CofiniteResults.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/CofiniteResults.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-TripleObstruction",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/TripleObstruction.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/TripleObstruction.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-EntranceBridge",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/EntranceBridge.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/EntranceBridge.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-RepairBlocks",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/RepairBlocks.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/RepairBlocks.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-ResidueOmission",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/ResidueOmission.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/ResidueOmission.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-EntranceResults",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/EntranceResults.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/EntranceResults.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-RepairEntrance",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/RepairEntrance.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/RepairEntrance.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-ResidueCoverage",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/ResidueCoverage.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/ResidueCoverage.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-EntranceExamples",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/EntranceExamples.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/EntranceExamples.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-RepairGlobal",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/RepairGlobal.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/RepairGlobal.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-ResidueResults",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/ResidueResults.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/ResidueResults.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-PaperAudit",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/PaperAudit.lean",
+        "-o",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/build/combined-01/compiled/PaperAudit.olean"
+      ],
+      "exit_code": 0,
+      "expected_rejection": false,
+      "log_sha256": "aaa2521547e8ead8929a9b137380026c6ea865fffcfbae8c0400fe47cb646acb"
+    },
+    {
+      "label": "reject-G06-formal-negative-BoundedSetAboveTwo",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative/BoundedSetAboveTwo.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "7b1e601497d421fb3a8b3b8bff9728c553cae6f98e0f3a1f0218c776167c532a"
+    },
+    {
+      "label": "reject-G06-formal-negative-MissingOne",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative/MissingOne.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "7721df6627d138bcbb3d8bae33681ae9e7dd5d5d62ac773211139555ce8ea1b9"
+    },
+    {
+      "label": "reject-G06-formal-negative-MissingTwo",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative/MissingTwo.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "6f34ebd4a23e0bdc5f080c0c03b8eaadc5f186af80e0287671bc477f5673f501"
+    },
+    {
+      "label": "reject-G06-formal-negative-RepeatedZero",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative/RepeatedZero.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "8e25aa4d42b979c6edaa9c4d970d94c36d7b5d6092ddb295d6db981dca2042b6"
+    },
+    {
+      "label": "reject-G06-formal-negative-WrongAdjacentEndpoint",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative/WrongAdjacentEndpoint.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "16986e29b45d6e76f2639090ba90b2b9ab5dc9b438a7b689424343b4231d1eaa"
+    },
+    {
+      "label": "reject-G07-formal-negative-ForbiddenEight",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative/ForbiddenEight.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "bbf0e3afe4620c5e216671288f1cc8768ff3b30f646070fe35993e623ea53a83"
+    },
+    {
+      "label": "reject-G07-formal-negative-LostLocalHole",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative/LostLocalHole.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "834bcb92b6cb95ae4c0641632fa578945abae36f6f4202ec514f5663a0ff0037"
+    },
+    {
+      "label": "reject-G07-formal-negative-MissingCore",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative/MissingCore.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "2d714d7ae27ee3dad2abcf810fc9c7bc07cee6cbdaeff8a7062754a52b3de55d"
+    },
+    {
+      "label": "reject-G07-formal-negative-MissingDouble",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative/MissingDouble.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "03d89ec03ab7407bd69d80cb4e794d01c84c543630ec1d7feb3078403f469180"
+    },
+    {
+      "label": "reject-G07-formal-negative-WrongBlockEndpoint",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative/WrongBlockEndpoint.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "1d243d1a024513d2187d90f23ebf7534fa5915b92b3e55cf7a3ad2dd8bd901a9"
+    },
+    {
+      "label": "reject-G08-formal-entrance-negative-AlteredThresholdTie",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative/AlteredThresholdTie.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "2e3df8fe1fb07d5035c121b7679e78d7a1d5f604cc71881244481c81352a8c38"
+    },
+    {
+      "label": "reject-G08-formal-entrance-negative-MissingUsedEndpoint",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative/MissingUsedEndpoint.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "69d2c66c4c3235dac15543855e485950b2e7d8cd51a45e523875d25f1256f9b1"
+    },
+    {
+      "label": "reject-G08-formal-entrance-negative-WrongCurrent",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative/WrongCurrent.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "0c3ddc1ecf8b887c268dd5637eeaf1f7f0dd67dbba52427e6ea44d2ea73af88f"
+    },
+    {
+      "label": "reject-G08-formal-entrance-negative-WrongHoleCount",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative/WrongHoleCount.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "d0a17d95ca1ee55a2e8abcc960e683e1356e8355331358c37851aca91a6934ad"
+    },
+    {
+      "label": "reject-G08-formal-entrance-negative-WrongIndex",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-entrance-negative/WrongIndex.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "00d296c6a5f298a87b4a49811894a2a414d5dacc702bd5e9a94b7c9538846933"
+    },
+    {
+      "label": "reject-G08-formal-holes-negative-WrongCountAtTen",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-holes-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-holes-negative/WrongCountAtTen.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "ebe9fa3c3f47b90a720289e696f0864c23c65775514746d83608bcab39da024f"
+    },
+    {
+      "label": "reject-G08-formal-holes-negative-WrongParityAtFive",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-holes-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-holes-negative/WrongParityAtFive.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "761bfd1058f5ccf0f5ca7d2a2f66b861dd8e4214d6361b4d1bdc64a9076442f5"
+    },
+    {
+      "label": "reject-G08-formal-negative-AbsentTwo",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative/AbsentTwo.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "62b8cca3a89bb295487d674839421fbe09a5bec9a761b5a52fdf7eae34a40b49"
+    },
+    {
+      "label": "reject-G08-formal-negative-ExtraEvenDistance",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative/ExtraEvenDistance.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "c1e9785b8612d449ca03dde2356a74385ec8612a96316a9faffc711cdcca7fa4"
+    },
+    {
+      "label": "reject-G08-formal-negative-ExtraInteriorHole",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative/ExtraInteriorHole.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "3ed4720b1fa27ce91215fb4bece1758e0df58a05da49839050fa6f75018e4d2b"
+    },
+    {
+      "label": "reject-G08-formal-negative-ThirdInwardMove",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative/ThirdInwardMove.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "21f218ed10e540aca691467f79b7d35e9503a6f22570a3d8217b7d0cb1db9669"
+    },
+    {
+      "label": "reject-G08-formal-negative-WrongEntrance",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G08/formal-negative/WrongEntrance.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "8d745d1d02b4ace52669d61fd32325a9e3885a62762e8b6c17f8464f54d37212"
+    },
+    {
+      "label": "reject-G09-formal-negative-AbsentDouble",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative/AbsentDouble.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "81a46953c6b0160884bf2b22dc19da34b0ae4fd2c0bc94cf61cda98c434ddb50"
+    },
+    {
+      "label": "reject-G09-formal-negative-FalseCompleteBox",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative/FalseCompleteBox.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "939e579d6dddf6a0d36e75ef3911e17b2f669720fc510d2822522b71572f8051"
+    },
+    {
+      "label": "reject-G09-formal-negative-OddCrossing",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative/OddCrossing.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "8db1a1498dc6f4da094e6f561d75daf51e8829e09d4a0afcc716127f9408c347"
+    },
+    {
+      "label": "reject-G09-formal-negative-WrongBlockSign",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative/WrongBlockSign.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "cd81de13177d8f6de1b2509e3b99386735d30f2ddb8aedf391eaf1240a73e9ca"
+    },
+    {
+      "label": "reject-G09-formal-negative-WrongEntranceEndpoint",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative/WrongEntranceEndpoint.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "779be5d79a2df04aa2a4974a5593d19092f21ec50b3564443a05b5bfdf72621c"
+    },
+    {
+      "label": "reject-G09-formal-negative-WrongFirstRepair",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative/WrongFirstRepair.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "777b52e6a9c21ef142e2301806d926a27896bbd43e6faff17c4d70cba3d8dac2"
+    },
+    {
+      "label": "reject-G10-formal-negative-G08DeadlineArithmetic",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative/G08DeadlineArithmetic.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "17e70588200b053be96e6e9698532a0562e533b15744a6fd0e807f1e2a0e39f3"
+    },
+    {
+      "label": "reject-G10-formal-negative-NearParityCollision",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative/NearParityCollision.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "57eb2eab5e5e8359985a0fb075f1b85ccb470bb878c7f33a3e2cd1f95b81322d"
+    },
+    {
+      "label": "reject-G10-formal-negative-OppositeParityRequired",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative/OppositeParityRequired.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "c3f065a5c0e689cf217aaebcd37408880f8ac5cd7412e51b42161ef41a925917"
+    },
+    {
+      "label": "reject-G10-formal-negative-PrefixEndpoint",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative/PrefixEndpoint.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "c4ba53a3fa20f5f794f440bc9f37140904013a26683a9f0d7466b9d55ca1d868"
+    },
+    {
+      "label": "reject-G10-formal-negative-SparseOddTail",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative/SparseOddTail.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "79b02870622db0e05c1150560ea95867e639da5304fe2b3f28357a1af482bb13"
+    },
+    {
+      "label": "reject-G10-formal-negative-StrictNearBoundary",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative/StrictNearBoundary.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "19ca287385489c24d1cebfb064da22826437e4af2b4260108664bde2edece384"
+    },
+    {
+      "label": "reject-G18-formal-negative-DisconnectedGcd",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative/DisconnectedGcd.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "873b0e7d20ad6549b3221b7f5b764189f5fb056e115c0cf3eeadbf3e0b49e21d"
+    },
+    {
+      "label": "reject-G18-formal-negative-EmptyList",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative/EmptyList.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "df874d38f83cbe1ae4fbc8724c4648cf3555b8d988cf09fe2d08d2a19f525da3"
+    },
+    {
+      "label": "reject-G18-formal-negative-NegativeDirection",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative/NegativeDirection.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "5aa5e4e494dd4f9d25b1935255ceab9f0c15005a59c068b74ee120a320870b65"
+    },
+    {
+      "label": "reject-G18-formal-negative-NoncanonicalResidue",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative/NoncanonicalResidue.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "064f84136459cca2cf614d47d3278eb0e2e0d9505b9ed8aa63cb8891d625dbca"
+    },
+    {
+      "label": "reject-G18-formal-negative-SparseTail",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative/SparseTail.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "35b59758c5c94db1c6343810dcd37ade3b1c6f859961ec1ee1caeba44072444a"
+    },
+    {
+      "label": "reject-G18-formal-negative-StrictMagnitude",
+      "command": [
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin/bin/lean",
+        "-R",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative",
+        "-DwarningAsError=true",
+        "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative/StrictMagnitude.lean"
+      ],
+      "exit_code": 1,
+      "expected_rejection": true,
+      "log_sha256": "d77fe28d3cd3e5a9926b6e9ba0c67ac9fa5ef1977a1f073ba81169516ca83c70"
+    }
+  ],
+  "scope": "Fresh relocated combined build; pinned Lean binary and bundled Std trusted. Not independent human review.",
+  "lean_version": "Lean (version 4.35.0, x86_64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "lean_binary_sha256": "3f04956c5cef436a26fd88956effdb6767d8beb0174012c19989764bd74a4f3b",
+  "standard_library_prefix": "/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin",
+  "modules": 44,
+  "axiom_audits": {
+    "G01.active_min_greedy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.descent_finish": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.descent_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.difference_symm": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.entrance_frame": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.fill_finish": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.fill_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.frame_visit": [
+      "propext"
+    ],
+    "G01.greedy_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.greedy_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.historyList_mem": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.history_succ": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.history_zero": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.initial_positive": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.interval_visit_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.interval_visit_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.least_nat": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.map_nodup_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.next_positive": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.one_side_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.opposite_disjoint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.point_abs": [
+      "propext"
+    ],
+    "G01.point_add_distance": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.point_cases": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.point_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.point_sub_distance": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.rank_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.reaches_history": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.second_negative": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.sparse_descent_visit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.state_ext": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.unused_active": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.visit_bounded": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.walk_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G01.zero_bounded": [
+      "propext"
+    ],
+    "G02.certificate_from_zero": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G02.certificate_history": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G02.finite_greedy_sound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G02.mem_candidates": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G02.next_spec": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G02.orbit_history": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G02.unbounded_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G02.unbounded_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.boxList_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.box_history_index": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.cross_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.fill_negative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.fill_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.inside_greedy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G03.inside_visit": [
+      "propext"
+    ],
+    "G03.negative_run": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.negative_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.odd_next": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.reached_box": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.shielded_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G03.transfer_inside": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G05.cross_negative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G05.even_boundary_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G05.fill_negative_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G05.fill_positive_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G05.negative_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G05.odd_boundary_negative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G05.positive_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G05.positive_run": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G05.positive_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.adjacent_transition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.all_checkpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.allowed_of_unused": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G06.completion_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.completion_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.every_distance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.initial_checkpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.literal_checkpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.literal_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.literal_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.literal_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G06.nextDistance_spec": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.scale_checkpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.scales_growth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.scales_member": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.separated_transition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.transition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.unbounded_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G06.unbounded_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.block_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.block_finish": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.blocked_no_completion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.blocked_no_interior": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.blocked_used": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.certificate_prevents_completion": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G07.cross_negative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.family_blocks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.family_checkpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.family_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.family_unbounded": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G07.initial_box": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.initial_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.initial_history": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.inward_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.literal_checkpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.literal_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.literal_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.local_filling_impossible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.next_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.optional_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.optional_result": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.reference_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.repair_negative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.same_rule_global_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G07.second_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.absent_two_counterexample": [
+      "propext"
+    ],
+    "G08.canonical_literal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.conditional_lane_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.extra_even_counterexample": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.extra_hole_counterexample": [
+      "propext"
+    ],
+    "G08.finite_literal_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.finite_visit": [
+      "propext"
+    ],
+    "G08.history_segment": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.interior_current_used": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.interior_visit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.inward_greedy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.lane_count": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.literal_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.literal_state_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.literal_walk_lane": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.negative_exterior_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.point_distance": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.positive_exterior_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.prefix_current_used": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.prefix_next": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.prefix_run": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.prefix_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.run_complete_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.run_finite": [
+      "propext"
+    ],
+    "G08.run_greedy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.run_interior": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.run_used": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.sample_distances": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.sample_entry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.sample_exterior": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.sample_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08.state_ext": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.third_inward_move_counterexample": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.two_holes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.unused_distance_positive": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.walk_segment_literal": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08.wrong_entrance_counterexample": [
+      "propext"
+    ],
+    "G08E.abs_distance_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.actual_block_states": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.actual_box": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.actual_entrance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.actual_hole_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.actual_hole_enumeration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.altered_threshold_breaks_short_choice": [
+      "propext"
+    ],
+    "G08E.altered_threshold_competitor": [
+      "propext"
+    ],
+    "G08E.base_large": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.base_short": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.base_state": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.block_large": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.block_short": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.block_state": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.boundary_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.boundary_previous_index": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.boundary_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.box_deadline": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.difference_symmetric": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.endpoint_minus_seven_used": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.entrance_hole_inside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.every_entrance_hole_repaired": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.exact_entrance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.final_jump": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.follow_trace": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.front_large": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.front_short": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.front_state": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.history_next": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.history_zero": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.lift_trace": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.literal_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.literal_rule_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.negative_preferred": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.negative_shield": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.no_uniform_hole_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.omitted_entrance_deadline": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.positive_preferred": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.short_greedy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.short_lift": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.short_signed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08E.unbounded_reachable_holes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08E.walk_greedy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08H.holesList_length": [
+      "propext"
+    ],
+    "G08H.holesList_mem_formula": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08H.holesList_mem_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08H.holesList_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G08H.lane_hole_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G08H.map_injective_nodup": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G09.after_repair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.checkpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.cross_after_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.distances_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.entrance_frontier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.entrance_history": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G09.first_checkpoint_frame": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.first_repair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.forward_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.immediate_repairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.last_negative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.literal_checkpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.literal_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.literal_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.literal_repair_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.literal_repairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.original_hole": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G09.repair_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.repair_finish": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.repairs_within_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.second_checkpoint_frame": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G09.second_hole": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G09.tail_hypotheses": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.g08_box_deadline": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.g08_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.g08_odd_tail": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.lane_point_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.lane_point_properties": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.length_le_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.literal_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.literal_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.literal_first_visit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.literal_first_visit_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.literal_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.map_nodup_on": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.missing_forces_small": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.missing_target_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.near_code_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.near_code_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.odd_tail_unbounded": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.omission_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.opposite_mem": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.opposite_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.parity_distance": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G10.parity_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G10.second_missing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.all_omitted_classes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.class_above": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.class_below": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.class_difference": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.duplicate_residues_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.eventually_ne": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.eventually_outside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.finite_class_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.finite_eventually": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.literal_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.literal_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.lower_class": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.missing_avoids": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.mixed_six_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.modulus_one_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.odd_tail_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.omitted_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.omitted_period": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.omitted_shift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.omitted_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.positive_distance_mod": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.prefix_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.progression_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.progression_five_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.shift_add": [
+      "propext"
+    ],
+    "G18.shift_fold_gcd": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.shift_gcd": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.shift_int_mul": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.shift_mod": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.shift_nat_mul": [
+      "propext"
+    ],
+    "G18.shift_neg": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.shift_one_all": [
+      "propext",
+      "Quot.sound"
+    ],
+    "G18.shift_zero": [
+      "propext"
+    ],
+    "G18.tail_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.upper_class": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G18.visited_class_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "G01.Reaches.trans": [],
+    "G01.allowed_eq": [],
+    "G01.entranceState_spec": [],
+    "G03.reaches_used": [],
+    "G06.completion_unbounded": [],
+    "G07.finish_preserves_used": [],
+    "G07.finite_of_greedy": [],
+    "G07.reaches_used": [],
+    "G08.run_current": [],
+    "G08.sample_finite": [],
+    "G08E.final_state": [],
+    "G08H.holes_five": [],
+    "G08H.holes_ten": [],
+    "G09.certificate_take": [],
+    "G09.entrance_certificate": [],
+    "G18.mixed_six_residues": [],
+    "G18.progression_five_no_short": []
+  },
+  "mathematical_rejections": 40,
+  "proof_manifest_sha256": "1053a2d22fca4c10155aaa4231d6c3f97bf496016df7f94f7d73e98a02d12d9a",
+  "runner_sha256": "fc9c134baa2124de5858156a9e80bb717ec96a281402e9edc397873d94f4a688",
+  "compiled_sha256": {
+    "BlockGeometry.olean": "c0c890cb3160e18b9186cb99172296d5bb78ac2af04feedf309c78d675007d5c",
+    "CloseBlocks.olean": "c24142552dd30d00b3d59daf583b22a81a504be83f6e0907363741fca9d8d0bf",
+    "CloseGeometry.olean": "f7cdff28a541ed1f7224642c0c27a87e0a6829a38c0c11890694ec9a5833c7ac",
+    "CloseTransition.olean": "33fcd85c4137363d7c168d66222ebc54b242de730fffc45f689ba2f6176dd3f6",
+    "CofiniteCounting.olean": "ef00b9b24078e8e536c981eb3c729b461f8483ea337222eeb3b6f511334154b4",
+    "CofiniteGlobal.olean": "6810b5d8538e7fcd9eaa7aa292a7f14006beedbb157c4a496385d0406b2a82f8",
+    "CofiniteResults.olean": "4c3762dfa01d03d76fe4c64494764c7670eff97a378e6c9bc098e45611c6df01",
+    "EntranceBlocks.olean": "076dce2a75af41dfd833fab29263cb0b958f70e949afbfcaf0a0b94182ffe0df",
+    "EntranceBridge.olean": "93c228acea88ad6e6baa82700ad02ca583989c268a53884dc30b9e052f478e73",
+    "EntranceExamples.olean": "721655b0351cd8727541c5050ec68e7c6d467a97e7d5c821b7b70999e9b5ab61",
+    "EntranceGlobal.olean": "59116d174bf92703b62810619e27aa4d31d45bea5bcd81d4ef0b46510d972a24",
+    "EntranceResults.olean": "5d684b23355cb43b2199088b8f476240fc21fe8d3d436a8af447f26734991893",
+    "EntranceTrace.olean": "78bc677e75566099266de7ebc038b7e9301d5ccaa284b569df48e311928c94c2",
+    "Examples.olean": "4fde660109771be65a3c5d79a3dd7a68988eba1a058a7bc2898502dc951f6d52",
+    "FinitePrefix.olean": "199c85e1052be64165c8e92987539d124dfb63b4f3b539392c6080874b9a95b8",
+    "Global.olean": "65b122efe31f955c7295d59559c9abfb2ca1ea1d479c1ea7e52d5bdfc1949e01",
+    "History.olean": "64b38ff95a3fc7a145ebd39b66850fa75ce97d538a4a9fa56154950c42d32adf",
+    "HoleCount.olean": "ad6110b13d59dd8eefdc428c5785106dbebde8ce4e7746bb2d8c02a248c4346d",
+    "InfiniteWitnesses.olean": "4bb485960fc19f0673969004923632c37212827a52695dec780718ba02ae85b5",
+    "LaneExamples.olean": "f30d8e39bb0bd2f74dce06c91fe087827a4c2b9031ebb9375af40d0ce100f328",
+    "LaneFill.olean": "c361729568232eb6d6a41164d29fa7708c827cc0881322804fe0a873c02a2930",
+    "LaneLiteral.olean": "e44a351f8a0c2bfb462012ad3776129c77da2266053d312c2ce9b7b621dd804d",
+    "LaneStep.olean": "47b1a8f294a3c305ed5036f9c7204370890c50dace6371f61a601b9f4a6edf85",
+    "MixedBlocks.olean": "35b4cbf4b26a0037a840eda876e325124e920e00f1b8723c7d2f1cefc1973f1c",
+    "MixedGeometry.olean": "2981ecf7881d756a4180b12362abaa03c44282d7a366e0f4dc34c9fa4f9a0008",
+    "MixedGlobal.olean": "a3b61c2f5c5704fa0c98f0ba2f0b3a14e37e7bdcdd23931c9ed6b9639a2a6f84",
+    "OneSide.olean": "c625bb7ad47ff30b3a3510606ef8dbc8288364cabff19b440a0f89e680e44129",
+    "OriginalRule.olean": "3221c11287776ac12635c57b1f1bcc1e80700b6ce66f41af80896a287475de1b",
+    "PaperAudit.olean": "733acc5a641976ed57235554c6aa3cf96c52ce8e000af57b185288453241c92e",
+    "RepairBlocks.olean": "07e81c86296464836305ba22e7b75428c3e9a7fd75bef21f88b359629730152a",
+    "RepairEntrance.olean": "99edd377b653b67ff5dbd8606bde68a1ffbe608f6c90f5ca059e0eecbe1f22e3",
+    "RepairGlobal.olean": "9f55a3d8339628774676cd797052dfb62a6b5dae6b7f77b70efeafd36f10807e",
+    "ResidueAlgebra.olean": "8145669ee6ac8841cf9020a00c2a50bcbd7f5c2ce46325b8dba82b0459e655fa",
+    "ResidueCoverage.olean": "b2897a33d656a108bb02c4f6f48609933d3085678a775d04f375867a72367ad2",
+    "ResidueOmission.olean": "9b1504e438e4b55e33441f053011e525e56927b73a50dcfe1e69af1131e93220",
+    "ResidueResults.olean": "3d54c0e8df86c32665daaebed8ff333b5f9379d1449a9f859a554d0ee75320d5",
+    "Semantics.olean": "cecd483c51604f16a7409ee2259ebd8e588a3b470e2b3fce82c8b5bfd21a3de0",
+    "Shielded.olean": "5723d53e46d9edc4eaaebe131e7ca4b2391de46d149e2e57c1141d04f16802b5",
+    "TripleBlocks.olean": "80062a372835a58d0be8185b563e34a06067918fe9ac9625515730babc65135c",
+    "TripleGlobal.olean": "7c95b2d4b2f9b364f762c30ac13010a3303f1fa5012d2330ac438c8043ee0fed",
+    "TripleObstruction.olean": "a0018252de9061b9e273e5c77fd5cf3dc787e6f14a3b12976380c979a014fba7",
+    "UniversalGlobal.olean": "920d5e8752a791154005a987bb9d34ed894c9893d1a6cc1896e94b1888b49094",
+    "UniversalLiteral.olean": "2d174102b2a5052cac8036eff5cee254ede8b9d67ea063f0c7e75026b08b2670",
+    "UniversalTransition.olean": "01cb71c547c0ebf053aa719e40af3b2618210a7c23907ea9a5586097b154cb04"
+  },
+  "finished_utc": "2026-11-05T09:12:14.247556+00:00"
+}

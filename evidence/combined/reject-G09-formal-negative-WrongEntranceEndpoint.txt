@@ -1,0 +1,3 @@
+/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G09/formal-negative/WrongEntranceEndpoint.lean:5:99: error: Tactic `decide` proved that the proposition
+  35 = 34
+is false

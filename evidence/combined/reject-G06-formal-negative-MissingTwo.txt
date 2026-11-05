@@ -1,0 +1,3 @@
+/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G06/formal-negative/MissingTwo.lean:2:42: error: Tactic `decide` proved that the proposition
+  2 = 1 ∨ 2 = 3
+is false

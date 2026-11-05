@@ -1,0 +1,3 @@
+/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G07/formal-negative/ForbiddenEight.lean:2:82: error: Tactic `decide` proved that the proposition
+  (8 = 1 ∨ 8 = 3 ∨ 6 ≤ 8 ∧ 8 % 4 = 2) ∨ (8 = 4 ∨ 7 ≤ 8 ∧ 8 % 4 = 3) ∧ (fun x => True) 8
+is false

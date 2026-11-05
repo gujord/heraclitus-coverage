@@ -1,0 +1,3 @@
+/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative/OppositeParityRequired.lean:3:41: error: Tactic `decide` proved that the proposition
+  Int.natAbs 2 % 2 = 1
+is false

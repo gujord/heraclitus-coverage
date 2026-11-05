@@ -1,0 +1,3 @@
+/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G18/formal-negative/StrictMagnitude.lean:3:53: error: Tactic `decide` proved that the proposition
+  Int.natAbs 1 < (-1).natAbs
+is false

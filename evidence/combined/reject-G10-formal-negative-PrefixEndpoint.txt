@@ -1,0 +1,4 @@
+/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W04-first-article-residue-bundle/package-cleanup/relocated/heraclitus-coverage-1.0.0/formal/negative/G10/formal-negative/PrefixEndpoint.lean:6:2: error: Tactic `decide` proved that the proposition
+  (List.filter (fun i => decide ((fun i => 2 * ↑i + 1) i % 2 ≠ 0 % 2)) (List.range 2)).length ≤
+    (List.filter (fun i => decide ((fun i => 2 * ↑i + 1) i % 2 ≠ 0 % 2)) (List.range 1)).length
+is false

@@ -1,0 +1,1 @@
+/Users/rogerg/ai/math/heraclitus-generalization/build/generalization/W02-portable-proof-bundle/fresh-toolchain/lean-4.35.0-darwin
